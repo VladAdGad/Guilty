@@ -40,12 +40,8 @@ sysinfo.txt
 Assembly-CSharp-Editor-firstpass.csproj
 Assembly-CSharp.csproj
 CHANGELOG.md
-Guilty.sln
 LICENSE.md
-Library/
 ProjectSettings/
 QAReport.md
 README.md
-Temp/
 UnityPackageManager/
-obj/
