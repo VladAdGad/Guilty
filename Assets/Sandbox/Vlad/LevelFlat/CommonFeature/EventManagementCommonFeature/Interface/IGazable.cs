@@ -1,4 +1,6 @@
-﻿namespace EventManagement.Interfaces
+﻿using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
+
+namespace LevelFlat.CommonFeature.EventManagementCommonFeature.Interface
 {
     public interface IGazable : IInteractable
     {

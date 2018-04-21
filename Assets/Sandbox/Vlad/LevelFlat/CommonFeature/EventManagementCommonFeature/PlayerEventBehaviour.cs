@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using EventManagement.Interfaces;
+using CommonFeature.UtilityCommonFeature;
+using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
 using UnityEngine;
 using UnityEngine.Assertions;
-using Utilities;
 
-namespace Player
+namespace LevelFlat.CommonFeature.EventManagementCommonFeature
 {
     public class PlayerEventBehaviour : MonoBehaviour
     {

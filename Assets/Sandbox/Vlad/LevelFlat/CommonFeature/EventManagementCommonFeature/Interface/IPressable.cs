@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
+using UnityEngine;
 
-namespace EventManagement.Interfaces
+namespace LevelFlat.CommonFeature.EventManagementCommonFeature.Interface
 {
     public interface IPressable : IInteractable
     {

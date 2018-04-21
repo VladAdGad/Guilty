@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Gui
+namespace LevelFlat.CommonFeature.EventManagementCommonFeature
 {
     public class TooltipGuiSocket : MonoBehaviour
     {

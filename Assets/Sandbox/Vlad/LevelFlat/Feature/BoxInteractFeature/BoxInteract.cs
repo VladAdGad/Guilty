@@ -1,8 +1,10 @@
-﻿using EventManagement.Interfaces;
-using Gui;
+﻿using LevelFlat.CommonFeature.EventManagementCommonFeature;
+using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
+using LevelFlat.CommonFeature.ObjectRotateCommonFeature;
+using LevelFlat.CommonFeature.PlayerBehaviourCommonFeature;
 using UnityEngine;
 
-namespace Player.Interact
+namespace LevelFlat.Feature.BoxInteractFeature
 {
     public class BoxInteract : MonoBehaviour, IGazable, IPressable
     {

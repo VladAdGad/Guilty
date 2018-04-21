@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 
-namespace Player
+namespace LevelFlat.CommonFeature.PlayerBehaviourCommonFeature
 {
     public class PlayerBehaviour : MonoBehaviour
     {
