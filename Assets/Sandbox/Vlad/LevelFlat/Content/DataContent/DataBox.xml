@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataCollection>
+    <DataObjects>
+        <DataObject title="Blood on box">
+            <Description>"There are blood :D"</Description>
+            <!--<Icon></Icon>-->
+        </DataObject>
+    </DataObjects>
+</DataCollection>
