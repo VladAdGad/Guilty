@@ -1,22 +1,25 @@
 ﻿using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
-using LevelFlat.CommonFeature.NoticeCommonFeature;
 using UnityEngine;
 
-public class NoticeObject : MonoBehaviour, IGazable
+namespace LevelFlat.CommonFeature.NoticeCommonFeature
 {
-    private DataOfNoticeObject _dataOfNoticeObject;
-
-    private void Awake()
+    public class NoticeObject : MonoBehaviour, IGazable
     {
-        _dataOfNoticeObject = gameObject.GetComponent<DataOfNoticeObject>();
-    }
+        [SerializeField] private TextAsset _xml;
+        private DataOfNoticeObject _dataOfNoticeObject;
 
-    public void OnGazeEnter()
-    {
-//        _dataOfNoticeObject.ShowData();
-    }
+        private void Awake()
+        {
+            _dataOfNoticeObject = new DataOfNoticeObject();
+        }
 
-    public void OnGazeExit()
-    {
+        public void OnGazeEnter()
+        {
+            _dataOfNoticeObject.ShowData(_xml);
+        }
+
+        public void OnGazeExit()
+        {
+        }
     }
 }
