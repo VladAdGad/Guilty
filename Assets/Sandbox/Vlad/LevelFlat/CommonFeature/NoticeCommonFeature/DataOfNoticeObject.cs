@@ -7,16 +7,11 @@ namespace LevelFlat.CommonFeature.NoticeCommonFeature
     {
         public string Title { get; set; }
         public string Description { get; set; }
-        [JsonIgnore]
-        public Sprite IconOfObject { get; set; }
+        [JsonIgnore] public Sprite IconOfObject { get; private set; }
 
         public string PathIcon
         {
-            get { return PathIcon;}
-            set
-            {
-                IconOfObject = Resources.Load<Sprite>(value);
-            }
+            set { IconOfObject = Resources.Load<Sprite>(value); }
         }
     }
 }
