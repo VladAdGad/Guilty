@@ -1,6 +1,7 @@
 ﻿using Gui;
 using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
 using Newtonsoft.Json;
+using Sandbox.Vlad.LevelFlat.CommonFeature.NoticeCommonFeature;
 using UnityEngine;
 
 namespace LevelFlat.CommonFeature.NoticeCommonFeature
@@ -9,11 +10,13 @@ namespace LevelFlat.CommonFeature.NoticeCommonFeature
     {
         [SerializeField] private TextAsset _jsonFile;
         [SerializeField] private ImageGuiSocket _imageSocket;
-        private DataOfNoticeObject _dataOfNoticeObject = new DataOfNoticeObject();
+        private NoticedClueRecord _noticedClueRecord;
 
         private void Awake()
         {
-            _dataOfNoticeObject = JsonConvert.DeserializeObject<DataOfNoticeObject>(_jsonFile.text);
+            JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings();
+            jsonSerializerSettings.Converters.Add(new NoticeClueRecordConventer());
+            _noticedClueRecord = JsonConvert.DeserializeObject<NoticedClueRecord>(_jsonFile.text, jsonSerializerSettings);
         }
 
         public void OnGazeEnter()
@@ -28,9 +31,9 @@ namespace LevelFlat.CommonFeature.NoticeCommonFeature
 
         private void ShowInfo()
         {
-            _imageSocket.Display(_dataOfNoticeObject.IconOfObject);
-            Debug.Log(_dataOfNoticeObject.Title);
-            Debug.Log(_dataOfNoticeObject.Description);
+            _imageSocket.Display(_noticedClueRecord.Icon);
+            Debug.Log(_noticedClueRecord.Title);
+            Debug.Log(_noticedClueRecord.Description);
         }
     }
 }

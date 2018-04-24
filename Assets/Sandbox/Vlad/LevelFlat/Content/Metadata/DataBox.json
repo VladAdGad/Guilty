@@ -1,5 +1,5 @@
 ﻿{
   "Title": "Blood on box",
   "Description": "Example text lorem ipsum",
-  "PathIcon": "Sprites/Icons/myAvatar"
+  "Icon": "Sprites/Icons/myAvatar"
 }
