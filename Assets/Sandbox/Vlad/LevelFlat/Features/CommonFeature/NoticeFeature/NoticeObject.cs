@@ -26,12 +26,12 @@ namespace LevelFlat.CommonFeature.NoticeCommonFeature
 
         public void OnGazeExit()
         {
-            _imageSocket.Flush();
+//            _imageSocket.Flush();
         }
 
         private void ShowInfo()
         {
-            _imageSocket.Display(_noticedClueRecord.Icon);
+//            _imageSocket.Display(_noticedClueRecord.Icon);
             Debug.Log(_noticedClueRecord.Title);
             Debug.Log(_noticedClueRecord.Description);
         }

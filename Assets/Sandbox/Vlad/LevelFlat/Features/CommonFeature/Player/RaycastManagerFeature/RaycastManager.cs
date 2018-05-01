@@ -14,12 +14,10 @@ namespace LevelFlat.CommonFeature.EventManagementCommonFeature
         [SerializeField] private float _interactionDistance;
         [SerializeField] private LayerMask _layerMaskInteract;
         [SerializeField] private GameObject _crosshairManager;
+        [SerializeField] private Camera _camera;
 
         private IEnumerable<IGazable> _previousGazeable = new HashSet<IGazable>();
         private readonly Vector3 _position = new Vector3(Screen.width / 2f, Screen.height / 2f, 0f);
-        private Camera _camera;
-
-        private void Start() => _camera = Camera.main;
 
         private void Update() => GazeCast()
             .Map(raycastHit => raycastHit.collider)
