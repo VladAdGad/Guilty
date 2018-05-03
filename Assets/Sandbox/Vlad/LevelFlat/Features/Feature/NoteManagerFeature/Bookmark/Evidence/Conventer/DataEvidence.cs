@@ -1,19 +1,22 @@
 ﻿using Newtonsoft.Json;
+using UnityEngine;
 
 namespace Sandbox.Vlad.LevelFlat.Features.Feature
 {
-    public class DataDescribe
+    public class DataEvidence
     {
         public string Title { get; }
         public string Description { get; }
-//        public Sprite Icon { get; }
-        
+        public string Involved { get; }
+        public Sprite Icon { get; }
+
         [JsonConstructor]
-        public DataDescribe(string title, string description)
+        public DataEvidence(string title, string description, string involved, Sprite icon)
         {
             Title = title;
             Description = description;
-//            Icon = icon;
+            Involved = involved;
+            Icon = icon;
         }
     }
 }

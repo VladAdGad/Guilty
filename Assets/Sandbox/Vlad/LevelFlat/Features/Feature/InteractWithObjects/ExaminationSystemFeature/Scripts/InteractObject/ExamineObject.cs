@@ -37,8 +37,8 @@ public class ExamineObject : Interactable
     private void StartExamineObject()
     {
         _player.GetComponentInChildren<ExamineRotation>().StartRotateObject(_targetExaminableObject);
-        _player.GetComponentInChildren<Blur>().enabled = true;
         _player.GetComponent<Behaviour>().DisableFirstPersonController();
+        _player.GetComponentInChildren<Blur>().enabled = true;
         _crosshairObject.DisableCrosshair();
         _examineObjectInfoGui.FadeIn();
         _examineRaycastManager.enabled = true;
@@ -47,8 +47,8 @@ public class ExamineObject : Interactable
     private void StopExamineObject()
     {
         _player.GetComponentInChildren<ExamineRotation>().StopRotateObject(_targetExaminableObject);
-        _player.GetComponentInChildren<Blur>().enabled = false;
         _player.GetComponent<Behaviour>().EnableFirstPersonController();
+        _player.GetComponentInChildren<Blur>().enabled = false;
         _crosshairObject.EnableCrosshair();
         _examineObjectInfoGui.FadeOut();
         _examineRaycastManager.enabled = false;

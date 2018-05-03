@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -16,10 +15,10 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.Task
             _dataTask = JsonConvert.DeserializeObject<DataTask>(_jsonFile.text, JsonSerializerSettings);
         }
 
-        public void InvokeDescry()
+        public void WriteToNote()
         {
-            _notable.OnDescry(_dataTask);
-            var lookup = NotableManager<DataTask>.NotableObjects.ToLookup(a => a.Key, a => a.Value);
+            _notable.OnConsider(_dataTask);
+            var lookup = NotableManager<DataTask>.CollectionOfInformation.ToLookup(a => a.Key, a => a.Value);
             foreach (var variable in lookup)
             {
                 Debug.Log(variable.Key);

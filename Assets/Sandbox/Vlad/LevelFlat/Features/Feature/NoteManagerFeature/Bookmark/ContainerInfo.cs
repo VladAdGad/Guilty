@@ -1,19 +1,23 @@
-﻿using Sandbox.Vlad.LevelFlat.Features.Feature.Task;
+﻿using Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Picked;
+using Sandbox.Vlad.LevelFlat.Features.Feature.Task;
 using UnityEngine;
 
 namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects
 {
-    public class ContainerInfo: MonoBehaviour
+    public class ContainerInfo : MonoBehaviour
     {
-        [SerializeField] private DescribeEntity _describeEntity;
+        [SerializeField] private EvidenceEntity _evidenceEntity;
         [SerializeField] private TaskEntity _taskEntity;
-        
+        [SerializeField] private DataPickupItemEntity _dataPickupItemEntity;
+
         public void UpdateNote()
         {
-            if (_describeEntity != null)
-                _describeEntity.InvokeDescry();
+            if (_evidenceEntity != null)
+                _evidenceEntity.WriteToNote();
             if (_taskEntity != null)
-                _taskEntity.InvokeDescry();
+                _taskEntity.WriteToNote();
+            if (_dataPickupItemEntity != null)
+                _dataPickupItemEntity.WriteToNote();
         }
     }
 }
