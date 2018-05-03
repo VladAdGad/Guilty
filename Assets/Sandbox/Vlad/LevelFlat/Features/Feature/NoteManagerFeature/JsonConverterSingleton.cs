@@ -1,5 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
+using Sandbox.Vlad.LevelFlat.Features.Feature.Picked;
 using UnityEngine;
 
 namespace Sandbox.Vlad.LevelFlat.Features.Feature
@@ -14,7 +15,12 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
             JsonInitializeConverters();
         }
 
-        private void JsonInitializeConverters() => JsonSerializerSettings.Converters.Add(new DataEvidenceConventer());
+        private void JsonInitializeConverters()
+        {
+            JsonSerializerSettings.Converters.Add(new DataEvidenceConventer());
+            JsonSerializerSettings.Converters.Add(new DataTaskConventer());
+            JsonSerializerSettings.Converters.Add(new DataPickupItemConventer());
+        }
 
         public static JsonConverterSingleton Instance => InstanceHolder.Value;
     }

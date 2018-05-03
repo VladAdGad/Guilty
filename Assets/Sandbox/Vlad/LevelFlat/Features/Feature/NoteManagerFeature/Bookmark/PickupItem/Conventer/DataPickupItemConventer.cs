@@ -1,6 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using UnityEngine;
 
 namespace Sandbox.Vlad.LevelFlat.Features.Feature.Picked
 {
@@ -14,7 +15,7 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.Picked
             string title = (string) jo["Title"];
             string description = (string) jo["Description"];
             string pathIcon = (string) jo["Icon"];
-
+            Debug.Log(pathIcon);
             return DataPickupItemFactory.Create(title, description, pathIcon);
         }
 
