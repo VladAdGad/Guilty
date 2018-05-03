@@ -11,6 +11,10 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.Task
 
         private void Awake() => _dataTask = JsonConvert.DeserializeObject<DataTask>(_jsonFile.text, JsonSerializerSettings);
 
-        public void WriteToNote() => _notable.OnConsider(_dataTask);
+        public void WriteToNote()
+        {
+            _notable.OnConsider(_dataTask);
+            Destroy(this);
+        }
     }
 }

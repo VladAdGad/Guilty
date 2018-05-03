@@ -11,6 +11,7 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.Examinatio
 
         public void OnGazeExit()
         {
+            Destroy(this);
         }
     }
 }

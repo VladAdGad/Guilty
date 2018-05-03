@@ -11,6 +11,10 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
 
         private void Awake() => _dataEvidence = JsonConvert.DeserializeObject<DataEvidence>(_jsonFile.text, JsonSerializerSettings);
 
-        public void WriteToNote() => _notable.OnConsider(_dataEvidence);
+        public void WriteToNote()
+        {
+            _notable.OnConsider(_dataEvidence);
+            Destroy(this);
+        }
     }
 }

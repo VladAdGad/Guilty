@@ -12,6 +12,10 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Pi
 
         private void Awake() => _dataEvidence = JsonConvert.DeserializeObject<DataPickupItem>(_jsonFile.text, JsonSerializerSettings);
 
-        public void WriteToNote() => _notable.OnConsider(_dataEvidence);
+        public void WriteToNote()
+        {
+            _notable.OnConsider(_dataEvidence);
+            Destroy(this);
+        }
     }
 }

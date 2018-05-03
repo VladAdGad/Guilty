@@ -18,6 +18,8 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects
                 _taskEntity.WriteToNote();
             if (_dataPickupItemEntity != null)
                 _dataPickupItemEntity.WriteToNote();
+            
+            Destroy(this);
         }
     }
 }
