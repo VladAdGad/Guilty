@@ -1,35 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Sandbox.Vlad.LevelFlat.Features.Feature
 {
     public class NotableManager<TValue> : INotable<TValue>
     {
-//        public static IDictionary<Type, IList<TValue>> Dictionary;
-
-        public static List<KeyValuePair<Type, TValue>> Lists;
+        public static IList<KeyValuePair<Type, TValue>> List;
 
         public NotableManager()
         {
-//            Dictionary = new Dictionary<Type, IList<TValue>>();
+            List = new List<KeyValuePair<Type, TValue>>();
         }
 
         public void OnDescry(TValue dataOfNotable)
         {
-//            if (Dictionary.ContainsKey(typeof(TValue)))
-//            {
-//                Dictionary[typeof(TValue)] = dataOfNotable;
-//            }
-//            else
-//            {
-//                Dictionary.Add(typeof(TValue), dataOfNotable);
-//            }
-
-            var smth = new KeyValuePair<Type, TValue>(typeof(TValue), dataOfNotable);
-            Lists.Add(smth);
-            
-            var lookups = Lists.ToLookup(a => a.Key, a=> a.Value);
+            List.Add(new KeyValuePair<Type, TValue>(typeof(TValue), dataOfNotable));
+//            var lookups = List.ToLookup(a => a.Key, a=> a.Value);
         }
     }
 }

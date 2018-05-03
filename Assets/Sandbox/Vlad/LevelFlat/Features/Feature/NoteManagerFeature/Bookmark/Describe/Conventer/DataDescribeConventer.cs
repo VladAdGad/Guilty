@@ -1,5 +1,4 @@
 ﻿using System;
-using LevelFlat.CommonFeature.NoticeCommonFeature;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 

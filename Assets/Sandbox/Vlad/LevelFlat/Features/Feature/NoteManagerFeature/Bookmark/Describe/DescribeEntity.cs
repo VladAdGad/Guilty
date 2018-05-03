@@ -1,4 +1,5 @@
-﻿using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
+﻿using System.Linq;
+using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -9,7 +10,7 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
         [SerializeField] private TextAsset _jsonFile;
         private DataDescribe _dataDescribe;
         private readonly INotable<DataDescribe> _notable = new NotableManager<DataDescribe>();
-        
+
         private void Awake()
         {
             _dataDescribe = JsonConvert.DeserializeObject<DataDescribe>(_jsonFile.text, JsonSerializerSettings);
@@ -18,7 +19,7 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
         public void OnGazeEnter()
         {
             _notable.OnDescry(_dataDescribe);
-            Debug.Log(NotableManager<DataDescribe>.Dictionary);
+            Debug.Log(NotableManager<DataDescribe>.List.ToLookup(a => a.Key, a => a.Value));
         }
 
         public void OnGazeExit()
