@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Sandbox.Vlad.LevelFlat.Features.Feature
 {
-    public class DescribeEntity : JsonConverterSingleton, IGazable
+    public class DescribeEntity : JsonConverterSingleton
     {
         [SerializeField] private TextAsset _jsonFile;
         private DataDescribe _dataDescribe;
@@ -16,19 +16,18 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
             _dataDescribe = JsonConvert.DeserializeObject<DataDescribe>(_jsonFile.text, JsonSerializerSettings);
         }
 
-        public void OnGazeEnter()
-        {
-            InvokeDescry();
-        }
-
-        public void OnGazeExit()
-        {
-        }
-
         public void InvokeDescry()
         {
             _notable.OnDescry(_dataDescribe);
-            Debug.Log(NotableManager<DataDescribe>.NotableObjects.ToLookup(a => a.Key, a => a.Value));
+            var lookup = NotableManager<DataDescribe>.NotableObjects.ToLookup(a => a.Key, a => a.Value);
+            foreach (var variable in lookup)
+            {
+                Debug.Log(variable.Key);
+                foreach (var variablee in variable)
+                {
+                    Debug.Log(variablee.Description);
+                }
+            }
         }
     }
 }

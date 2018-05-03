@@ -1,11 +1,10 @@
 ﻿using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
-using Sandbox.Vlad.LevelFlat.Features.Feature.Task;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.PickupableSystemFeature
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects
 {
-    public class PickupObject : MonoBehaviour, IGazable, IPressable, IPickupable
+    public abstract class Interactable: MonoBehaviour, IGazable, IPressable
     {
         // @formatter:off
         [Header("Interact Settings")] 
@@ -14,10 +13,6 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.Pickupable
         
         [Header("GUI Objects")]
         [SerializeField] private GameObject _itemNameText;
-        
-        [Header("Descry Objects")]
-        [SerializeField] private DescribeEntity _describeEntity;
-        [SerializeField] private TaskEntity _taskEntity;
         // @formatter:on
 
         public void OnGazeEnter() => ShowInfoOfSeenObject();
@@ -26,18 +21,8 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.Pickupable
 
         public KeyCode ActivationKeyCode() => _activationButton;
 
-        public void OnPress()
+        public virtual void OnPress()
         {
-            Pickup();
-            Destroy(gameObject);
-        }
-
-        public void Pickup()
-        {
-            if(_describeEntity != null)
-            _describeEntity.InvokeDescry();
-            if(_taskEntity != null)
-            _taskEntity.InvokeDescry();
         }
 
         private void ShowInfoOfSeenObject()

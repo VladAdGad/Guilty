@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Sandbox.Vlad.LevelFlat.Features.Feature.Task
 {
-    public class TaskEntity : JsonConverterSingleton, IGazable
+    public class TaskEntity : JsonConverterSingleton
     {
         [SerializeField] private TextAsset _jsonFile;
         private DataTask _dataTask;
@@ -14,15 +14,6 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.Task
         private void Awake()
         {
             _dataTask = JsonConvert.DeserializeObject<DataTask>(_jsonFile.text, JsonSerializerSettings);
-        }
-
-        public void OnGazeEnter()
-        {
-            InvokeDescry();
-        }
-
-        public void OnGazeExit()
-        {
         }
 
         public void InvokeDescry()

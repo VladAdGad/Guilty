@@ -7,26 +7,20 @@
 
 //This script manages the informations of the interactable objects, such as the name
 
-using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
-using LevelFlat.CommonFeature.PlayerBehaviourCommonFeature;
 using MyGaze;
 using Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityStandardAssets.ImageEffects;
 using Behaviour = LevelFlat.CommonFeature.PlayerBehaviourCommonFeature.Behaviour;
 
-public class ExamineObject : MonoBehaviour, IGazable, IPressable, IExamine
+public class ExamineObject : Interactable
 {
     // @formatter:off
     [Header("Interact Settings")] 
-    [SerializeField] private string _itemName;
     [SerializeField] private GameObject _targetExaminableObject;
-    [SerializeField] private KeyCode _activationButton = KeyCode.Mouse1;
     
     [Header("GUI Objects")]
     [SerializeField] private CrosshairManager _crosshairObject;
-    [SerializeField] private GameObject _itemNameText;
     [SerializeField] private UIFade _examineObjectInfoGui;   
     
     [Header("Player")]
@@ -35,13 +29,7 @@ public class ExamineObject : MonoBehaviour, IGazable, IPressable, IExamine
     private bool _isEximiningObject;
     // @formatter:on
 
-    public void OnGazeEnter() => ShowInfoOfSeenObject();
-
-    public void OnGazeExit() => HideInfoOfSeenObject();
-
-    public KeyCode ActivationKeyCode() => _activationButton;
-
-    public void OnPress()
+    public override void OnPress()
     {
         if (_isEximiningObject)
             StopExamineObject();
@@ -51,7 +39,7 @@ public class ExamineObject : MonoBehaviour, IGazable, IPressable, IExamine
         ChangeExaminingState();
     }
 
-    public void StartExamineObject()
+    private void StartExamineObject()
     {
         _player.GetComponentInChildren<ExamineRotation>().StartRotateObject(_targetExaminableObject);
         _player.GetComponentInChildren<Blur>().enabled = true;
@@ -60,7 +48,7 @@ public class ExamineObject : MonoBehaviour, IGazable, IPressable, IExamine
         _examineObjectInfoGui.FadeIn();
     }
 
-    public void StopExamineObject()
+    private void StopExamineObject()
     {
         _player.GetComponentInChildren<ExamineRotation>().StopRotateObject(_targetExaminableObject);
         _player.GetComponentInChildren<Blur>().enabled = false;
@@ -70,15 +58,4 @@ public class ExamineObject : MonoBehaviour, IGazable, IPressable, IExamine
     }
 
     private void ChangeExaminingState() => _isEximiningObject = !_isEximiningObject;
-
-    private void ShowInfoOfSeenObject()
-    {
-        _itemNameText.GetComponent<Text>().text = _itemName;
-        _itemNameText.GetComponent<UIFade>().FadeIn();
-    }
-
-    private void HideInfoOfSeenObject()
-    {
-        _itemNameText.GetComponent<UIFade>().FadeOut();
-    }
 }
