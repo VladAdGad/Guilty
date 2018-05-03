@@ -23,14 +23,8 @@ namespace MyGaze
             _interactCrosshair.SetActive(false);
         }
 
-        public void EnableCrosshair()
-        {
-            gameObject.GetComponent<CanvasGroup>().alpha = 1;
-        }
+        public void EnableCrosshair() => gameObject.GetComponent<CanvasGroup>().alpha = 1;
 
-        public void DisableCrosshair()
-        {
-            gameObject.GetComponent<CanvasGroup>().alpha = 0;
-        }
+        public void DisableCrosshair() => gameObject.GetComponent<CanvasGroup>().alpha = 0;
     }
 }

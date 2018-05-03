@@ -15,19 +15,12 @@ using Behaviour = LevelFlat.CommonFeature.PlayerBehaviourCommonFeature.Behaviour
 
 public class ExamineObject : Interactable
 {
-    // @formatter:off
-    [Header("Interact Settings")] 
     [SerializeField] private GameObject _targetExaminableObject;
-    
-    [Header("GUI Objects")]
     [SerializeField] private CrosshairManager _crosshairObject;
-    [SerializeField] private UIFade _examineObjectInfoGui;   
-    
-    [Header("Player")]
+    [SerializeField] private UIFade _examineObjectInfoGui;
     [SerializeField] private GameObject _player;
-    
+
     private bool _isEximiningObject;
-    // @formatter:on
 
     public override void OnPress()
     {

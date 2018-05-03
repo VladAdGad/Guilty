@@ -6,14 +6,9 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects
 {
     public abstract class Interactable: MonoBehaviour, IGazable, IPressable
     {
-        // @formatter:off
-        [Header("Interact Settings")] 
         [SerializeField] private string _itemName;
         [SerializeField] private KeyCode _activationButton = KeyCode.Mouse1;
-        
-        [Header("GUI Objects")]
         [SerializeField] private GameObject _itemNameText;
-        // @formatter:on
 
         public void OnGazeEnter() => ShowInfoOfSeenObject();
 

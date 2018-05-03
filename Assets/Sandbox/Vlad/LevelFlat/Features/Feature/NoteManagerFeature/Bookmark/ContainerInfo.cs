@@ -5,7 +5,6 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects
 {
     public class ContainerInfo: MonoBehaviour
     {
-        [Header("Descry Objects")]
         [SerializeField] private DescribeEntity _describeEntity;
         [SerializeField] private TaskEntity _taskEntity;
         
