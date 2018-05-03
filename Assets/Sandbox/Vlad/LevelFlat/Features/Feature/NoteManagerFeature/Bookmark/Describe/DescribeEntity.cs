@@ -18,12 +18,17 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
 
         public void OnGazeEnter()
         {
-            _notable.OnDescry(_dataDescribe);
-            Debug.Log(NotableManager<DataDescribe>.NotableObjects.ToLookup(a => a.Key, a => a.Value));
+            InvokeDescry();
         }
 
         public void OnGazeExit()
         {
+        }
+
+        public void InvokeDescry()
+        {
+            _notable.OnDescry(_dataDescribe);
+            Debug.Log(NotableManager<DataDescribe>.NotableObjects.ToLookup(a => a.Key, a => a.Value));
         }
     }
 }

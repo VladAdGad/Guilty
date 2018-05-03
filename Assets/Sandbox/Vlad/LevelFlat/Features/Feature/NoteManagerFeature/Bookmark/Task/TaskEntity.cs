@@ -18,8 +18,16 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.Task
 
         public void OnGazeEnter()
         {
+            InvokeDescry();
+        }
+
+        public void OnGazeExit()
+        {
+        }
+
+        public void InvokeDescry()
+        {
             _notable.OnDescry(_dataTask);
-            //SHOW INFO
             var lookup = NotableManager<DataTask>.NotableObjects.ToLookup(a => a.Key, a => a.Value);
             foreach (var variable in lookup)
             {
@@ -29,10 +37,6 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.Task
                     Debug.Log(variablee.Description);
                 }
             }
-        }
-
-        public void OnGazeExit()
-        {
         }
     }
 }

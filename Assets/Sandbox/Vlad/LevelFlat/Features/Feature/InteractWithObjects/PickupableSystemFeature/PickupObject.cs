@@ -1,34 +1,54 @@
 ﻿using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
+using Sandbox.Vlad.LevelFlat.Features.Feature.Task;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.PickupableSystemFeature
 {
-    public class PickupObject: MonoBehaviour, IGazable, IPressable, IPickupable
+    public class PickupObject : MonoBehaviour, IGazable, IPressable, IPickupable
     {
+        // @formatter:off
+        [Header("Interact Settings")] 
+        [SerializeField] private string _itemName;
+        [SerializeField] private KeyCode _activationButton = KeyCode.Mouse1;
         
-        public void OnGazeEnter()
-        {
-            throw new System.NotImplementedException();
-        }
+        [Header("GUI Objects")]
+        [SerializeField] private GameObject _itemNameText;
+        
+        [Header("Descry Objects")]
+        [SerializeField] private DescribeEntity _describeEntity;
+        [SerializeField] private TaskEntity _taskEntity;
+        // @formatter:on
 
-        public void OnGazeExit()
-        {
-            throw new System.NotImplementedException();
-        }
+        public void OnGazeEnter() => ShowInfoOfSeenObject();
 
-        public KeyCode ActivationKeyCode()
-        {
-            throw new System.NotImplementedException();
-        }
+        public void OnGazeExit() => HideInfoOfSeenObject();
+
+        public KeyCode ActivationKeyCode() => _activationButton;
 
         public void OnPress()
         {
-            throw new System.NotImplementedException();
+            Pickup();
+            Destroy(gameObject);
         }
 
         public void Pickup()
         {
-            throw new System.NotImplementedException();
+            if(_describeEntity != null)
+            _describeEntity.InvokeDescry();
+            if(_taskEntity != null)
+            _taskEntity.InvokeDescry();
+        }
+
+        private void ShowInfoOfSeenObject()
+        {
+            _itemNameText.GetComponent<Text>().text = _itemName;
+            _itemNameText.GetComponent<UIFade>().FadeIn();
+        }
+
+        private void HideInfoOfSeenObject()
+        {
+            _itemNameText.GetComponent<UIFade>().FadeOut();
         }
     }
 }
