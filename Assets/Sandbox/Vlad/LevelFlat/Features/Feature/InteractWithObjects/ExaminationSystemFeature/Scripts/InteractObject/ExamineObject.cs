@@ -10,12 +10,13 @@
 using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
 using LevelFlat.CommonFeature.PlayerBehaviourCommonFeature;
 using MyGaze;
+using Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.ImageEffects;
 using Behaviour = LevelFlat.CommonFeature.PlayerBehaviourCommonFeature.Behaviour;
 
-public class InteractObject : MonoBehaviour, IGazable, IPressable
+public class ExamineObject : MonoBehaviour, IGazable, IPressable, IExamine
 {
     // @formatter:off
     [Header("Interact Settings")] 
@@ -34,30 +35,23 @@ public class InteractObject : MonoBehaviour, IGazable, IPressable
     private bool _isEximiningObject;
     // @formatter:on
 
-    public void OnGazeEnter()
-    {
-        _itemNameText.GetComponent<Text>().text = _itemName;
-        _itemNameText.GetComponent<UIFade>().FadeIn();
-    }
+    public void OnGazeEnter() => ShowInfoOfSeenObject();
 
-    public void OnGazeExit()
-    {
-        _itemNameText.GetComponent<UIFade>().FadeOut();
-    }
+    public void OnGazeExit() => HideInfoOfSeenObject();
 
     public KeyCode ActivationKeyCode() => _activationButton;
 
     public void OnPress()
     {
         if (_isEximiningObject)
-            StopEximineObject();
+            StopExamineObject();
         else
-            StartEximineObject();
+            StartExamineObject();
 
         ChangeExaminingState();
     }
 
-    private void StartEximineObject()
+    public void StartExamineObject()
     {
         _player.GetComponentInChildren<ExamineRotation>().StartRotateObject(_targetExaminableObject);
         _player.GetComponentInChildren<Blur>().enabled = true;
@@ -66,7 +60,7 @@ public class InteractObject : MonoBehaviour, IGazable, IPressable
         _examineObjectInfoGui.FadeIn();
     }
 
-    private void StopEximineObject()
+    public void StopExamineObject()
     {
         _player.GetComponentInChildren<ExamineRotation>().StopRotateObject(_targetExaminableObject);
         _player.GetComponentInChildren<Blur>().enabled = false;
@@ -76,4 +70,15 @@ public class InteractObject : MonoBehaviour, IGazable, IPressable
     }
 
     private void ChangeExaminingState() => _isEximiningObject = !_isEximiningObject;
+
+    private void ShowInfoOfSeenObject()
+    {
+        _itemNameText.GetComponent<Text>().text = _itemName;
+        _itemNameText.GetComponent<UIFade>().FadeIn();
+    }
+
+    private void HideInfoOfSeenObject()
+    {
+        _itemNameText.GetComponent<UIFade>().FadeOut();
+    }
 }
