@@ -16,15 +16,23 @@ public class Emission : MonoBehaviour, IGazable
     [Header("Highlight Settings")] 
     [SerializeField] private Material _normalMat;
     [SerializeField] private Material _raycastedMat;
-    // @formatter:on
     
+    private GameObject _gameObject;
+    // @formatter:on
+
+    private void Start()
+    {
+        _gameObject = gameObject;
+    }
+
     public void OnGazeEnter()
     {
-        gameObject.GetComponent<MeshRenderer>().material = _raycastedMat;
+        _gameObject.GetComponent<MeshRenderer>().material = _raycastedMat;
     }
 
     public void OnGazeExit()
     {
-        gameObject.GetComponent<MeshRenderer>().material = _normalMat;
+        if(_gameObject != null)
+        _gameObject.GetComponent<MeshRenderer>().material = _normalMat;
     }
 }
