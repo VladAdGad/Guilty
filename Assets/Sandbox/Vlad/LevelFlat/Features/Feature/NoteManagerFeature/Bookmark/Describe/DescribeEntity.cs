@@ -8,7 +8,7 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
     {
         [SerializeField] private TextAsset _jsonFile;
         private DataDescribe _dataDescribe;
-        private readonly IDescribe _describe = new DescribeManager();
+        private readonly INotable<DataDescribe> _notable = new NotableManager<DataDescribe>();
         
         private void Awake()
         {
@@ -17,8 +17,8 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
 
         public void OnGazeEnter()
         {
-            _describe.OnDescry(_dataDescribe);
-            Debug.Log(DescribeManager.DataDescribes);
+            _notable.OnDescry(_dataDescribe);
+            Debug.Log(NotableManager<DataDescribe>.Dictionary);
         }
 
         public void OnGazeExit()

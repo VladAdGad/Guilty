@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace Sandbox.Vlad.LevelFlat.Features.Feature
+﻿namespace Sandbox.Vlad.LevelFlat.Features.Feature
 {
     public class DataDescribeFactory
     {

@@ -1,6 +1,5 @@
 ﻿using System;
 using Newtonsoft.Json;
-using Sandbox.Vlad.LevelFlat.CommonFeature.NoticeCommonFeature;
 using UnityEngine;
 
 namespace Sandbox.Vlad.LevelFlat.Features.Feature
