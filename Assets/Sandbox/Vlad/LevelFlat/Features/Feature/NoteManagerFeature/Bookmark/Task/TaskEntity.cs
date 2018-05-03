@@ -20,13 +20,13 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.Task
         {
             _notable.OnDescry(_dataTask);
             //SHOW INFO
-            var lookup = NotableManager<DataTask>.List.ToLookup(a => a.Key, a => a.Value);
-            foreach (var VARIABLE in lookup)
+            var lookup = NotableManager<DataTask>.NotableObjects.ToLookup(a => a.Key, a => a.Value);
+            foreach (var variable in lookup)
             {
-                Debug.Log(VARIABLE.Key);
-                foreach (var VARIABLEE in VARIABLE)
+                Debug.Log(variable.Key);
+                foreach (var variablee in variable)
                 {
-                    Debug.Log(VARIABLEE.Description);
+                    Debug.Log(variablee.Description);
                 }
             }
         }
