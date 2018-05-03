@@ -7,6 +7,7 @@
 
 //This script manages the informations of the interactable objects, such as the name
 
+using LevelFlat.CommonFeature.EventManagementCommonFeature;
 using MyGaze;
 using Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects;
 using UnityEngine;
@@ -19,6 +20,7 @@ public class ExamineObject : Interactable
     [SerializeField] private CrosshairManager _crosshairObject;
     [SerializeField] private UIFade _examineObjectInfoGui;
     [SerializeField] private GameObject _player;
+    [SerializeField] private RaycastManager _examineRaycastManager;
 
     private bool _isEximiningObject;
 
@@ -39,6 +41,7 @@ public class ExamineObject : Interactable
         _player.GetComponent<Behaviour>().DisableFirstPersonController();
         _crosshairObject.DisableCrosshair();
         _examineObjectInfoGui.FadeIn();
+        _examineRaycastManager.enabled = true;
     }
 
     private void StopExamineObject()
@@ -48,6 +51,7 @@ public class ExamineObject : Interactable
         _player.GetComponent<Behaviour>().EnableFirstPersonController();
         _crosshairObject.EnableCrosshair();
         _examineObjectInfoGui.FadeOut();
+        _examineRaycastManager.enabled = false;
     }
 
     private void ChangeExaminingState() => _isEximiningObject = !_isEximiningObject;
