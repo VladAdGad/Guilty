@@ -20,19 +20,17 @@ public class Emission : MonoBehaviour, IGazable
     private GameObject _gameObject;
     // @formatter:on
 
-    private void Start()
-    {
-        _gameObject = gameObject;
-    }
+    private void Start() => _gameObject = gameObject;
 
     public void OnGazeEnter()
     {
-        _gameObject.GetComponent<MeshRenderer>().material = _raycastedMat;
+        if (_gameObject != null)
+            _gameObject.GetComponent<MeshRenderer>().material = _raycastedMat;
     }
 
     public void OnGazeExit()
     {
-        if(_gameObject != null)
-        _gameObject.GetComponent<MeshRenderer>().material = _normalMat;
+        if (_gameObject != null)
+            _gameObject.GetComponent<MeshRenderer>().material = _normalMat;
     }
 }
