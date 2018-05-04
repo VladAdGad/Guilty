@@ -1,38 +1,49 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 using UnityEngine;
 
 namespace Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task
 {
-    public class CreateTask: JsonConverterSingleton
+    public class CreateTask : JsonConverterSingleton
     {
         [SerializeField] private TextAsset _jsonDataTask;
+
         private DataTask _dataTask;
-        
+
         private void Awake() => Deserialize();
 
-        public void SettingTask()
+        public void SetupTask()
         {
-            HashSet<DataTask> dataTasks = NotableManager<DataTask>.GetValueFromDictionary();
-            foreach (var task in dataTasks)
+            Type key = typeof(DataTask);
+            if (NotableManager<DataTask>._collectionOfInformation.ContainsKey(key))
             {
-                if (task.Id.Equals(_dataTask.Id))
+                foreach (KeyValuePair<Type, HashSet<DataTask>> dataTasks in NotableManager<DataTask>._collectionOfInformation)
                 {
-                    task.isHide = false;
-                    task.IsComplete = true;
+                    foreach (DataTask currentDataTask in dataTasks.Value)
+                    {
+                        if (currentDataTask.Id.Equals(_dataTask.Id))
+                        {
+                            currentDataTask.isHide = false;
+                        }
+                        else
+                        {
+                            NotableManager<DataTask>._collectionOfInformation[key].Add(_dataTask);
+                        }
+                    }
                 }
-                else
-                {
-                    task.isHide = false;
-                    task.IsComplete = false;
-                }
+            }
+            else
+            {
+                HashSet<DataTask> hashSet = new HashSet<DataTask> {_dataTask};
+                NotableManager<DataTask>._collectionOfInformation.Add(key, hashSet);
             }
         }
 
         private void Deserialize()
         {
             if (_jsonDataTask != null)
-            _dataTask = JsonConvert.DeserializeObject<DataTask>(_jsonDataTask.text, JsonSerializerSettings);
+                _dataTask = JsonConvert.DeserializeObject<DataTask>(_jsonDataTask.text, JsonSerializerSettings);
         }
     }
 }

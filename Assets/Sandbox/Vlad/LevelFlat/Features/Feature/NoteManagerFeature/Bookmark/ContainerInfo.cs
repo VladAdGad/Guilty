@@ -8,14 +8,13 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects
     public class ContainerInfo : JsonConverterSingleton
     {
         [SerializeField] private CreateTask _createTask;
+        [SerializeField] private CompleteTask _completeTask;
         [SerializeField] private TextAsset _jsondataEvidence;
         [SerializeField] private TextAsset _jsonDataPickupItem;
 
-        private DataTask _dataTask;
         private DataEvidence _dataEvidence;
         private DataPickupItem _dataPickupItem;
 
-        private readonly INotable<DataTask> _notableDataTask = new NotableManager<DataTask>();
         private readonly INotable<DataEvidence> _notableDataEvidence = new NotableManager<DataEvidence>();
         private readonly INotable<DataPickupItem> _notablePickupItem = new NotableManager<DataPickupItem>();
 
@@ -23,8 +22,13 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects
 
         public void UpdateNote()
         {
-            InvokeOnConsider(_dataTask, _dataEvidence, _dataPickupItem);
-            
+            InvokeOnConsider(_dataEvidence, _dataPickupItem);
+            if (_createTask != null)
+                _createTask.SetupTask();
+
+            if (_completeTask != null)
+                _completeTask.SetupTask();
+
             Destroy(this);
         }
 
@@ -37,16 +41,10 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects
                 _dataPickupItem = JsonConvert.DeserializeObject<DataPickupItem>(_jsonDataPickupItem.text, JsonSerializerSettings);
         }
 
-        private void InvokeOnConsider(DataTask dataTask, DataEvidence dataEvidence, DataPickupItem dataPickupItem)
+        private void InvokeOnConsider(DataEvidence dataEvidence, DataPickupItem dataPickupItem)
         {
-            if (dataTask != null)
-                _notableDataTask.OnConsider(dataTask);
-
-            if (dataEvidence != null)
-                _notableDataEvidence.OnConsider(dataEvidence);
-
-            if (dataPickupItem != null)
-                _notablePickupItem.OnConsider(dataPickupItem);
+            _notableDataEvidence.OnConsider(dataEvidence);
+            _notablePickupItem.OnConsider(dataPickupItem);
         }
     }
 }

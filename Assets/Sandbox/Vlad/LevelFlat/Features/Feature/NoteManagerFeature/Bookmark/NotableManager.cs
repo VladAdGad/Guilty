@@ -3,13 +3,14 @@ using System.Collections.Generic;
 
 namespace Sandbox.Vlad.LevelFlat.Features.Feature
 {
-    public class NotableManager<TValue> : INotable<TValue>
+    public class NotableManager<TValue> : INotable<TValue> where TValue : class
     {
-        private static readonly IDictionary<Type, HashSet<TValue>> _collectionOfInformation = new Dictionary<Type, HashSet<TValue>>();
+        public static readonly IDictionary<Type, HashSet<TValue>> _collectionOfInformation = new Dictionary<Type, HashSet<TValue>>();
 
         public void OnConsider(TValue dataOf)
         {
-            AddToDictionary(typeof(TValue), dataOf);
+            if (dataOf != null)
+                AddToDictionary(typeof(TValue), dataOf);
         }
 
         private void AddToDictionary(Type key, TValue value)
@@ -17,10 +18,7 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
             if (_collectionOfInformation.ContainsKey(key))
             {
                 HashSet<TValue> hashSet = _collectionOfInformation[key];
-                if (hashSet.Contains(value) == false)
-                {
-                    hashSet.Add(value);
-                }
+                hashSet.Add(value);
             }
             else
             {
