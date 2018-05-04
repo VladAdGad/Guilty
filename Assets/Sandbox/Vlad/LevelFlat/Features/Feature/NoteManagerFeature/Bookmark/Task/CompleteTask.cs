@@ -17,9 +17,9 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Ta
         {
             _dataTask.IsComplete = true;
             Type key = typeof(DataTask);
-            if (NotableManager<DataTask>._collectionOfInformation.ContainsKey(key))
+            if (NotableManager<DataTask>.CollectionOfInformation.ContainsKey(key))
             {
-                foreach (KeyValuePair<Type, HashSet<DataTask>> dataTasks in NotableManager<DataTask>._collectionOfInformation)
+                foreach (KeyValuePair<Type, HashSet<DataTask>> dataTasks in NotableManager<DataTask>.CollectionOfInformation)
                 {
                     foreach (DataTask currentDataTask in dataTasks.Value)
                     {
@@ -29,7 +29,7 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Ta
                         }
                         else
                         {
-                            NotableManager<DataTask>._collectionOfInformation[key].Add(_dataTask);
+                            NotableManager<DataTask>.CollectionOfInformation[key].Add(_dataTask);
                         }
                     }
                 }
@@ -37,8 +37,10 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Ta
             else
             {
                 HashSet<DataTask> hashSet = new HashSet<DataTask> {_dataTask};
-                NotableManager<DataTask>._collectionOfInformation.Add(key, hashSet);
+                NotableManager<DataTask>.CollectionOfInformation.Add(key, hashSet);
             }
+            
+            Destroy(this);
         }
 
         private void Deserialize()

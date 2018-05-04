@@ -5,7 +5,7 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
 {
     public class NotableManager<TValue> : INotable<TValue> where TValue : class
     {
-        public static readonly IDictionary<Type, HashSet<TValue>> _collectionOfInformation = new Dictionary<Type, HashSet<TValue>>();
+        public static readonly IDictionary<Type, HashSet<TValue>> CollectionOfInformation = new Dictionary<Type, HashSet<TValue>>();
 
         public void OnConsider(TValue dataOf)
         {
@@ -15,18 +15,18 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
 
         private void AddToDictionary(Type key, TValue value)
         {
-            if (_collectionOfInformation.ContainsKey(key))
+            if (CollectionOfInformation.ContainsKey(key))
             {
-                HashSet<TValue> hashSet = _collectionOfInformation[key];
+                HashSet<TValue> hashSet = CollectionOfInformation[key];
                 hashSet.Add(value);
             }
             else
             {
                 HashSet<TValue> hashSet = new HashSet<TValue> {value};
-                _collectionOfInformation.Add(key, hashSet);
+                CollectionOfInformation.Add(key, hashSet);
             }
         }
 
-        public static HashSet<TValue> GetValueFromDictionary() => _collectionOfInformation[typeof(TValue)];
+        public static HashSet<TValue> GetValueFromDictionary() => CollectionOfInformation[typeof(TValue)];
     }
 }

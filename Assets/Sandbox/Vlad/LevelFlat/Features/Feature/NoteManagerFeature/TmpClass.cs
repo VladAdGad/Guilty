@@ -9,10 +9,10 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
         {
             if (Input.GetKeyDown("space"))
             {
-                HashSet<DataTask> kek = NotableManager<DataTask>.GetValueFromDictionary();
-                foreach (var VARIABLE in kek)
+                HashSet<DataTask> setTasks = NotableManager<DataTask>.GetValueFromDictionary();
+                foreach (var task in setTasks)
                 {
-                    Debug.Log($"ID: {VARIABLE.Id}, Title: {VARIABLE.Title}, Description: {VARIABLE.Description}");
+                    Debug.Log($"ID: {task.Id}, Title: {task.Title}, Description: {task.Description}, IsHide: {task.IsHide}, IsComplete: {task.IsComplete}");
                 }
             }
         }

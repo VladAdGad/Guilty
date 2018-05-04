@@ -23,6 +23,7 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects
         public void UpdateNote()
         {
             InvokeOnConsider(_dataEvidence, _dataPickupItem);
+            
             if (_createTask != null)
                 _createTask.SetupTask();
 

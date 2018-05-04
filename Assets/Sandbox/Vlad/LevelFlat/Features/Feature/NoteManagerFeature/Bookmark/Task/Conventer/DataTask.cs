@@ -10,7 +10,7 @@ namespace Sandbox.Vlad.LevelFlat.Features.Feature
         public string Description { get; }
 
         [JsonIgnore]
-        public bool isHide;
+        public bool IsHide = true;
         [JsonIgnore]
         public bool IsComplete;
         
