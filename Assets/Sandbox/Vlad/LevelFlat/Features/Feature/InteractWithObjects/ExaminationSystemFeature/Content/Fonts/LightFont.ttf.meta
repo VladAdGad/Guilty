@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: f45d33e428672ad43beaaed51dc680f1
-timeCreated: 1491732418
-licenseType: Store
+guid: 45992794c28fb9449a10b8c2a3ef3619
 TrueTypeFontImporter:
+  externalObjects: {}
   serializedVersion: 4
   fontSize: 16
   forceTextureCase: -2
@@ -12,10 +11,13 @@ TrueTypeFontImporter:
   fontName: PT Sans Caption
   fontNames:
   - PT Sans Caption
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f45d33e428672ad43beaaed51dc680f1, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

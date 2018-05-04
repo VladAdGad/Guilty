@@ -1,7 +1,6 @@
-﻿using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace LevelFlat.CommonFeature.EventManagementCommonFeature.Interface
+namespace Sandbox.Vlad.LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface
 {
     public interface IPressable : IInteractable
     {

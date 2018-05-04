@@ -7,30 +7,33 @@
 
 //This script allows us to setup the highlightning system for interactable items
 
-using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
+using Sandbox.Vlad.LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
 using UnityEngine;
 
-public class Emission : MonoBehaviour, IGazable
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts
 {
-    // @formatter:off
-    [Header("Highlight Settings")] 
-    [SerializeField] private Material _normalMat;
-    [SerializeField] private Material _raycastedMat;
+    public class Emission : MonoBehaviour, IGazable
+    {
+        // @formatter:off
+        [Header("Highlight Settings")] 
+        [SerializeField] private Material _normalMat;
+        [SerializeField] private Material _raycastedMat;
     
-    private GameObject _gameObject;
-    // @formatter:on
+        private GameObject _gameObject;
+        // @formatter:on
 
-    private void Start() => _gameObject = gameObject;
+        private void Start() => _gameObject = gameObject;
 
-    public void OnGazeEnter()
-    {
-        if (_gameObject != null)
-            _gameObject.GetComponent<MeshRenderer>().material = _raycastedMat;
-    }
+        public void OnGazeEnter()
+        {
+            if (_gameObject != null)
+                _gameObject.GetComponent<MeshRenderer>().material = _raycastedMat;
+        }
 
-    public void OnGazeExit()
-    {
-        if (_gameObject != null)
-            _gameObject.GetComponent<MeshRenderer>().material = _normalMat;
+        public void OnGazeExit()
+        {
+            if (_gameObject != null)
+                _gameObject.GetComponent<MeshRenderer>().material = _normalMat;
+        }
     }
 }

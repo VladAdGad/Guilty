@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace MyGaze
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI
 {
     public class CrosshairManager : MonoBehaviour
     {

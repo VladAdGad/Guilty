@@ -1,9 +1,11 @@
 ﻿using Newtonsoft.Json;
+using Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer;
+using Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer;
 using Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task;
-using Sandbox.Vlad.LevelFlat.Features.Feature.Picked;
+using Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Interface;
 using UnityEngine;
 
-namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark
 {
     public class ContainerInfo : JsonConverterSingleton
     {

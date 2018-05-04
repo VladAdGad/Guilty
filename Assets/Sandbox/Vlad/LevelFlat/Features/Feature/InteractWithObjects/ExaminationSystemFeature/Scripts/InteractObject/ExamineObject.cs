@@ -7,52 +7,54 @@
 
 //This script manages the informations of the interactable objects, such as the name
 
-using LevelFlat.CommonFeature.EventManagementCommonFeature;
-using MyGaze;
-using Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects;
+using Sandbox.Vlad.LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature;
+using Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts;
+using Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
 using UnityEngine;
-using UnityStandardAssets.ImageEffects;
-using Behaviour = LevelFlat.CommonFeature.PlayerBehaviourCommonFeature.Behaviour;
+using Behaviour = Sandbox.Vlad.LevelFlat.Features.CommonFeature.Player.Behaviour;
 
-public class ExamineObject : Interactable
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.InteractObject
 {
-    [SerializeField] private GameObject _targetExaminableObject;
-    [SerializeField] private CrosshairManager _crosshairObject;
-    [SerializeField] private UIFade _examineObjectInfoGui;
-    [SerializeField] private GameObject _player;
-    [SerializeField] private RaycastManager _examineRaycastManager;
-
-    private bool _isEximiningObject;
-
-    public override void OnPress()
+    public class ExamineObject : Interactable
     {
-        if (_isEximiningObject)
-            StopExamineObject();
-        else
-            StartExamineObject();
+        [SerializeField] private GameObject _targetExaminableObject;
+        [SerializeField] private CrosshairManager _crosshairObject;
+        [SerializeField] private UIFade _examineObjectInfoGui;
+        [SerializeField] private GameObject _player;
+        [SerializeField] private RaycastManager _examineRaycastManager;
 
-        ChangeExaminingState();
+        private bool _isEximiningObject;
+
+        public override void OnPress()
+        {
+            if (_isEximiningObject)
+                StopExamineObject();
+            else
+                StartExamineObject();
+
+            ChangeExaminingState();
+        }
+
+        private void StartExamineObject()
+        {
+            _player.GetComponentInChildren<ExamineRotation>().StartRotateObject(_targetExaminableObject);
+            _player.GetComponent<Behaviour>().DisableFirstPersonController();
+            _player.GetComponentInChildren<Blur>().enabled = true;
+            _crosshairObject.DisableCrosshair();
+            _examineObjectInfoGui.FadeIn();
+            _examineRaycastManager.enabled = true;
+        }
+
+        private void StopExamineObject()
+        {
+            _player.GetComponentInChildren<ExamineRotation>().StopRotateObject(_targetExaminableObject);
+            _player.GetComponent<Behaviour>().EnableFirstPersonController();
+            _player.GetComponentInChildren<Blur>().enabled = false;
+            _crosshairObject.EnableCrosshair();
+            _examineObjectInfoGui.FadeOut();
+            _examineRaycastManager.enabled = false;
+        }
+
+        private void ChangeExaminingState() => _isEximiningObject = !_isEximiningObject;
     }
-
-    private void StartExamineObject()
-    {
-        _player.GetComponentInChildren<ExamineRotation>().StartRotateObject(_targetExaminableObject);
-        _player.GetComponent<Behaviour>().DisableFirstPersonController();
-        _player.GetComponentInChildren<Blur>().enabled = true;
-        _crosshairObject.DisableCrosshair();
-        _examineObjectInfoGui.FadeIn();
-        _examineRaycastManager.enabled = true;
-    }
-
-    private void StopExamineObject()
-    {
-        _player.GetComponentInChildren<ExamineRotation>().StopRotateObject(_targetExaminableObject);
-        _player.GetComponent<Behaviour>().EnableFirstPersonController();
-        _player.GetComponentInChildren<Blur>().enabled = false;
-        _crosshairObject.EnableCrosshair();
-        _examineObjectInfoGui.FadeOut();
-        _examineRaycastManager.enabled = false;
-    }
-
-    private void ChangeExaminingState() => _isEximiningObject = !_isEximiningObject;
 }

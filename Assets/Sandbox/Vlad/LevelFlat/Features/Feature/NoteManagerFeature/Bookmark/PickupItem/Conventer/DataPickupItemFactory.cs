@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Sandbox.Vlad.LevelFlat.Features.Feature.Picked
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer
 {
     public abstract class DataPickupItemFactory
     {
