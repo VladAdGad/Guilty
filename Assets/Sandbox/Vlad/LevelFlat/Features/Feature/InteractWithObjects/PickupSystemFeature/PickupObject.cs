@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark;
+using UnityEngine;
 
-namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.PickupableSystemFeature
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.PickupSystemFeature
 {
     public class PickupObject : Interactable
     {

@@ -1,8 +1,6 @@
-using System;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
-namespace UnityStandardAssets.ImageEffects
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts
 {
     class Triangles
     {

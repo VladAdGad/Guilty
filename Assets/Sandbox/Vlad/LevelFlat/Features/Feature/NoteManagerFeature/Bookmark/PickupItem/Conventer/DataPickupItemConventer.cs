@@ -1,9 +1,8 @@
 ﻿using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using UnityEngine;
 
-namespace Sandbox.Vlad.LevelFlat.Features.Feature.Picked
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer
 {
     public class DataPickupItemConventer : JsonConverter
     {

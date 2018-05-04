@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace UnityStandardAssets.ImageEffects
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts
 {
     [RequireComponent (typeof(Camera))]
     [AddComponentMenu ("Image Effects/Camera/Tilt Shift (Lens Blur)")]

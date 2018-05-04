@@ -1,4 +1,5 @@
-﻿using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
+﻿using Sandbox.Vlad.LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
+using Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
 using UnityEngine;
 using UnityEngine.UI;
 

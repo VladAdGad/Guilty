@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using CommonFeature.UtilityCommonFeature;
-using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
-using MyGaze;
+using Sandbox.Vlad.LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
+using Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-namespace LevelFlat.CommonFeature.EventManagementCommonFeature
+namespace Sandbox.Vlad.LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature
 {
     public class RaycastManager : MonoBehaviour
     {

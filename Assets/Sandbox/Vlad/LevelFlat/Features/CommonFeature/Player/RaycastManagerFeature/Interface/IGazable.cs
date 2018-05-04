@@ -1,6 +1,4 @@
-﻿using LevelFlat.CommonFeature.EventManagementCommonFeature.Interface;
-
-namespace LevelFlat.CommonFeature.EventManagementCommonFeature.Interface
+﻿namespace Sandbox.Vlad.LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface
 {
     public interface IGazable : IInteractable
     {

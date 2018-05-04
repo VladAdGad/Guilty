@@ -1,4 +1,4 @@
-﻿namespace Sandbox.Vlad.LevelFlat.Features.Feature
+﻿namespace Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer
 {
     public abstract class DataTaskFactory
     {

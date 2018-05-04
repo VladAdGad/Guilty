@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Interface;
 
-namespace Sandbox.Vlad.LevelFlat.Features.Feature
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark
 {
     public class NotableManager<TValue> : INotable<TValue> where TValue : class
     {

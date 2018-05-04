@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 // This class implements simple ghosting type Motion Blur.
@@ -6,7 +5,7 @@ using UnityEngine;
 // as it is scaled to a smaller resolution.
 // The effect works by accumulating the previous frames in an accumulation
 // texture.
-namespace UnityStandardAssets.ImageEffects
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts
 {
     [ExecuteInEditMode]
     [AddComponentMenu("Image Effects/Blur/Motion Blur (Color Accumulation)")]

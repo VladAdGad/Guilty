@@ -9,47 +9,50 @@
 
 using UnityEngine;
 
-public class UIFade : MonoBehaviour
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI
 {
-	// @formatter:off
-	[Header ("Fade Settings")]
-    private bool _textIn;
-    private bool _textOut;
-    private CanvasGroup _canvasGroup;
-    // @formatter:on
-
-    private void Start() => _canvasGroup = GetComponent<CanvasGroup>();
-
-    private void Update()
+    public class UIFade : MonoBehaviour
     {
-        if (_canvasGroup.alpha != 0f || _canvasGroup.alpha != 1f)
+        // @formatter:off
+        [Header ("Fade Settings")]
+        private bool _textIn;
+        private bool _textOut;
+        private CanvasGroup _canvasGroup;
+        // @formatter:on
+
+        private void Start() => _canvasGroup = GetComponent<CanvasGroup>();
+
+        private void Update()
         {
-            StartFaiding();
-        }
-    }
-
-    public void FadeIn()
-    {
-        _textIn = true;
-        _textOut = false;
-    }
-
-    public void FadeOut()
-    {
-        _textOut = true;
-        _textIn = false;
-    }
-
-    private void StartFaiding()
-    {
-        if (_textIn)
-        {
-            _canvasGroup.alpha += Time.deltaTime;
+            if (_canvasGroup.alpha != 0f || _canvasGroup.alpha != 1f)
+            {
+                StartFaiding();
+            }
         }
 
-        if (_textOut)
+        public void FadeIn()
         {
-            _canvasGroup.alpha -= Time.deltaTime;
+            _textIn = true;
+            _textOut = false;
+        }
+
+        public void FadeOut()
+        {
+            _textOut = true;
+            _textIn = false;
+        }
+
+        private void StartFaiding()
+        {
+            if (_textIn)
+            {
+                _canvasGroup.alpha += Time.deltaTime;
+            }
+
+            if (_textOut)
+            {
+                _canvasGroup.alpha -= Time.deltaTime;
+            }
         }
     }
 }

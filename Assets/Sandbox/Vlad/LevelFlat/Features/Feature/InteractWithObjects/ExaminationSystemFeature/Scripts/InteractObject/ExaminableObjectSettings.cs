@@ -9,12 +9,15 @@
 
 using UnityEngine;
 
-public class ExaminableObjectSettings : MonoBehaviour
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.InteractObject
 {
-	// @formatter:off
-    [Header("Zoom Settings")] 
-    public float MaxZoom;
-    public float MinZoom;
-    public bool CanZoom;
-    // @formatter:on
+	public class ExaminableObjectSettings : MonoBehaviour
+	{
+		// @formatter:off
+		[Header("Zoom Settings")] 
+		public float MaxZoom;
+		public float MinZoom;
+		public bool CanZoom;
+		// @formatter:on
+	}
 }

@@ -9,48 +9,51 @@
 
 using UnityEngine;
 
-public class ExamineRotation : MonoBehaviour
+namespace Sandbox.Vlad.LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.InteractObject
 {
-    // @formatter:off
-    [Header("Object Rotation Settings")] 
-    [SerializeField] private float _speedx = 3;
-    [SerializeField] private float _speedy = 3;
-    public Transform TargetTransform;
-    private float _rootx;
-    private float _rooty;
-
-    [Header("Zoom Settings")] 
-    [SerializeField] private float _zoomScrollSpeed = 5f;
-    // @formatter:on
-
-    private void Update()
+    public class ExamineRotation : MonoBehaviour
     {
-        _rootx += Input.GetAxis("Mouse X") * _speedx;
-        _rooty += Input.GetAxis("Mouse Y") * _speedy;
-        _rooty = Mathf.Clamp(_rooty, -360, 360);
-        TargetTransform.eulerAngles = new Vector3(_rooty, -_rootx, 0);
+        // @formatter:off
+        [Header("Object Rotation Settings")] 
+        [SerializeField] private float _speedx = 3;
+        [SerializeField] private float _speedy = 3;
+        public Transform TargetTransform;
+        private float _rootx;
+        private float _rooty;
 
-        if (TargetTransform.GetComponent<ExaminableObjectSettings>().CanZoom)
+        [Header("Zoom Settings")] 
+        [SerializeField] private float _zoomScrollSpeed = 5f;
+        // @formatter:on
+
+        private void Update()
         {
-            float maxValue = TargetTransform.GetComponent<ExaminableObjectSettings>().MaxZoom;
-            float minValue = TargetTransform.GetComponent<ExaminableObjectSettings>().MinZoom;
+            _rootx += Input.GetAxis("Mouse X") * _speedx;
+            _rooty += Input.GetAxis("Mouse Y") * _speedy;
+            _rooty = Mathf.Clamp(_rooty, -360, 360);
+            TargetTransform.eulerAngles = new Vector3(_rooty, -_rootx, 0);
 
-            GetComponent<Camera>().fieldOfView += Input.GetAxis("Mouse ScrollWheel") * _zoomScrollSpeed;
-            GetComponent<Camera>().fieldOfView = Mathf.Clamp(GetComponent<Camera>().fieldOfView, maxValue, minValue);
+            if (TargetTransform.GetComponent<ExaminableObjectSettings>().CanZoom)
+            {
+                float maxValue = TargetTransform.GetComponent<ExaminableObjectSettings>().MaxZoom;
+                float minValue = TargetTransform.GetComponent<ExaminableObjectSettings>().MinZoom;
+
+                GetComponent<Camera>().fieldOfView += Input.GetAxis("Mouse ScrollWheel") * _zoomScrollSpeed;
+                GetComponent<Camera>().fieldOfView = Mathf.Clamp(GetComponent<Camera>().fieldOfView, maxValue, minValue);
+            }
         }
-    }
     
-    public void StartRotateObject(GameObject targetTransform)
-    {
-        targetTransform.SetActive(true);
-        gameObject.GetComponent<ExamineRotation>().enabled = true;
-        gameObject.GetComponent<ExamineRotation>().TargetTransform = targetTransform.transform;
-    }
+        public void StartRotateObject(GameObject targetTransform)
+        {
+            targetTransform.SetActive(true);
+            gameObject.GetComponent<ExamineRotation>().enabled = true;
+            gameObject.GetComponent<ExamineRotation>().TargetTransform = targetTransform.transform;
+        }
     
-    public void StopRotateObject(GameObject targetTransform)
-    {
-        targetTransform.SetActive(false);
-        gameObject.GetComponent<ExamineRotation>().enabled = false;
-        gameObject.GetComponent<ExamineRotation>().TargetTransform = null;
+        public void StopRotateObject(GameObject targetTransform)
+        {
+            targetTransform.SetActive(false);
+            gameObject.GetComponent<ExamineRotation>().enabled = false;
+            gameObject.GetComponent<ExamineRotation>().TargetTransform = null;
+        }
     }
 }
