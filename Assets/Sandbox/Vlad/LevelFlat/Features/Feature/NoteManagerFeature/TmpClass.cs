@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark;
-using Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer;
+using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark;
+using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer;
 using UnityEngine;
 
 namespace Sandbox.Vlad.LevelFlat.Features.Feature.NoteManagerFeature
