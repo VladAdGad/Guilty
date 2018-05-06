@@ -341,6 +341,16 @@ Prefab:
       propertyPath: m_ScrollSensitivity
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 224748990486943468, guid: 0147ac0e6cdca3043a52a5247ac29f36,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224946553451073300, guid: 0147ac0e6cdca3043a52a5247ac29f36,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0147ac0e6cdca3043a52a5247ac29f36, type: 2}
   m_IsPrefabParent: 0
