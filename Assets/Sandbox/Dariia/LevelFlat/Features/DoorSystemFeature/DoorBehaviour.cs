@@ -23,13 +23,13 @@ namespace InteractableObjects.Doors
         private void OpenDoor()
         {
             _animator.SetBool("isOpen", true);
-//            _openingDoorAudioSource.Play();
+            _openingDoorAudioSource.Play();
         }
 
-        public void CloseDoor()
+        private void CloseDoor()
         {
             _animator.SetBool("isOpen", false);
-//            _closingDoorAudioSource.Play();
+            _closingDoorAudioSource.Play();
         }
 
         private void ChangeStateOfDoor() => _isDoorClosed = !_isDoorClosed;
