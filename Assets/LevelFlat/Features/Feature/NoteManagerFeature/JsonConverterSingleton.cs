@@ -1,7 +1,6 @@
 ﻿using System;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -20,7 +19,6 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature
         private void JsonInitializeConverters()
         {
             JsonSerializerSettings.Converters.Add(new DataEvidenceConventer());
-            JsonSerializerSettings.Converters.Add(new DataTaskConventer());
             JsonSerializerSettings.Converters.Add(new DataPickupItemConventer());
         }
 
