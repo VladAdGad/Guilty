@@ -6,7 +6,6 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer
     {
         public int Id { get; }
         public string Title { get; }
-        public string Description { get; }
 
         [JsonIgnore]
         public bool IsHide = true;
@@ -14,11 +13,10 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer
         public bool IsComplete;
         
         [JsonConstructor]
-        public DataTask(int id, string title, string description)
+        public DataTask(int id, string title)
         {
             Id = id;
             Title = title;
-            Description = description;
         }
     }
 }

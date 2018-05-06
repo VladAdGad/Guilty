@@ -13,9 +13,8 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer
             JObject jo = JObject.Load(reader);
             string id = (string) jo["Id"];
             string title = (string) jo["Title"];
-            string description = (string) jo["Description"];
 
-            return DataTaskFactory.Create(id, title, description);
+            return DataTaskFactory.Create(id, title);
         }
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
