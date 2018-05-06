@@ -7,6 +7,7 @@ namespace Sandbox.Vlad.Scene
     {
         [SerializeField] private GameObject _player;
         [SerializeField] private GameObject _noteBook;
+
         [SerializeField] private InventoryManager _inventoryManager;
 
         private void Update()
@@ -15,9 +16,9 @@ namespace Sandbox.Vlad.Scene
             {
                 if (_noteBook.activeSelf.Equals(false))
                 {
-                    _inventoryManager.FillInventory();
                     _player.GetComponent<Behaviour>().DisableFirstPersonController();
                     _noteBook.SetActive(true);
+                    _inventoryManager.UpdateInventory();
                 }
                 else
                 {

@@ -11,9 +11,10 @@ namespace Sandbox.Vlad.Scene
         private ButtonItemChanger[] _buttonItemChangers;
         private readonly NotableManager<DataItem> _notableManager = NotableManager<DataItem>.Instance;
 
-        public void FillInventory()
+        private void Awake() => _buttonItemChangers = GetComponentsInChildren<ButtonItemChanger>();
+
+        public void UpdateInventory()
         {
-            _buttonItemChangers = GetComponentsInChildren<ButtonItemChanger>();
             IList<DataItem> dataPickupItems = _notableManager.GetValueFromDictionary().ToList();
             for (int i = 0; i < dataPickupItems.Count; ++i)
             {

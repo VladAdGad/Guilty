@@ -11,7 +11,7 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.PickupSystemFeature
         [SerializeField] private CreateTaskEntity _createTaskEntity;
         [SerializeField] private EvidenceEntity _evidenceEntity;
         [SerializeField] private ItemEntity _dataItem;
-        
+
         public override void OnPress()
         {
             _completeTaskEntity.AddTask();
