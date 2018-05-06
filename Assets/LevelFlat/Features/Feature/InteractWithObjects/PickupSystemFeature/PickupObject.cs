@@ -9,7 +9,7 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.PickupSystemFeature
         
         public override void OnPress()
         {
-            _containerInfo.UpdateNote();
+            _containerInfo.UpdateCollectionOfInformation();
             Destroy(gameObject);
         }
     }

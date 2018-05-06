@@ -22,7 +22,7 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark
 
         private void Awake() => Deserialize();
 
-        public void UpdateNote()
+        public void UpdateCollectionOfInformation()
         {
             InvokeOnConsider(_dataEvidence, _dataPickupItem);
             

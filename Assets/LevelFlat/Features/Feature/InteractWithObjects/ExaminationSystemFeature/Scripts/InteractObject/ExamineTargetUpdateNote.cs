@@ -8,7 +8,7 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
     {
         [SerializeField] private ContainerInfo _containerInfo;
         
-        public void OnGazeEnter() => _containerInfo.UpdateNote();
+        public void OnGazeEnter() => _containerInfo.UpdateCollectionOfInformation();
 
         public void OnGazeExit()
         {
