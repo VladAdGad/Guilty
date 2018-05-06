@@ -28,6 +28,6 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark
             }
         }
 
-        public static HashSet<TValue> GetValueFromDictionary() => CollectionOfInformation[typeof(TValue)];
+        public static HashSet<TValue> GetValueFromDictionary() => CollectionOfInformation.ContainsKey(typeof(TValue)) ? CollectionOfInformation[typeof(TValue)] : new HashSet<TValue>();
     }
 }
