@@ -336,6 +336,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114354085950767714, guid: 0147ac0e6cdca3043a52a5247ac29f36,
+        type: 2}
+      propertyPath: m_ScrollSensitivity
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0147ac0e6cdca3043a52a5247ac29f36, type: 2}
   m_IsPrefabParent: 0
