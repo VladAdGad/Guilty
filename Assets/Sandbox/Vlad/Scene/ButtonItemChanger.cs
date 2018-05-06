@@ -3,31 +3,37 @@ using UnityEngine.UI;
 
 public class ButtonItemChanger : MonoBehaviour
 {
-    public string name;
-    public string description;
+    [SerializeField] private GameObject _panel;
 
-    private GameObject nameObject;
-    private GameObject descriptionObject;
+    private string _name;
+    private string _description;
+    private Sprite _sprite;
 
-    private Text nameText;
-    private Text descriptionText;
+    private Text[] _texts;
+    private Text _nameText;
+    private Text _descriptionText;
 
-    private void Start()
+    private void Awake() => GetComponent<Button>().onClick.AddListener(ChangeNameAndDescription);
+
+    private void ChangeNameAndDescription()
     {
-        nameObject = GameObject.Find("Name");
-        descriptionObject = GameObject.Find("Description");
-        nameText = nameObject.GetComponent<Text>();
-        descriptionText = descriptionObject.GetComponent<Text>();
+        _nameText.text = _name;
+        _descriptionText.text = _description;
     }
 
-    private void Awake()
+    public void SetFields(string name, string description, Sprite icon)
     {
-        GetComponent<Button>().onClick.AddListener(SetNameAndDescription);
+        _name = name;
+        _description = description;
+        _sprite = icon;
+        SetComponents();
     }
 
-    private void SetNameAndDescription()
+    private void SetComponents()
     {
-        nameText.text = name;
-        descriptionText.text = description;
+        _texts = _panel.GetComponentsInChildren<Text>();
+        _nameText = _texts[0];
+        _descriptionText = _texts[1];
+        GetComponent<Image>().sprite = _sprite;
     }
 }
