@@ -5,14 +5,14 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conv
 {
     public class DataPickupItem
     {
-        public string Title { get; }
+        public string Name { get; }
         public string Description { get; }
         public Sprite Icon { get; }
         
         [JsonConstructor]
-        public DataPickupItem(string title, string description, Sprite icon)
+        public DataPickupItem(string name, string description, Sprite icon)
         {
-            Title = title;
+            Name = name;
             Description = description;
             Icon = icon;
         }
