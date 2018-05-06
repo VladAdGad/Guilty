@@ -4,9 +4,9 @@ using Newtonsoft.Json.Linq;
 
 namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer
 {
-    public class DataPickupItemConventer : JsonConverter
+    public class DataItemConventer : JsonConverter
     {
-        public override bool CanConvert(Type objectType) => (objectType == typeof(DataPickupItem));
+        public override bool CanConvert(Type objectType) => (objectType == typeof(DataItem));
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
@@ -15,7 +15,7 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conv
             string description = (string) jo["Description"];
             string pathIcon = (string) jo["Icon"];
 
-            return DataPickupItemFactory.Create(title, description, pathIcon);
+            return DataItemFactory.Create(title, description, pathIcon);
         }
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)

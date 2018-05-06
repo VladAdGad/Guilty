@@ -18,5 +18,9 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conven
             Involved = involved;
             Icon = icon;
         }
+
+        public DataEvidence()
+        {
+        }
     }
 }

@@ -6,9 +6,14 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark
 {
     public class NotableManager<TValue> : INotable<TValue> where TValue : class
     {
-        public static readonly IDictionary<Type, HashSet<TValue>> CollectionOfInformation = new Dictionary<Type, HashSet<TValue>>();
+        private static readonly Lazy<NotableManager<TValue>> InstanceHolder = new Lazy<NotableManager<TValue>>(() => new NotableManager<TValue>());
+        public readonly IDictionary<Type, HashSet<TValue>> CollectionOfInformation = new Dictionary<Type, HashSet<TValue>>();
 
-        public void OnConsider(TValue dataOf)
+        private NotableManager()
+        {
+        }
+        
+        public virtual void OnConsider(TValue dataOf)
         {
             if (dataOf != null)
                 AddToDictionary(typeof(TValue), dataOf);
@@ -28,6 +33,8 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark
             }
         }
 
-        public static HashSet<TValue> GetValueFromDictionary() => CollectionOfInformation.ContainsKey(typeof(TValue)) ? CollectionOfInformation[typeof(TValue)] : new HashSet<TValue>();
+        public HashSet<TValue> GetValueFromDictionary() => CollectionOfInformation.ContainsKey(typeof(TValue)) ? CollectionOfInformation[typeof(TValue)] : new HashSet<TValue>();
+        
+        public static NotableManager<TValue> Instance => InstanceHolder.Value;
     }
 }
