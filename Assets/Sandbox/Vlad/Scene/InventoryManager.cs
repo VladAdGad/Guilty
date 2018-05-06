@@ -18,7 +18,7 @@ namespace Sandbox.Vlad.Scene
             IList<DataItem> dataPickupItems = _notableManager.GetValueFromDictionary().ToList();
             for (int i = 0; i < dataPickupItems.Count; ++i)
             {
-                _buttonItemChangers[i].SetFields(dataPickupItems[i].Name, dataPickupItems[i].Description, dataPickupItems[i].Icon);
+                _buttonItemChangers[i].UpdateComponents(dataPickupItems[i].Name, dataPickupItems[i].Description, dataPickupItems[i].Icon);
             }
         }
     }

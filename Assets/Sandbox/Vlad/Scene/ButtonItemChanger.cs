@@ -5,39 +5,49 @@ public class ButtonItemChanger : MonoBehaviour
 {
     [SerializeField] private GameObject _panel;
 
-    private string _name = "";
-    private string _description = "";
-    private Sprite _sprite;
-
     private Text[] _texts;
     private Text _nameText;
     private Text _descriptionText;
-    
+
+    private readonly ButtonItemContainer _buttonItemContainer = new ButtonItemContainer();
+
     private void Awake()
     {
-        SetComponents();
-        GetComponent<Button>().onClick.AddListener(UpdateFields);
+        SetTextComponents();
+        GetComponent<Button>().onClick.AddListener(UpdateComponents);
     }
 
-    private void UpdateFields()
-    {
-        _nameText.text = _name;
-        _descriptionText.text = _description;
-        GetComponent<Image>().sprite = _sprite;
-    }
-
-    private void SetComponents()
+    private void SetTextComponents()
     {
         _texts = _panel.GetComponentsInChildren<Text>();
         _nameText = _texts[0];
         _descriptionText = _texts[1];
     }
 
-    public void SetFields(string name, string description, Sprite icon)
+    public void UpdateComponents(string name, string description, Sprite icon)
     {
-        _name = name;
-        _description = description;
-        _sprite = icon;
-        UpdateFields();
+        _buttonItemContainer.SetFields(icon, name, description);
+        UpdateComponents();
+    }
+
+    private void UpdateComponents()
+    {
+        _nameText.text = _buttonItemContainer.Name;
+        _descriptionText.text = _buttonItemContainer.Description;
+        GetComponent<Image>().sprite = _buttonItemContainer.Sprite;
+    }
+
+    private class ButtonItemContainer
+    {
+        public Sprite Sprite;
+        public string Name;
+        public string Description;
+
+        public void SetFields(Sprite icon, string name = "", string description = "")
+        {
+            Name = name;
+            Description = description;
+            Sprite = icon;
+        }
     }
 }
