@@ -4,7 +4,7 @@ using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer;
 using UnityEngine;
 
-namespace Sandbox.Vlad.Scene
+namespace LevelFlat.Features.Feature.NotebookFeature.Inventory
 {
     public class InventoryManager : MonoBehaviour
     {

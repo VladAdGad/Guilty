@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using LevelFlat.Features.Feature.NotebookFeature.Inventory;
+using UnityEngine;
 using Behaviour = LevelFlat.Features.CommonFeature.Player.Behaviour;
 
-namespace Sandbox.Vlad.Scene
+namespace LevelFlat.Features.Feature.NotebookFeature
 {
     public class NotebookManager : MonoBehaviour
     {
