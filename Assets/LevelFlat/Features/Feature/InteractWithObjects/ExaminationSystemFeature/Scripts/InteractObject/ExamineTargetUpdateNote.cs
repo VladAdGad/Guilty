@@ -11,19 +11,14 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
         [SerializeField] private CompleteTaskEntity _completeTaskEntity;
         [SerializeField] private CreateTaskEntity _createTaskEntity;
         [SerializeField] private EvidenceEntity _evidenceEntity;
-        [SerializeField] private ItemEntity _dataItem;
         
         public void OnGazeEnter()
         {
             _completeTaskEntity.AddTask();
             _createTaskEntity.AddTask();
             _evidenceEntity.AddEvidence();
-            _dataItem.AddItem();
         }
 
-        public void OnGazeExit()
-        {
-            Destroy(this);
-        }
+        public void OnGazeExit() => Destroy(this);
     }
 }

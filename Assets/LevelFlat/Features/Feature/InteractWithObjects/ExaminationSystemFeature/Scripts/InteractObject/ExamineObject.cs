@@ -28,8 +28,6 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
 
         public override void OnPress()
         {
-            if (EventSystem.current.IsPointerOverGameObject()) return;
-
             if (_isEximiningObject)
                 StopExamineObject();
             else
