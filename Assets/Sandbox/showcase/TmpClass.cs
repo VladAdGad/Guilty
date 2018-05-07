@@ -5,17 +5,19 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public class TmpClass: MonoBehaviour
+    public class TmpClass : MonoBehaviour
     {
         private void Update()
         {
-            if (Input.GetKeyDown("space"))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                HashSet<DataTask> setTasks = NotableManager<DataTask>.Instance.CollectionOfInformation[typeof(DataTask)];
-                if(setTasks == null) return;
-                foreach (var task in setTasks)
+                if (NotableManager<DataTask>.Instance.CollectionOfInformation[typeof(DataTask)] != null)
                 {
-                    Debug.Log($"ID: {task.Id}, Title: {task.Title}, IsHide: {task.IsHide}, IsComplete: {task.IsComplete}");
+                    HashSet<DataTask> setTasks = NotableManager<DataTask>.Instance.CollectionOfInformation[typeof(DataTask)];
+                    foreach (var task in setTasks)
+                    {
+                        Debug.Log($"ID: {task.Id}, Title: {task.Title}, IsHide: {task.IsHide}, IsComplete: {task.IsComplete}");
+                    }
                 }
             }
         }
