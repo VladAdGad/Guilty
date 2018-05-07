@@ -14,10 +14,17 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.PickupSystemFeature
 
         public override void OnPress()
         {
-            _completeTaskEntity.AddTask();
-            _createTaskEntity.AddTask();
-            _evidenceEntity.AddEvidence();
-            _dataItem.AddItem();
+            if (_completeTaskEntity != null)
+                _completeTaskEntity.AddTask();
+
+            if (_createTaskEntity != null)
+                _createTaskEntity.AddTask();
+
+            if (_evidenceEntity != null)
+                _evidenceEntity.AddEvidence();
+
+            if (_dataItem != null)
+                _dataItem.AddItem();
             Destroy(gameObject);
         }
     }
