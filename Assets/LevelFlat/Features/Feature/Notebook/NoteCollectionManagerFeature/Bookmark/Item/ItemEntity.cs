@@ -8,13 +8,13 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conv
 
         private DataItem _dataEvidence;
         private readonly ContainerInfo<DataItem> _containerInfo = new ContainerInfo<DataItem>();
-        private readonly NotableManager<DataItem> _notableManager = NotableManager<DataItem>.Instance;
+        private readonly CollectionManager<DataItem> _collectionManager = CollectionManager<DataItem>.Instance;
 
         private void Awake() => _dataEvidence = _containerInfo.Deserialize(_json);
 
         public void AddItem()
         {
-            _notableManager.OnConsider(_dataEvidence);
+            _collectionManager.OnConsider(_dataEvidence);
             Destroy(this);
         }
     }
