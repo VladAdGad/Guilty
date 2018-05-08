@@ -1,5 +1,5 @@
-﻿using LevelFlat.Features.Feature.NotebookFeature.Evidence;
-using LevelFlat.Features.Feature.NotebookFeature.Inventory;
+﻿using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer;
+using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer;
 using UnityEngine;
 using Behaviour = LevelFlat.Features.CommonFeature.Player.Behaviour;
 
@@ -10,8 +10,8 @@ namespace LevelFlat.Features.Feature.NotebookFeature
         [SerializeField] private GameObject _player;
         [SerializeField] private GameObject _noteBook;
 
-        [SerializeField] private InventoryManager _inventoryManager;
-        [SerializeField] private EvidenceManager _evidenceManager;
+        [SerializeField] private PageUpdate<DataItem> _inventoryManager;
+        [SerializeField] private PageUpdate<DataEvidence> _evidenceManager;
 
         private void Update()
         {
@@ -22,7 +22,7 @@ namespace LevelFlat.Features.Feature.NotebookFeature
                     _player.GetComponent<Behaviour>().DisableFirstPersonController();
                     _noteBook.SetActive(true);
                     _inventoryManager.UpdateInventory();
-                    _evidenceManager.UpdateEvidence();
+                    _evidenceManager.UpdateInventory();
                 }
                 else
                 {

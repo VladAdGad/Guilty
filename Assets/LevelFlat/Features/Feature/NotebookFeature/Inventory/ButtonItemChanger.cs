@@ -1,56 +1,50 @@
-﻿using UnityEngine;
+﻿using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer;
+using UnityEngine;
 using UnityEngine.UI;
 
-namespace LevelFlat.Features.Feature.NotebookFeature.Inventory
+namespace LevelFlat.Features.Feature.NotebookFeature
 {
-    public class ButtonItemChanger : MonoBehaviour
+    public class ButtonItemChanger : ButtonChanger<DataItem>
     {
         [SerializeField] private GameObject _panel;
 
         private Text[] _texts;
-        private Text _nameText;
+        private Text _titleText;
         private Text _descriptionText;
-
-        private readonly ButtonItemContainer _buttonItemContainer = new ButtonItemContainer();
+        private DataItem _dataItem;
 
         private void Awake()
         {
             SetTextComponents();
-            GetComponent<Button>().onClick.AddListener(UpdateComponents);
+            GetComponent<Button>().onClick.AddListener(() => UpdateComponents(_dataItem));
         }
 
         private void SetTextComponents()
         {
             _texts = _panel.GetComponentsInChildren<Text>();
-            _nameText = _texts[0];
+            _titleText = _texts[0];
             _descriptionText = _texts[1];
         }
 
-        public void UpdateComponents(string name, string description, Sprite icon)
+        private void UpdateComponents(DataItem dataItem)
         {
-            _buttonItemContainer.SetFields(icon, name, description);
-            UpdateComponents();
-        }
-
-        private void UpdateComponents()
-        {
-            _nameText.text = _buttonItemContainer.Name;
-            _descriptionText.text = _buttonItemContainer.Description;
-            GetComponent<Image>().sprite = _buttonItemContainer.Sprite;
-        }
-
-        private class ButtonItemContainer
-        {
-            public Sprite Sprite;
-            public string Name;
-            public string Description;
-
-            public void SetFields(Sprite icon, string name = "", string description = "")
+            if (dataItem != null)
             {
-                Name = name;
-                Description = description;
-                Sprite = icon;
+                _titleText.text = dataItem.Name ?? "";
+                _descriptionText.text = dataItem.Description ?? "";
+                GetComponent<Image>().sprite = dataItem.Icon;
             }
+            else
+            {
+                _titleText.text = "";
+                _descriptionText.text = "";
+            }
+        }
+
+        public override void UpdateButton(DataItem dataItem)
+        {
+            _dataItem = dataItem;
+            UpdateComponents(dataItem);
         }
     }
 }
