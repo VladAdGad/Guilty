@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace LevelFlat.Features.Feature.NotebookFeature
 {
-    public class PageUpdate<T> : MonoBehaviour where T : class
+    public class PageUpdate<T> : MonoBehaviour
     {
         private List<ButtonChanger<T>> _buttonItemChangers = new List<ButtonChanger<T>>();
         private readonly NotableManager<T> _notableManager = NotableManager<T>.Instance;

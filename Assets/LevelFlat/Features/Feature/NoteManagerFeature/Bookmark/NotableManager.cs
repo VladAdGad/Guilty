@@ -4,7 +4,7 @@ using LevelFlat.Features.Feature.NoteManagerFeature.Interface;
 
 namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark
 {
-    public class NotableManager<TValue> : INotable<TValue> where TValue : class
+    public class NotableManager<TValue> : INotable<TValue>
     {
         private static readonly Lazy<NotableManager<TValue>> InstanceHolder = new Lazy<NotableManager<TValue>>(() => new NotableManager<TValue>());
         public readonly IDictionary<Type, HashSet<TValue>> CollectionOfInformation = new Dictionary<Type, HashSet<TValue>>();

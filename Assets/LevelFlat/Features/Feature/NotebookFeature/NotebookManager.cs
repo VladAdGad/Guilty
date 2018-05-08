@@ -1,6 +1,4 @@
-﻿using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer;
-using UnityEngine;
+﻿using UnityEngine;
 using Behaviour = LevelFlat.Features.CommonFeature.Player.Behaviour;
 
 namespace LevelFlat.Features.Feature.NotebookFeature
@@ -10,9 +8,9 @@ namespace LevelFlat.Features.Feature.NotebookFeature
         [SerializeField] private GameObject _player;
         [SerializeField] private GameObject _noteBook;
 
-        [SerializeField] private PageUpdate<DataItem> _inventoryManager;
-        [SerializeField] private PageUpdate<DataEvidence> _evidenceManager;
-
+        [SerializeField] private InventoryUpdate _inventoryManager;
+        [SerializeField] private EvidenceUpdate _evidenceManager;
+        
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.I))

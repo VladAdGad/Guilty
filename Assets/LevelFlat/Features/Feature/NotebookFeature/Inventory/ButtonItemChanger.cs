@@ -6,11 +6,6 @@ namespace LevelFlat.Features.Feature.NotebookFeature
 {
     public class ButtonItemChanger : ButtonChanger<DataItem>
     {
-        [SerializeField] private GameObject _panel;
-
-        private Text[] _texts;
-        private Text _titleText;
-        private Text _descriptionText;
         private DataItem _dataItem;
 
         private void Awake()
@@ -19,25 +14,18 @@ namespace LevelFlat.Features.Feature.NotebookFeature
             GetComponent<Button>().onClick.AddListener(() => UpdateComponents(_dataItem));
         }
 
-        private void SetTextComponents()
-        {
-            _texts = _panel.GetComponentsInChildren<Text>();
-            _titleText = _texts[0];
-            _descriptionText = _texts[1];
-        }
-
         private void UpdateComponents(DataItem dataItem)
         {
             if (dataItem != null)
             {
-                _titleText.text = dataItem.Name ?? "";
-                _descriptionText.text = dataItem.Description ?? "";
+                TitleText.text = dataItem.Name ?? "";
+                DescriptionText.text = dataItem.Description ?? "";
                 GetComponent<Image>().sprite = dataItem.Icon;
             }
             else
             {
-                _titleText.text = "";
-                _descriptionText.text = "";
+                TitleText.text = "";
+                DescriptionText.text = "";
             }
         }
 
