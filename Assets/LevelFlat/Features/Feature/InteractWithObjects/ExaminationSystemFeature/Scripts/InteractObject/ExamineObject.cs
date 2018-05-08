@@ -11,7 +11,6 @@ using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using Behaviour = LevelFlat.Features.CommonFeature.Player.Behaviour;
 
 namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.InteractObject
@@ -28,8 +27,6 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
 
         public override void OnPress()
         {
-            if (EventSystem.current.IsPointerOverGameObject()) return;
-
             if (_isEximiningObject)
                 StopExamineObject();
             else
