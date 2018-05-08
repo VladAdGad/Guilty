@@ -4,12 +4,12 @@ using LevelFlat.Features.Feature.NoteManagerFeature.Interface;
 
 namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark
 {
-    public class NotableManager<TValue> : INotable<TValue> where TValue : class
+    public class CollectionManager<TValue> : INotable<TValue>
     {
-        private static readonly Lazy<NotableManager<TValue>> InstanceHolder = new Lazy<NotableManager<TValue>>(() => new NotableManager<TValue>());
+        private static readonly Lazy<CollectionManager<TValue>> InstanceHolder = new Lazy<CollectionManager<TValue>>(() => new CollectionManager<TValue>());
         public readonly IDictionary<Type, HashSet<TValue>> CollectionOfInformation = new Dictionary<Type, HashSet<TValue>>();
 
-        private NotableManager()
+        private CollectionManager()
         {
         }
         
@@ -35,6 +35,6 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark
 
         public HashSet<TValue> GetValueFromDictionary() => CollectionOfInformation.ContainsKey(typeof(TValue)) ? CollectionOfInformation[typeof(TValue)] : new HashSet<TValue>();
         
-        public static NotableManager<TValue> Instance => InstanceHolder.Value;
+        public static CollectionManager<TValue> Instance => InstanceHolder.Value;
     }
 }

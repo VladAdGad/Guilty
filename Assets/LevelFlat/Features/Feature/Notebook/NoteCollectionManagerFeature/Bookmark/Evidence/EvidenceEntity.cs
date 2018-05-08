@@ -8,13 +8,13 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conven
 
         private DataEvidence _dataEvidence;
         private readonly ContainerInfo<DataEvidence> _containerInfo = new ContainerInfo<DataEvidence>();
-        private readonly NotableManager<DataEvidence> _notableManager = NotableManager<DataEvidence>.Instance;
+        private readonly CollectionManager<DataEvidence> _collectionManager = CollectionManager<DataEvidence>.Instance;
 
         private void Awake() => _dataEvidence = _containerInfo.Deserialize(_json);
 
         public void AddEvidence()
         {
-            _notableManager.OnConsider(_dataEvidence);
+            _collectionManager.OnConsider(_dataEvidence);
             Destroy(this);
         }
     }
