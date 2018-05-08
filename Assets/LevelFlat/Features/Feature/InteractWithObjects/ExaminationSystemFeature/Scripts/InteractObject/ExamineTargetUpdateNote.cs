@@ -1,6 +1,5 @@
 ﻿using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task;
 using UnityEngine;
 
@@ -11,19 +10,19 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
         [SerializeField] private CompleteTaskEntity _completeTaskEntity;
         [SerializeField] private CreateTaskEntity _createTaskEntity;
         [SerializeField] private EvidenceEntity _evidenceEntity;
-        [SerializeField] private ItemEntity _dataItem;
-        
+
         public void OnGazeEnter()
         {
-            _completeTaskEntity.AddTask();
-            _createTaskEntity.AddTask();
-            _evidenceEntity.AddEvidence();
-            _dataItem.AddItem();
+            if (_completeTaskEntity != null)
+                _completeTaskEntity.AddTask();
+
+            if (_createTaskEntity != null)
+                _createTaskEntity.AddTask();
+
+            if (_evidenceEntity != null)
+                _evidenceEntity.AddEvidence();
         }
 
-        public void OnGazeExit()
-        {
-            Destroy(this);
-        }
+        public void OnGazeExit() => Destroy(this);
     }
 }
