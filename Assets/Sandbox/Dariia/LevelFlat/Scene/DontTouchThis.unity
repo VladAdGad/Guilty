@@ -11961,7 +11961,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <color=#808080ff>- Task 1</color>
+  m_Text: "<color=#808080ff>\u2713 Task 1</color>"
 --- !u!222 &2125490201
 CanvasRenderer:
   m_ObjectHideFlags: 0
