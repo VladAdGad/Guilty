@@ -8,7 +8,7 @@ namespace LevelFlat.Features.Feature.NotebookFeature
         [SerializeField] private Button _bookmark;
         [SerializeField] private AudioSource _audioSource;
 
-        private const int LastSibling = 1;
+        private const int LastSibling = 2;
 
         public void Init()
         {
