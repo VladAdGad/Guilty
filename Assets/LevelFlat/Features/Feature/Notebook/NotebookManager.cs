@@ -1,5 +1,4 @@
-﻿using LevelFlat.Features.Feature.NotebookFeature.Inventory;
-using UnityEngine;
+﻿using UnityEngine;
 using Behaviour = LevelFlat.Features.CommonFeature.Player.Behaviour;
 
 namespace LevelFlat.Features.Feature.NotebookFeature
@@ -9,8 +8,9 @@ namespace LevelFlat.Features.Feature.NotebookFeature
         [SerializeField] private GameObject _player;
         [SerializeField] private GameObject _noteBook;
 
-        [SerializeField] private InventoryManager _inventoryManager;
-
+        [SerializeField] private InventoryUpdate _inventoryManager;
+        [SerializeField] private EvidenceUpdate _evidenceManager;
+        
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.I))
@@ -20,6 +20,7 @@ namespace LevelFlat.Features.Feature.NotebookFeature
                     _player.GetComponent<Behaviour>().DisableFirstPersonController();
                     _noteBook.SetActive(true);
                     _inventoryManager.UpdateInventory();
+                    _evidenceManager.UpdateInventory();
                 }
                 else
                 {

@@ -5,14 +5,14 @@ using UnityEngine;
 
 namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task
 {
-    public class CreateTaskEntity: MonoBehaviour
+    public class CompleteTaskEntity : MonoBehaviour
     {
         [SerializeField] private TextAsset _jsonDataTask;
 
         private DataTask _dataTask;
         private readonly Type _key = typeof(DataTask);
         private readonly ContainerInfo<DataTask> _containerInfo = new ContainerInfo<DataTask>();
-        private readonly NotableManager<DataTask> _notableManager = NotableManager<DataTask>.Instance;
+        private readonly CollectionManager<DataTask> _collectionManager = CollectionManager<DataTask>.Instance;
 
         private void Awake() => _dataTask = _containerInfo.Deserialize(_jsonDataTask);
 
@@ -25,20 +25,20 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task
 
         private void OnConsider(DataTask value)
         {
-            value.IsHide = false;
-            if (_notableManager.CollectionOfInformation.ContainsKey(_key))
+            value.IsComplete = true;
+            if (_collectionManager.CollectionOfInformation.ContainsKey(_key))
             {
-                foreach (KeyValuePair<Type, HashSet<DataTask>> dataTasks in _notableManager.CollectionOfInformation)
+                foreach (KeyValuePair<Type, HashSet<DataTask>> dataTasks in _collectionManager.CollectionOfInformation)
                 {
                     foreach (DataTask currentDataTask in dataTasks.Value)
                     {
                         if (currentDataTask.Id.Equals(value.Id))
                         {
-                            currentDataTask.IsHide = false;
+                            currentDataTask.IsComplete = true;
                         }
                         else
                         {
-                            _notableManager.CollectionOfInformation[_key].Add(value);
+                            _collectionManager.CollectionOfInformation[_key].Add(value);
                         }
                     }
                 }
@@ -46,7 +46,7 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task
             else
             {
                 HashSet<DataTask> hashSet = new HashSet<DataTask> {value};
-                _notableManager.CollectionOfInformation.Add(_key, hashSet);
+                _collectionManager.CollectionOfInformation.Add(_key, hashSet);
             }
         }
     }
