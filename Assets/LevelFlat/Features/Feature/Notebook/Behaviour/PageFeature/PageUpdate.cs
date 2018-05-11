@@ -12,7 +12,7 @@ namespace LevelFlat.Features.Feature.NotebookFeature
 
         private void Awake() => _buttonItemChangers = GetComponentsInChildren<ButtonChanger<T>>().ToList();
 
-        public void UpdateInventory()
+        public void UpdatePage()
         {
             List<T> dataPickupItems = _collectionManager.GetValueFromDictionary().ToList();
             for (int i = 0; i < dataPickupItems.Count; ++i)

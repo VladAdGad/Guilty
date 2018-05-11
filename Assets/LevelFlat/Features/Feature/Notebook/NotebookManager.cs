@@ -10,6 +10,7 @@ namespace LevelFlat.Features.Feature.NotebookFeature
 
         [SerializeField] private InventoryUpdate _inventoryManager;
         [SerializeField] private EvidenceUpdate _evidenceManager;
+        [SerializeField] private TaskUpdate _taskUpdate;
         
         private void Update()
         {
@@ -19,8 +20,9 @@ namespace LevelFlat.Features.Feature.NotebookFeature
                 {
                     _player.GetComponent<Behaviour>().DisableFirstPersonController();
                     _noteBook.SetActive(true);
-                    _inventoryManager.UpdateInventory();
-                    _evidenceManager.UpdateInventory();
+                    _inventoryManager.UpdatePage();
+                    _evidenceManager.UpdatePage();
+                    _taskUpdate.UpdatePage();
                 }
                 else
                 {
