@@ -15,12 +15,12 @@ namespace LevelFlat.Features.Feature.NotebookFeature
 
         public void UpdatePage()
         {
-            List<DataEvidence> dataTasks = _collectionManager.GetValueFromDictionary().ToList();
-            foreach (var dataTask in dataTasks)
+            List<DataEvidence> dataEvidences = _collectionManager.GetValueFromDictionary().ToList();
+            foreach (var dataEvidence in dataEvidences)
             {
                 foreach (var sliderChanger in _sliderChangers)
                 {
-                    sliderChanger.UpdateSlider(dataTask);
+                    sliderChanger.UpdateSlider(dataEvidence);
                 }
             }
         }
