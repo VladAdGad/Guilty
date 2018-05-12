@@ -20,7 +20,10 @@ namespace LevelFlat.Features.Feature.NotebookFeature
         public void UpdateSlider(DataEvidence dataEvidence)
         {
             if (dataEvidence.Involved.Equals(_involveName))
-                _count.text = $"{++_slider.value}/{_slider.maxValue}";
+            {
+                ++_slider.value;
+                _count.text = $"{_slider.value}/{_slider.maxValue}";
+            }
         }
     }
 }

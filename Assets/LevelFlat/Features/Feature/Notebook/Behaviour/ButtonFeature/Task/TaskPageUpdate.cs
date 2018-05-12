@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace LevelFlat.Features.Feature.NotebookFeature
 {
-    public class TaskUpdate: MonoBehaviour
+    public class TaskPageUpdate : MonoBehaviour
     {
         private List<SliderChanger> _sliderChangers = new List<SliderChanger>();
         private readonly CollectionManager<DataEvidence> _collectionManager = CollectionManager<DataEvidence>.Instance;

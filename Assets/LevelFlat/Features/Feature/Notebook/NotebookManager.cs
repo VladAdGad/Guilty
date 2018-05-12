@@ -8,9 +8,9 @@ namespace LevelFlat.Features.Feature.NotebookFeature
         [SerializeField] private GameObject _player;
         [SerializeField] private GameObject _noteBook;
 
-        [SerializeField] private InventoryUpdate _inventoryManager;
-        [SerializeField] private EvidenceUpdate _evidenceManager;
-        [SerializeField] private TaskUpdate _taskUpdate;
+        [SerializeField] private InventoryPageUpdate _inventoryManager;
+        [SerializeField] private EvidencePageUpdate _evidenceManager;
+        [SerializeField] private TaskPageUpdate _taskUpdate;
         
         private void Update()
         {

@@ -2,7 +2,7 @@
 
 namespace LevelFlat.Features.Feature.NotebookFeature
 {
-    public class EvidenceUpdate : PageUpdate<DataEvidence>
+    public class EvidencePageUpdate : PageUpdate<DataEvidence>
     {
     }
 }

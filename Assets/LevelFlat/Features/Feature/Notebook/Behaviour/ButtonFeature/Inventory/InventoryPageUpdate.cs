@@ -2,7 +2,7 @@
 
 namespace LevelFlat.Features.Feature.NotebookFeature
 {
-    public class InventoryUpdate : PageUpdate<DataItem>
+    public class InventoryPageUpdate : PageUpdate<DataItem>
     {
     }
 }
