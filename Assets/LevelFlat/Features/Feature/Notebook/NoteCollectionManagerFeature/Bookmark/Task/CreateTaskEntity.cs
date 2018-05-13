@@ -26,22 +26,18 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task
         {
             dataTask.IsHide = false;
 
-            if (!_dataTaskProxy.DataTasks.Any(it => it.Id.Equals(dataTask.Id)))
+            if (!_dataTaskProxy.DataTasks.ToList().Any(it => it.Id.Equals(dataTask.Id)))
             {
                 _dataTaskProxy.DataTasks.Add(dataTask);
             }
             else
             {
-                _dataTaskProxy.DataTasks.ForEach(it =>
+                _dataTaskProxy.DataTasks.ToList().ForEach(it =>
                 {
                     if (it.Id.Equals(dataTask.Id))
                     {
                         it.IsHide = false;
                         dataTask = it;
-                    }
-                    else
-                    {
-                        _dataTaskProxy.DataTasks.Add(dataTask);
                     }
                 });
             }
