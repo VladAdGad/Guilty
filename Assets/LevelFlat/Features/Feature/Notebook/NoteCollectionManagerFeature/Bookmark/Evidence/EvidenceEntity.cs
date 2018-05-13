@@ -9,7 +9,7 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conven
         [SerializeField] private TextAsset _json;
 
         [Inject] private EvidencePage _evidencePage;
-        [Inject] private TaskPage _taskPage;
+        [Inject] private ProgressPage _progressPage;
 
         private DataEvidence _dataEvidence;
         private readonly ContainerInfo<DataEvidence> _containerInfo = new ContainerInfo<DataEvidence>();
@@ -19,7 +19,7 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conven
         public void AddEvidence()
         {
             _evidencePage.AddToPage(_dataEvidence);
-            _taskPage.AddToPage(_dataEvidence);
+            _progressPage.AddToPage(_dataEvidence);
             Destroy(this);
         }
     }

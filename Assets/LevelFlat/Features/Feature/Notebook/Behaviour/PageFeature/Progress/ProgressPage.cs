@@ -8,13 +8,12 @@ using Zenject;
 
 namespace LevelFlat.Features.Feature.NotebookFeature
 {
-    public class TaskPage : MonoBehaviour
+    public class ProgressPage : MonoBehaviour
     {
         [Inject] private List<SliderEvidenceChanger> _sliderChangers;
-        private readonly CollectionManager<DataTask> _collectionManager = CollectionManager<DataTask>.Instance;
 
         private void Awake() => _sliderChangers = GetComponentsInChildren<SliderEvidenceChanger>().ToList();
-
+        
         public void UpdatePage() => _sliderChangers.ForEach(it => it.UpdateSlider());
 
         public void AddToPage(DataEvidence dataEvidence) => _sliderChangers.ForEach(it => it.TryAdd(dataEvidence));
