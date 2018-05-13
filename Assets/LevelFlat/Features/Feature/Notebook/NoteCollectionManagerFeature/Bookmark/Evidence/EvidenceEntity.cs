@@ -4,13 +4,13 @@ using Zenject;
 
 namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer
 {
-    public class EvidenceEntity: MonoBehaviour
+    public class EvidenceEntity : MonoBehaviour
     {
         [SerializeField] private TextAsset _json;
 
-        [Inject]
-        private EvidencePageUpdate _evidencePageUpdate;
-        
+        [Inject] private EvidencePage _evidencePage;
+        [Inject] private TaskPage _taskPage;
+
         private DataEvidence _dataEvidence;
         private readonly ContainerInfo<DataEvidence> _containerInfo = new ContainerInfo<DataEvidence>();
 
@@ -18,7 +18,8 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conven
 
         public void AddEvidence()
         {
-            _evidencePageUpdate.UpdatePage(_dataEvidence);
+            _evidencePage.AddToPage(_dataEvidence);
+            _taskPage.AddToPage(_dataEvidence);
             Destroy(this);
         }
     }

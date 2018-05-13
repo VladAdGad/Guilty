@@ -6,13 +6,13 @@ using Zenject;
 
 namespace LevelFlat.Features.Feature.NotebookFeature
 {
-    public class EvidencePageUpdate : MonoBehaviour
+    public class EvidencePage : MonoBehaviour
     {
         [Inject] private List<ButtonEvidenceChanger> _buttonEvidenceChangers;
         private int _nextButton;
         
         public void UpdatePage() => _buttonEvidenceChangers.ForEach(it => it.UpdateButton());
         
-        public void UpdatePage(DataEvidence dataEvidence) => _buttonEvidenceChangers[_nextButton++].DataEvidence = dataEvidence;
+        public void AddToPage(DataEvidence dataEvidence) => _buttonEvidenceChangers[_nextButton++].DataEvidence = dataEvidence;
     }
 }

@@ -5,7 +5,7 @@ using Zenject;
 
 namespace LevelFlat.Features.Feature.NotebookFeature
 {
-    public class InventoryPageUpdate : MonoBehaviour
+    public class InventoryPage : MonoBehaviour
     {
         [Inject] private List<ButtonItemChanger> _buttonItemChangers;
         private int _nextButton;

@@ -9,7 +9,7 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conv
         [SerializeField] private TextAsset _json;
         
         [Inject]
-        private InventoryPageUpdate _inventoryManager;
+        private InventoryPage _inventoryManager;
 
         private DataItem _dataItem;
         private readonly ContainerInfo<DataItem> _containerInfo = new ContainerInfo<DataItem>();
