@@ -1,6 +1,7 @@
 ﻿using System;
 using LevelFlat.Features.CommonFeature.Player;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
+using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.InteractObject;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark;
 using UnityStandardAssets.Characters.FirstPerson;
 using Zenject;
@@ -18,6 +19,7 @@ namespace DefaultNamespace
             Container.Bind<DataTaskProxy>().AsSingle();
 
             Container.BindInstance(PlayerSettingsScene.FirstPersonController).AsSingle();
+            Container.BindInstance(PlayerSettingsScene.ExamineRotation).AsSingle();
 
             Container.BindInstance(GuiSettingsScene.CrosshairManager).AsSingle();
         }
@@ -26,6 +28,7 @@ namespace DefaultNamespace
         public class PlayerSettings
         {
             public FirstPersonController FirstPersonController;
+            public ExamineRotation ExamineRotation;
         }
 
         [Serializable]
