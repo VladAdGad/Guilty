@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using LevelFlat.Features.CommonFeature.Player;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
 using LevelFlat.Features.Feature.NotebookFeature;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark;
+using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 using Zenject;
 
@@ -12,28 +14,31 @@ namespace DefaultNamespace
     {
         public PlayerSettings PlayerSettingsScene;
         public GuiSettings GuiSettingsScene;
-        public NotebookSettings NotebookSettingsScene;
         
+        public NotebookSettings NotebookSettingsScene;
+        public InventoryPageSettings InventoryPageSettingsScene;
+
         public override void InstallBindings()
         {
             Container.Bind<PlayerBehaviour>().AsSingle();
             Container.Bind<DataTaskProxy>().AsSingle();
-            
+
             Container.BindInstance(PlayerSettingsScene.FirstPersonController).AsSingle();
-            
+
             Container.BindInstance(GuiSettingsScene.CrosshairManager).AsSingle();
 
             Container.BindInstance(NotebookSettingsScene.InventoryPage).AsSingle();
             Container.BindInstance(NotebookSettingsScene.EvidencePage).AsSingle();
             Container.BindInstance(NotebookSettingsScene.TaskPage).AsSingle();
             Container.BindInstance(NotebookSettingsScene.ProgressPage).AsSingle();
+
+            Container.BindInstance(InventoryPageSettingsScene.Buttons).AsSingle();
         }
-        
+
         [Serializable]
         public class PlayerSettings
         {
             public FirstPersonController FirstPersonController;
-            
         }
 
         [Serializable]
@@ -49,6 +54,12 @@ namespace DefaultNamespace
             public EvidencePage EvidencePage;
             public TaskPage TaskPage;
             public ProgressPage ProgressPage;
+        }
+
+        [Serializable]
+        public class InventoryPageSettings
+        {
+            public List<ButtonItemChanger> Buttons;
         }
     }
 }
