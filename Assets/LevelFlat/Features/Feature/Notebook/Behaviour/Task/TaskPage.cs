@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer;
 using UnityEngine;
 using Zenject;
@@ -10,13 +8,19 @@ namespace LevelFlat.Features.Feature.NotebookFeature
 {
     public class TaskPage : MonoBehaviour
     {
-        [Inject] private List<SliderEvidenceChanger> _sliderChangers;
-        private readonly CollectionManager<DataTask> _collectionManager = CollectionManager<DataTask>.Instance;
+        [Inject] private List<TaskTextChanger> _taskTextChangers;
 
-        private void Awake() => _sliderChangers = GetComponentsInChildren<SliderEvidenceChanger>().ToList();
+        [Inject] private DataTaskProxy _dataTaskProxy;
 
-        public void UpdatePage() => _sliderChangers.ForEach(it => it.UpdateSlider());
+        public void UpdatePage()
+        {
+            _dataTaskProxy.DataTasks.ForEach(dataTask => _taskTextChangers.ForEach(textChanger =>
+            {
+                textChanger.TryAdd(dataTask);
+                textChanger.UpdateText();
+            }));
+        }
 
-        public void AddToPage(DataEvidence dataEvidence) => _sliderChangers.ForEach(it => it.TryAdd(dataEvidence));
+        public void AddToPage(DataTask dataTask) => _taskTextChangers.ForEach(it => it.TryAdd(dataTask));
     }
 }

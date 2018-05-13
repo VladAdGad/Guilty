@@ -1,53 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using LevelFlat.Features.Feature.NotebookFeature;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer;
 using UnityEngine;
+using Zenject;
 
 namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task
 {
-    public class CreateTaskEntity: MonoBehaviour
+    public class CreateTaskEntity : MonoBehaviour
     {
         [SerializeField] private TextAsset _jsonDataTask;
+        [Inject] private DataTaskProxy _dataTaskProxy;
+        [Inject] private TaskPage _taskPage;
 
         private DataTask _dataTask;
-        private readonly Type _key = typeof(DataTask);
         private readonly ContainerInfo<DataTask> _containerInfo = new ContainerInfo<DataTask>();
-        private readonly CollectionManager<DataTask> _collectionManager = CollectionManager<DataTask>.Instance;
 
         private void Awake() => _dataTask = _containerInfo.Deserialize(_jsonDataTask);
 
         public void AddTask()
         {
-            OnConsider(_dataTask);
+            _taskPage.AddToPage(UpdateTask(_dataTask));
 
             Destroy(this);
         }
 
-        private void OnConsider(DataTask value)
+        private DataTask UpdateTask(DataTask dataTask)
         {
-            value.IsHide = false;
-            if (_collectionManager.CollectionOfInformation.ContainsKey(_key))
+            dataTask.IsHide = false;
+
+            _dataTaskProxy.DataTasks.ForEach(it =>
             {
-                foreach (KeyValuePair<Type, HashSet<DataTask>> dataTasks in _collectionManager.CollectionOfInformation)
+                if (it.Id.Equals(dataTask.Id))
                 {
-                    foreach (DataTask currentDataTask in dataTasks.Value)
-                    {
-                        if (currentDataTask.Id.Equals(value.Id))
-                        {
-                            currentDataTask.IsHide = false;
-                        }
-                        else
-                        {
-                            _collectionManager.CollectionOfInformation[_key].Add(value);
-                        }
-                    }
+                    it.IsHide = false;
+                    dataTask = it;
                 }
-            }
-            else
-            {
-                HashSet<DataTask> hashSet = new HashSet<DataTask> {value};
-                _collectionManager.CollectionOfInformation.Add(_key, hashSet);
-            }
+                else
+                {
+                    _dataTaskProxy.DataTasks.Add(dataTask);
+                }
+            });
+
+            return dataTask;
         }
     }
 }

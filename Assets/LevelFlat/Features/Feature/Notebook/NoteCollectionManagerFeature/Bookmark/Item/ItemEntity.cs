@@ -4,12 +4,11 @@ using Zenject;
 
 namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer
 {
-    public class ItemEntity: MonoBehaviour
+    public class ItemEntity : MonoBehaviour
     {
         [SerializeField] private TextAsset _json;
-        
-        [Inject]
-        private InventoryPage _inventoryManager;
+
+        [Inject] private InventoryPage _inventoryManager;
 
         private DataItem _dataItem;
         private readonly ContainerInfo<DataItem> _containerInfo = new ContainerInfo<DataItem>();

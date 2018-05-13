@@ -1,4 +1,5 @@
 ﻿using LevelFlat.Features.CommonFeature.Player;
+using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark;
 using Zenject;
 
 namespace DefaultNamespace
@@ -8,6 +9,7 @@ namespace DefaultNamespace
         public override void InstallBindings()
         {
             Container.Bind<PlayerBehaviour>().AsSingle();
+            Container.Bind<DataTaskProxy>().AsSingle();
         }
     }
 }

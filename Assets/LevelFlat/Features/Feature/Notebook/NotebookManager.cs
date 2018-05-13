@@ -11,16 +11,18 @@ namespace LevelFlat.Features.Feature.NotebookFeature
         private InventoryPage _inventoryManager;
         private EvidencePage _evidenceManager;
         private ProgressPage _progressPage;
+        private TaskPage _taskPage;
 
         private PlayerBehaviour _playerBehaviour;
 
         [Inject]
-        private void Construct(InventoryPage inventoryManager, EvidencePage evidenceManager, ProgressPage progressPage, PlayerBehaviour playerBehaviour)
+        private void Construct(InventoryPage inventoryManager, EvidencePage evidenceManager, ProgressPage progressPage, PlayerBehaviour playerBehaviour, TaskPage taskPage)
         {
             _inventoryManager = inventoryManager;
             _evidenceManager = evidenceManager;
             _progressPage = progressPage;
             _playerBehaviour = playerBehaviour;
+            _taskPage = taskPage;
         }
 
         private void Update()
@@ -34,6 +36,7 @@ namespace LevelFlat.Features.Feature.NotebookFeature
                     _inventoryManager.UpdatePage();
                     _evidenceManager.UpdatePage();
                     _progressPage.UpdatePage();
+                    _taskPage.UpdatePage();
                 }
                 else
                 {
