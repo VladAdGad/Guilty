@@ -4,35 +4,24 @@ using UnityEngine.UI;
 
 namespace LevelFlat.Features.Feature.NotebookFeature
 {
-    public class ButtonItemChanger : ButtonChanger<DataItem>
+    public class ButtonItemChanger : ButtonChanger
     {
-        private DataItem _dataItem;
+        public DataItem DataItem;
 
         private void Awake()
         {
-            SetTextComponents();
-            GetComponent<Button>().onClick.AddListener(() => UpdateComponents(_dataItem));
+            InitComponents();
+            GetComponent<Button>().onClick.AddListener(() => UpdateComponents(DataItem));
         }
+
+        public void UpdateButton() => UpdateComponents(DataItem);
 
         private void UpdateComponents(DataItem dataItem)
         {
-            if (dataItem != null)
-            {
-                TitleText.text = dataItem.Name ?? "";
-                DescriptionText.text = dataItem.Description ?? "";
-                GetComponent<Image>().sprite = dataItem.Icon;
-            }
-            else
-            {
-                TitleText.text = "";
-                DescriptionText.text = "";
-            }
-        }
-
-        public override void UpdateButton(DataItem dataItem)
-        {
-            _dataItem = dataItem;
-            UpdateComponents(dataItem);
+            if(dataItem == null) return;
+            TitleText.text = dataItem.Name;
+            DescriptionText.text = dataItem.Description;
+            Image.sprite = dataItem.Icon;
         }
     }
 }

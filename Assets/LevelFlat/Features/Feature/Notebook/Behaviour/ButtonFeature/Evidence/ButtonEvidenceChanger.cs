@@ -3,35 +3,25 @@ using UnityEngine.UI;
 
 namespace LevelFlat.Features.Feature.NotebookFeature.Evidence
 {
-    public class ButtonEvidenceChanger : ButtonChanger<DataEvidence>
+    public class ButtonEvidenceChanger : ButtonChanger
     {
-        private DataEvidence _dataEvidence;
+        public DataEvidence DataEvidence;
 
         private void Awake()
         {
-            SetTextComponents();
-            GetComponent<Button>().onClick.AddListener(() => UpdateComponents(_dataEvidence));
+            InitComponents();
+            UpdateComponents(DataEvidence);
+            GetComponent<Button>().onClick.AddListener(() => UpdateComponents(DataEvidence));
         }
+
+        public void UpdateButton() => UpdateComponents(DataEvidence);
 
         private void UpdateComponents(DataEvidence dataEvidence)
         {
-            if (dataEvidence != null)
-            {
-                TitleText.text = dataEvidence.Title ?? "";
-                DescriptionText.text = dataEvidence.Description ?? "";
-                GetComponent<Image>().sprite = dataEvidence.Icon;
-            }
-            else
-            {
-                TitleText.text = "";
-                DescriptionText.text = "";
-            }
-        }
-
-        public override void UpdateButton(DataEvidence dataEvidence)
-        {
-            _dataEvidence = dataEvidence;
-            UpdateComponents(dataEvidence);
+            if (dataEvidence == null) return;
+            TitleText.text = dataEvidence.Title;
+            DescriptionText.text = dataEvidence.Description;
+            Image.sprite = dataEvidence.Icon;
         }
     }
 }

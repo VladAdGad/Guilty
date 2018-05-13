@@ -1,20 +1,24 @@
-﻿using UnityEngine;
+﻿using LevelFlat.Features.Feature.NotebookFeature;
+using UnityEngine;
+using Zenject;
 
 namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer
 {
     public class ItemEntity: MonoBehaviour
     {
         [SerializeField] private TextAsset _json;
+        
+        [Inject]
+        private InventoryPageUpdate _inventoryManager;
 
-        private DataItem _dataEvidence;
+        private DataItem _dataItem;
         private readonly ContainerInfo<DataItem> _containerInfo = new ContainerInfo<DataItem>();
-        private readonly CollectionManager<DataItem> _collectionManager = CollectionManager<DataItem>.Instance;
 
-        private void Awake() => _dataEvidence = _containerInfo.Deserialize(_json);
+        private void Awake() => _dataItem = _containerInfo.Deserialize(_json);
 
         public void AddItem()
         {
-            _collectionManager.OnConsider(_dataEvidence);
+            _inventoryManager.AddToPage(_dataItem);
             Destroy(this);
         }
     }
