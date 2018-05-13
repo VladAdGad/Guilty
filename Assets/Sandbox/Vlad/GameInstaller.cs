@@ -1,6 +1,7 @@
 ﻿using System;
 using LevelFlat.Features.CommonFeature.Player;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
+using LevelFlat.Features.Feature.NotebookFeature;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark;
 using UnityStandardAssets.Characters.FirstPerson;
 using Zenject;
@@ -11,6 +12,7 @@ namespace DefaultNamespace
     {
         public PlayerSettings PlayerSettingsScene;
         public GuiSettings GuiSettingsScene;
+        public NotebookSettings NotebookSettingsScene;
         
         public override void InstallBindings()
         {
@@ -20,6 +22,11 @@ namespace DefaultNamespace
             Container.BindInstance(PlayerSettingsScene.FirstPersonController).AsSingle();
             
             Container.BindInstance(GuiSettingsScene.CrosshairManager).AsSingle();
+
+            Container.BindInstance(NotebookSettingsScene.InventoryPage).AsSingle();
+            Container.BindInstance(NotebookSettingsScene.EvidencePage).AsSingle();
+            Container.BindInstance(NotebookSettingsScene.TaskPage).AsSingle();
+            Container.BindInstance(NotebookSettingsScene.ProgressPage).AsSingle();
         }
         
         [Serializable]
@@ -33,6 +40,15 @@ namespace DefaultNamespace
         public class GuiSettings
         {
             public CrosshairManager CrosshairManager;
+        }
+
+        [Serializable]
+        public class NotebookSettings
+        {
+            public InventoryPage InventoryPage;
+            public EvidencePage EvidencePage;
+            public TaskPage TaskPage;
+            public ProgressPage ProgressPage;
         }
     }
 }
