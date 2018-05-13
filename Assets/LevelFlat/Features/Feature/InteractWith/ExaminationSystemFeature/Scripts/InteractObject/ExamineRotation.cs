@@ -17,7 +17,8 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
         [Header("Object Rotation Settings")] 
         [SerializeField] private float _speedx = 3;
         [SerializeField] private float _speedy = 3;
-        public Transform TargetTransform;
+        
+        private Transform _targetTransform;
         private float _rootx;
         private float _rooty;
 
@@ -30,12 +31,12 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
             _rootx += Input.GetAxis("Mouse X") * _speedx;
             _rooty += Input.GetAxis("Mouse Y") * _speedy;
             _rooty = Mathf.Clamp(_rooty, -360, 360);
-            TargetTransform.eulerAngles = new Vector3(_rooty, -_rootx, 0);
+            _targetTransform.eulerAngles = new Vector3(_rooty, -_rootx, 0);
 
-            if (TargetTransform.GetComponent<ExaminableObjectSettings>().CanZoom)
+            if (_targetTransform.GetComponent<ExaminableObjectSettings>().CanZoom)
             {
-                float maxValue = TargetTransform.GetComponent<ExaminableObjectSettings>().MaxZoom;
-                float minValue = TargetTransform.GetComponent<ExaminableObjectSettings>().MinZoom;
+                float maxValue = _targetTransform.GetComponent<ExaminableObjectSettings>().MaxZoom;
+                float minValue = _targetTransform.GetComponent<ExaminableObjectSettings>().MinZoom;
 
                 GetComponent<Camera>().fieldOfView += Input.GetAxis("Mouse ScrollWheel") * _zoomScrollSpeed;
                 GetComponent<Camera>().fieldOfView = Mathf.Clamp(GetComponent<Camera>().fieldOfView, maxValue, minValue);
@@ -45,15 +46,15 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
         public void StartRotateObject(GameObject targetTransform)
         {
             targetTransform.SetActive(true);
-            gameObject.GetComponent<ExamineRotation>().enabled = true;
-            gameObject.GetComponent<ExamineRotation>().TargetTransform = targetTransform.transform;
+            _targetTransform = targetTransform.transform;
+            enabled = true;
         }
     
         public void StopRotateObject(GameObject targetTransform)
         {
             targetTransform.SetActive(false);
-            gameObject.GetComponent<ExamineRotation>().enabled = false;
-            gameObject.GetComponent<ExamineRotation>().TargetTransform = null;
+            _targetTransform = null;
+            enabled = false;
         }
     }
 }

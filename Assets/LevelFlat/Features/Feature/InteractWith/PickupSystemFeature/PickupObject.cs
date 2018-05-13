@@ -7,10 +7,18 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.PickupSystemFeature
 {
     public class PickupObject : Interactable
     {
-        [SerializeField] private CompleteTaskEntity _completeTaskEntity;
-        [SerializeField] private CreateTaskEntity _createTaskEntity;
-        [SerializeField] private EvidenceEntity _evidenceEntity;
-        [SerializeField] private ItemEntity _dataItem;
+        private CompleteTaskEntity _completeTaskEntity;
+        private CreateTaskEntity _createTaskEntity;
+        private EvidenceEntity _evidenceEntity;
+        private ItemEntity _itemEntity;
+
+        private void Start()
+        {
+            _completeTaskEntity = GetComponent<CompleteTaskEntity>();
+            _createTaskEntity = GetComponent<CreateTaskEntity>();
+            _evidenceEntity = GetComponent<EvidenceEntity>();
+            _itemEntity = GetComponent<ItemEntity>();
+        }
 
         public override void OnPress()
         {
@@ -23,8 +31,8 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.PickupSystemFeature
             if (_evidenceEntity != null)
                 _evidenceEntity.AddEvidence();
 
-            if (_dataItem != null)
-                _dataItem.AddItem();
+            if (_itemEntity != null)
+                _itemEntity.AddItem();
             
             Destroy(gameObject);
         }

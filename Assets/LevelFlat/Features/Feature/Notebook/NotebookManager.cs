@@ -1,30 +1,46 @@
-﻿using UnityEngine;
-using Behaviour = LevelFlat.Features.CommonFeature.Player.Behaviour;
+﻿using LevelFlat.Features.CommonFeature.Player;
+using UnityEngine;
+using Zenject;
 
 namespace LevelFlat.Features.Feature.NotebookFeature
 {
     public class NotebookManager : MonoBehaviour
     {
-        [SerializeField] private GameObject _player;
         [SerializeField] private GameObject _noteBook;
 
-        [SerializeField] private InventoryUpdate _inventoryManager;
-        [SerializeField] private EvidenceUpdate _evidenceManager;
-        
+        private InventoryPage _inventoryManager;
+        private EvidencePage _evidenceManager;
+        private ProgressPage _progressPage;
+        private TaskPage _taskPage;
+
+        private PlayerBehaviour _playerBehaviour;
+
+        [Inject]
+        private void Construct(InventoryPage inventoryManager, EvidencePage evidenceManager, ProgressPage progressPage, PlayerBehaviour playerBehaviour, TaskPage taskPage)
+        {
+            _inventoryManager = inventoryManager;
+            _evidenceManager = evidenceManager;
+            _progressPage = progressPage;
+            _playerBehaviour = playerBehaviour;
+            _taskPage = taskPage;
+        }
+
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.I))
             {
                 if (_noteBook.activeSelf.Equals(false))
                 {
-                    _player.GetComponent<Behaviour>().DisableFirstPersonController();
+                    _playerBehaviour.DisableFirstPersonController();
                     _noteBook.SetActive(true);
-                    _inventoryManager.UpdateInventory();
-                    _evidenceManager.UpdateInventory();
+                    _inventoryManager.UpdatePage();
+                    _evidenceManager.UpdatePage();
+                    _progressPage.UpdatePage();
+                    _taskPage.UpdatePage();
                 }
                 else
                 {
-                    _player.GetComponent<Behaviour>().EnableFirstPersonController();
+                    _playerBehaviour.EnableFirstPersonController();
                     _noteBook.SetActive(false);
                 }
             }

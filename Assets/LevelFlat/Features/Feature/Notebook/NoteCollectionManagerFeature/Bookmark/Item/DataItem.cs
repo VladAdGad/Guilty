@@ -19,6 +19,8 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conv
 
         public DataItem()
         {
+            Name = "Empty";
+            Description = "Empty";
         }
     }
 }

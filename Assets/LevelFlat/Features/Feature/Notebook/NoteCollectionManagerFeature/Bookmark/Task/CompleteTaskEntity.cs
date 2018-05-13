@@ -1,52 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Linq;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer;
 using UnityEngine;
+using Zenject;
 
 namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task
 {
     public class CompleteTaskEntity : MonoBehaviour
     {
         [SerializeField] private TextAsset _jsonDataTask;
+        [Inject] private DataTaskProxy _dataTaskProxy;
 
         private DataTask _dataTask;
-        private readonly Type _key = typeof(DataTask);
         private readonly ContainerInfo<DataTask> _containerInfo = new ContainerInfo<DataTask>();
-        private readonly CollectionManager<DataTask> _collectionManager = CollectionManager<DataTask>.Instance;
 
         private void Awake() => _dataTask = _containerInfo.Deserialize(_jsonDataTask);
 
         public void AddTask()
         {
-            OnConsider(_dataTask);
+            UpdateTask(_dataTask);
 
             Destroy(this);
         }
 
-        private void OnConsider(DataTask value)
+        private void UpdateTask(DataTask dataTask)
         {
-            value.IsComplete = true;
-            if (_collectionManager.CollectionOfInformation.ContainsKey(_key))
+            dataTask.IsComplete = true;
+
+            if (!_dataTaskProxy.DataTasks.ToList().Any(it => it.Id.Equals(dataTask.Id)))
             {
-                foreach (KeyValuePair<Type, HashSet<DataTask>> dataTasks in _collectionManager.CollectionOfInformation)
-                {
-                    foreach (DataTask currentDataTask in dataTasks.Value)
-                    {
-                        if (currentDataTask.Id.Equals(value.Id))
-                        {
-                            currentDataTask.IsComplete = true;
-                        }
-                        else
-                        {
-                            _collectionManager.CollectionOfInformation[_key].Add(value);
-                        }
-                    }
-                }
+                _dataTaskProxy.DataTasks.Add(dataTask);
             }
             else
             {
-                HashSet<DataTask> hashSet = new HashSet<DataTask> {value};
-                _collectionManager.CollectionOfInformation.Add(_key, hashSet);
+                _dataTaskProxy.DataTasks.ToList().ForEach(it =>
+                {
+                    if (it.Id.Equals(dataTask.Id))
+                    {
+                        it.IsComplete = true;
+                        dataTask = it;
+                    }
+                });
             }
         }
     }

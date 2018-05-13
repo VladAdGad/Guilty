@@ -21,6 +21,9 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conven
 
         public DataEvidence()
         {
+            Title = "Empty";
+            Description = "Empty";
+            Involved = "Empty";
         }
     }
 }
