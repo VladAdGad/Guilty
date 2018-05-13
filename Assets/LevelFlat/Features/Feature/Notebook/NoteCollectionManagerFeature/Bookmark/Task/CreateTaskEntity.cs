@@ -1,4 +1,4 @@
-﻿using LevelFlat.Features.Feature.NotebookFeature;
+﻿using System.Linq;
 using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer;
 using UnityEngine;
 using Zenject;
@@ -9,7 +9,6 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task
     {
         [SerializeField] private TextAsset _jsonDataTask;
         [Inject] private DataTaskProxy _dataTaskProxy;
-        [Inject] private TaskPage _taskPage;
 
         private DataTask _dataTask;
         private readonly ContainerInfo<DataTask> _containerInfo = new ContainerInfo<DataTask>();
@@ -18,29 +17,34 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task
 
         public void AddTask()
         {
-            _taskPage.AddToPage(UpdateTask(_dataTask));
+            UpdateTask(_dataTask);
 
             Destroy(this);
         }
 
-        private DataTask UpdateTask(DataTask dataTask)
+        private void UpdateTask(DataTask dataTask)
         {
             dataTask.IsHide = false;
 
-            _dataTaskProxy.DataTasks.ForEach(it =>
+            if (!_dataTaskProxy.DataTasks.Any(it => it.Id.Equals(dataTask.Id)))
             {
-                if (it.Id.Equals(dataTask.Id))
+                _dataTaskProxy.DataTasks.Add(dataTask);
+            }
+            else
+            {
+                _dataTaskProxy.DataTasks.ForEach(it =>
                 {
-                    it.IsHide = false;
-                    dataTask = it;
-                }
-                else
-                {
-                    _dataTaskProxy.DataTasks.Add(dataTask);
-                }
-            });
-
-            return dataTask;
+                    if (it.Id.Equals(dataTask.Id))
+                    {
+                        it.IsHide = false;
+                        dataTask = it;
+                    }
+                    else
+                    {
+                        _dataTaskProxy.DataTasks.Add(dataTask);
+                    }
+                });
+            }
         }
     }
 }
