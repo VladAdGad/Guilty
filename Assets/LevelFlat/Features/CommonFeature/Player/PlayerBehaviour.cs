@@ -1,28 +1,28 @@
 ﻿using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
+using Zenject;
 
 namespace LevelFlat.Features.CommonFeature.Player
 {
-    public class Behaviour : MonoBehaviour
+    public class PlayerBehaviour
     {
-        private GameObject _player;
         private int _disablePlayer = 0;
         private const int CanEnable = 0;
 
-        private void Start() => _player = gameObject;
+        [Inject] private FirstPersonController _firstPersonController;
 
         public void DisableFirstPersonController()
         {
             ++_disablePlayer;
             EnableCursor();
-            _player.GetComponent<FirstPersonController>().enabled = false;
+            _firstPersonController.enabled = false;
         }
-        
+
         public void EnableFirstPersonController()
         {
             --_disablePlayer;
-            if(_disablePlayer.Equals(CanEnable))
-            _player.GetComponent<FirstPersonController>().enabled = true;
+            if (_disablePlayer.Equals(CanEnable))
+                _firstPersonController.enabled = true;
         }
 
         private void EnableCursor()

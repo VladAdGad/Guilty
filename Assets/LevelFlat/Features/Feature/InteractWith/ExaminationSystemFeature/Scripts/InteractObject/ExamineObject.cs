@@ -7,23 +7,38 @@
 
 //This script manages the informations of the interactable objects, such as the name
 
+using LevelFlat.Features.CommonFeature.Player;
 using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
 using UnityEngine;
-using Behaviour = LevelFlat.Features.CommonFeature.Player.Behaviour;
+using Zenject;
 
 namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.InteractObject
 {
     public class ExamineObject : Interactable
     {
         [SerializeField] private GameObject _targetExaminableObject;
-        [SerializeField] private CrosshairManager _crosshairObject;
-        [SerializeField] private UIFade _examineObjectInfoGui;
-        [SerializeField] private GameObject _player;
-        [SerializeField] private RaycastManager _examineRaycastManager;
+
+        private CrosshairManager _crosshairObject;
+        private UIFade _examineObjectInfoGui;
+        private RaycastManager _examineRaycastManager;
+        private ExamineRotation _examineRotation;
+        private PlayerBehaviour _playerBehaviour;
+        private Blur _blur;
 
         private bool _isEximiningObject;
+
+        [Inject]
+        private void Construct(CrosshairManager crosshairObject, UIFade examineObjectInfoGui, RaycastManager examineRaycastManager, ExamineRotation examineRotation, PlayerBehaviour playerBehaviour, Blur blur)
+        {
+            _crosshairObject = crosshairObject;
+            _examineObjectInfoGui = examineObjectInfoGui;
+            _examineRaycastManager = examineRaycastManager;
+            _examineRotation = examineRotation;
+            _playerBehaviour = playerBehaviour;
+            _blur = blur;
+        }
 
         public override void OnPress()
         {
@@ -37,9 +52,9 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
 
         private void StartExamineObject()
         {
-            _player.GetComponentInChildren<ExamineRotation>().StartRotateObject(_targetExaminableObject);
-            _player.GetComponent<Behaviour>().DisableFirstPersonController();
-            _player.GetComponentInChildren<Blur>().enabled = true;
+            _examineRotation.StartRotateObject(_targetExaminableObject);
+            _playerBehaviour.DisableFirstPersonController();
+            _blur.enabled = true;
             _crosshairObject.DisableCrosshair();
             _examineObjectInfoGui.FadeIn();
             _examineRaycastManager.enabled = true;
@@ -47,14 +62,14 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
 
         private void StopExamineObject()
         {
-            _player.GetComponentInChildren<ExamineRotation>().StopRotateObject(_targetExaminableObject);
-            _player.GetComponent<Behaviour>().EnableFirstPersonController();
-            _player.GetComponentInChildren<Blur>().enabled = false;
+            _examineRotation.StopRotateObject(_targetExaminableObject);
+            _playerBehaviour.EnableFirstPersonController();
+            _blur.enabled = false;
             _crosshairObject.EnableCrosshair();
             _examineObjectInfoGui.FadeOut();
             _examineRaycastManager.enabled = false;
         }
 
-        private void ChangeExaminingState() => _isEximiningObject = !_isEximiningObject;    
+        private void ChangeExaminingState() => _isEximiningObject = !_isEximiningObject;
     }
 }

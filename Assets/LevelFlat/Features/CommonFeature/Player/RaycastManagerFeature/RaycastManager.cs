@@ -6,6 +6,7 @@ using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
 using UnityEngine;
 using UnityEngine.Assertions;
+using Zenject;
 
 namespace LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature
 {
@@ -13,12 +14,19 @@ namespace LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature
     {
         [SerializeField] private float _interactionDistance;
         [SerializeField] private LayerMask _layerMaskInteract;
-        [SerializeField] private GameObject _crosshairManager;
         [SerializeField] private Camera _camera;
 
         private IEnumerable<IGazable> _previousGazeable = new HashSet<IGazable>();
         private readonly Vector3 _position = new Vector3(Screen.width / 2f, Screen.height / 2f, 0f);
+        
+        private CrosshairManager _crosshairManager;
 
+        [Inject]
+        private void Construct(CrosshairManager crosshairManager)
+        {
+            _crosshairManager = crosshairManager;
+        }
+        
         private void Update() => GazeCast()
             .Map(raycastHit => raycastHit.collider)
             .Map(raycastHitCollider => raycastHitCollider.GetComponents<IInteractable>())
