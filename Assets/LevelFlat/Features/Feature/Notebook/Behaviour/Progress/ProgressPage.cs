@@ -12,8 +12,6 @@ namespace LevelFlat.Features.Feature.NotebookFeature
     {
         [Inject] private List<SliderEvidenceChanger> _sliderChangers;
 
-        private void Awake() => _sliderChangers = GetComponentsInChildren<SliderEvidenceChanger>().ToList();
-        
         public void UpdatePage() => _sliderChangers.ForEach(it => it.UpdateSlider());
 
         public void AddToPage(DataEvidence dataEvidence) => _sliderChangers.ForEach(it => it.TryAdd(dataEvidence));
