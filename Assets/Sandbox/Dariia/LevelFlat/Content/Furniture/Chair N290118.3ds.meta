@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 5201aead134e0cc4a90bf9d5d604466f
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: _DGeom_550
+    100002: _DGeom_551
+    100004: _DGeom_552
+    100006: _DGeom_553
+    100008: _DGeom_554
+    100010: _DGeom_555
+    100012: _DGeom_556
+    100014: _DGeom_557
+    100016: _DGeom_558
+    100018: _DGeom_559
+    100020: _DGeom_560
+    100022: _DGeom_561
+    100024: _DGeom_562
+    100026: _DGeom_563
+    100028: _DGeom_564
+    100030: _DGeom_565
+    100032: _DGeom_566
+    100034: //RootNode
+    400000: _DGeom_550
+    400002: _DGeom_551
+    400004: _DGeom_552
+    400006: _DGeom_553
+    400008: _DGeom_554
+    400010: _DGeom_555
+    400012: _DGeom_556
+    400014: _DGeom_557
+    400016: _DGeom_558
+    400018: _DGeom_559
+    400020: _DGeom_560
+    400022: _DGeom_561
+    400024: _DGeom_562
+    400026: _DGeom_563
+    400028: _DGeom_564
+    400030: _DGeom_565
+    400032: _DGeom_566
+    400034: //RootNode
+    2100000: st_wood
+    2300000: _DGeom_550
+    2300002: _DGeom_551
+    2300004: _DGeom_552
+    2300006: _DGeom_553
+    2300008: _DGeom_554
+    2300010: _DGeom_555
+    2300012: _DGeom_556
+    2300014: _DGeom_557
+    2300016: _DGeom_558
+    2300018: _DGeom_559
+    2300020: _DGeom_560
+    2300022: _DGeom_561
+    2300024: _DGeom_562
+    2300026: _DGeom_563
+    2300028: _DGeom_564
+    2300030: _DGeom_565
+    2300032: _DGeom_566
+    3300000: _DGeom_550
+    3300002: _DGeom_551
+    3300004: _DGeom_552
+    3300006: _DGeom_553
+    3300008: _DGeom_554
+    3300010: _DGeom_555
+    3300012: _DGeom_556
+    3300014: _DGeom_557
+    3300016: _DGeom_558
+    3300018: _DGeom_559
+    3300020: _DGeom_560
+    3300022: _DGeom_561
+    3300024: _DGeom_562
+    3300026: _DGeom_563
+    3300028: _DGeom_564
+    3300030: _DGeom_565
+    3300032: _DGeom_566
+    4300000: _DGeom_550
+    4300002: _DGeom_551
+    4300004: _DGeom_552
+    4300006: _DGeom_553
+    4300008: _DGeom_554
+    4300010: _DGeom_555
+    4300012: _DGeom_556
+    4300014: _DGeom_557
+    4300016: _DGeom_558
+    4300018: _DGeom_559
+    4300020: _DGeom_560
+    4300022: _DGeom_561
+    4300024: _DGeom_562
+    4300026: _DGeom_563
+    4300028: _DGeom_564
+    4300030: _DGeom_565
+    4300032: _DGeom_566
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
