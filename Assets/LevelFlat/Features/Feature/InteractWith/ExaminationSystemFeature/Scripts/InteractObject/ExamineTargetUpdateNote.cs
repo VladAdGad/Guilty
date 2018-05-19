@@ -7,9 +7,16 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
 {
     public class ExamineTargetUpdateNote : MonoBehaviour, IGazable
     {
-        [SerializeField] private CompleteTaskEntity _completeTaskEntity;
-        [SerializeField] private CreateTaskEntity _createTaskEntity;
-        [SerializeField] private EvidenceEntity _evidenceEntity;
+        private CompleteTaskEntity _completeTaskEntity;
+        private CreateTaskEntity _createTaskEntity;
+        private EvidenceEntity _evidenceEntity;
+
+        private void Start()
+        {
+            _completeTaskEntity = GetComponent<CompleteTaskEntity>();
+            _createTaskEntity = GetComponent<CreateTaskEntity>();
+            _evidenceEntity = GetComponent<EvidenceEntity>();
+        }
 
         public void OnGazeEnter()
         {

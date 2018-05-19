@@ -19,6 +19,8 @@ namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer
 
         public DataTask()
         {
+            Id = -1;
+            Title = "Empty";
         }
     }
 }
