@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer
+namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task
 {
     public class DataTask
     {

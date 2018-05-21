@@ -7,25 +7,26 @@
 
 //This script manages the informations of the interactable objects, such as the name
 
-using DefaultNamespace;
 using LevelFlat.Features.CommonFeature.Player;
 using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature;
+using LevelFlat.Features.Feature.InteractWithObjects;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
+using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.InteractObject
+namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.InteractObject
 {
     public class ExamineObject : Interactable
     {
         [SerializeField] private GameObject _targetExaminableObject;
 
         // @formatter:off
-        [Inject(Id = GuiSocketType.Crosshair)] private GameObject _crosshairObject;
-        [Inject(Id = GuiSocketType.Examinecontrol)] private GameObject _ecamineControlObject;
-        [Inject(Id = PlayerSettingsType.MainCamera)] private GameObject _mainCamera;
-        [Inject(Id = PlayerSettingsType.ExaminableCamera)] private GameObject _examinableCamera;
+        [Inject(Id = GameObjectType.GuiSocket.Crosshair)] private GameObject _crosshairObject;
+        [Inject(Id = GameObjectType.GuiSocket.ExamineControl)] private GameObject _ecamineControlObject;
+        [Inject(Id = GameObjectType.Camera.MainCamera)] private GameObject _mainCamera;
+        [Inject(Id = GameObjectType.Camera.ExaminableCamera)] private GameObject _examinableCamera;
         [Inject] private PlayerBehaviour _playerBehaviour;
         // @formatter:on
 

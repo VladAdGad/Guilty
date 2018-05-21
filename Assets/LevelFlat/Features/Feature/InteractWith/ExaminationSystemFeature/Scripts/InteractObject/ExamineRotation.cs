@@ -9,7 +9,7 @@
 
 using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.InteractObject
+namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.InteractObject
 {
     public class ExamineRotation : MonoBehaviour
     {
@@ -17,14 +17,14 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
         [Header("Object Rotation Settings")] 
         [SerializeField] private float _speedx = 3;
         [SerializeField] private float _speedy = 3;
-        
-        private Transform _targetTransform;
-        private float _rootx;
-        private float _rooty;
 
         [Header("Zoom Settings")] 
         [SerializeField] private float _zoomScrollSpeed = 5f;
         // @formatter:on
+
+        private Transform _targetTransform;
+        private float _rootx;
+        private float _rooty;
 
         private void Update()
         {
@@ -42,14 +42,14 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
                 GetComponent<Camera>().fieldOfView = Mathf.Clamp(GetComponent<Camera>().fieldOfView, maxValue, minValue);
             }
         }
-    
+
         public void StartRotateObject(GameObject targetTransform)
         {
             targetTransform.SetActive(true);
             _targetTransform = targetTransform.transform;
             enabled = true;
         }
-    
+
         public void StopRotateObject(GameObject targetTransform)
         {
             targetTransform.SetActive(false);

@@ -1,8 +1,7 @@
-﻿using LevelFlat.Features.CommonFeature.Player;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark;
+﻿using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
 using Zenject;
 
-namespace DefaultNamespace
+namespace LevelFlat.Features.Feature.SceneContext
 {
     public class GameInstaller : MonoInstaller
     {

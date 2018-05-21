@@ -10,7 +10,7 @@
 using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
 using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts
+namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts
 {
     public class Emission : MonoBehaviour, IGazable
     {

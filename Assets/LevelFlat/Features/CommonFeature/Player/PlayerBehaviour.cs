@@ -1,5 +1,4 @@
-﻿using DefaultNamespace;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 using Zenject;
 
@@ -10,20 +9,20 @@ namespace LevelFlat.Features.CommonFeature.Player
         private int _disablePlayer = 0;
         private const int CanEnable = 0;
 
-        [Inject(Id = PlayerSettingsType.Player)] private GameObject _player;
+        [Inject] private FirstPersonController _firstPersonController;
 
         public void DisableFirstPersonController()
         {
             ++_disablePlayer;
             EnableCursor();
-            _player.GetComponent<FirstPersonController>().enabled = false;
+            _firstPersonController.enabled = false;
         }
 
         public void EnableFirstPersonController()
         {
             --_disablePlayer;
             if (_disablePlayer.Equals(CanEnable))
-                _player.GetComponent<FirstPersonController>().enabled = true;
+                _firstPersonController.enabled = true;
         }
 
         private void EnableCursor()

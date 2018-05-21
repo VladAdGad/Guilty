@@ -1,9 +1,9 @@
-﻿using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task;
-using UnityEngine;
+﻿using LevelFlat.Features.Feature.InteractWithObjects;
+using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
+using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item;
+using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
 
-namespace LevelFlat.Features.Feature.InteractWithObjects.PickupSystemFeature
+namespace LevelFlat.Features.Feature.InteractWith.PickupSystemFeature
 {
     public class PickupObject : Interactable
     {

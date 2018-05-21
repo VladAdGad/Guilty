@@ -1,8 +1,10 @@
-﻿using LevelFlat.Features.Feature.NotebookFeature;
+﻿using LevelFlat.Features.Feature.Notebook.Behaviour.Evidence;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Progress;
+using LevelFlat.Features.Feature.NotebookFeature;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer
+namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence
 {
     public class EvidenceEntity : MonoBehaviour
     {

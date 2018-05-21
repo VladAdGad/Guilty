@@ -1,5 +1,11 @@
-﻿using LevelFlat.Features.CommonFeature.Player;
-using UnityEditor;
+﻿using System.Collections.Generic;
+using LevelFlat.Features.CommonFeature.Player;
+using LevelFlat.Features.Feature.Notebook.Behaviour;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Evidence;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Inventory;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Progress;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Task;
+using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using Zenject;
 
@@ -7,22 +13,18 @@ namespace LevelFlat.Features.Feature.NotebookFeature
 {
     public class NotebookManager : MonoBehaviour
     {
-        [SerializeField] private GameObject _noteBook;
+        // @formatter:off
+        [Inject(Id = NotebookType.Notebook)] private GameObject _noteBook;
+        // @formatter:on
+
         [Inject] private PlayerBehaviour _playerBehaviour;
+        [Inject] private InventoryPage _inventoryPage;
+        [Inject] private EvidencePage _evidencePage;
+        [Inject] private ProgressPage _progressPage;
+        [Inject] private TaskPage _taskPage;
+        [Inject] private List<Page> _pages;
 
-        private InventoryPage _inventoryPage;
-        private EvidencePage _evidencePage;
-        private ProgressPage _progressPage;
-        private TaskPage _taskPage;
-
-        [Inject]
-        private void Construct(InventoryPage inventoryPage, EvidencePage evidencePage, ProgressPage progressPage, TaskPage taskPage)
-        {
-            _inventoryPage = inventoryPage;
-            _evidencePage = evidencePage;
-            _progressPage = progressPage;
-            _taskPage = taskPage;
-        }
+        private void Start() => _pages.ForEach(page => page.Init());
 
         private void Update()
         {

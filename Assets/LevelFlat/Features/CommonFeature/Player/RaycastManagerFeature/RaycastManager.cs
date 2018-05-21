@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using CommonFeature.UtilityCommonFeature;
-using DefaultNamespace;
 using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
+using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using UnityEngine.Assertions;
 using Zenject;
@@ -16,7 +16,10 @@ namespace LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature
         [SerializeField] private float _interactionDistance;
         [SerializeField] private LayerMask _layerMaskInteract;
         [SerializeField] private Camera _camera;
-        [Inject(Id = GuiSocketType.Crosshair)] private GameObject _crosshairObject;
+        
+        // @formatter:off
+        [Inject(Id = GameObjectType.GuiSocket.Crosshair)] private GameObject _crosshairObject;
+        // @formatter:on
         
         private IEnumerable<IGazable> _previousGazeable = new HashSet<IGazable>();
         private readonly Vector3 _position = new Vector3(Screen.width / 2f, Screen.height / 2f, 0f);

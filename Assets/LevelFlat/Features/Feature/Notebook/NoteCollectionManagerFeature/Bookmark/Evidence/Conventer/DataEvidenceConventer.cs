@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer
+namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence.Conventer
 {
     public class DataEvidenceConventer : JsonConverter
     {

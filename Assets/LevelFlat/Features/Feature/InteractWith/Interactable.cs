@@ -1,6 +1,6 @@
-﻿using DefaultNamespace;
-using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
+﻿using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
+using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -11,8 +11,11 @@ namespace LevelFlat.Features.Feature.InteractWithObjects
     {
         [SerializeField] private string _itemName;
         [SerializeField] private KeyCode _activationButton = KeyCode.Mouse1;
-        [Inject(Id = GuiSocketType.Itemname)] private GameObject _itemNameObject;
-
+        
+        // @formatter:off
+        [Inject(Id = GameObjectType.GuiSocket.ItemName)] private GameObject _itemNameObject;
+        // @formatter:on
+        
         public void OnGazeEnter() => ShowInfoOfSeenObject();
 
         public void OnGazeExit() => HideInfoOfSeenObject();
