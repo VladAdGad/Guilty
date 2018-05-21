@@ -23414,7 +23414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56409ed2d7d7e094d897ab9d155069da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionDistance: 1
+  _interactionDistance: 1.5
   _layerMaskInteract:
     serializedVersion: 2
     m_Bits: 256
