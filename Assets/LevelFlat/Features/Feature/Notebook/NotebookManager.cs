@@ -8,18 +8,18 @@ namespace LevelFlat.Features.Feature.NotebookFeature
     {
         [SerializeField] private GameObject _noteBook;
 
-        private InventoryPage _inventoryManager;
-        private EvidencePage _evidenceManager;
+        private InventoryPage _inventoryPage;
+        private EvidencePage _evidencePage;
         private ProgressPage _progressPage;
         private TaskPage _taskPage;
 
         private PlayerBehaviour _playerBehaviour;
 
         [Inject]
-        private void Construct(InventoryPage inventoryManager, EvidencePage evidenceManager, ProgressPage progressPage, PlayerBehaviour playerBehaviour, TaskPage taskPage)
+        private void Construct(InventoryPage inventoryPage, EvidencePage evidencePage, ProgressPage progressPage, PlayerBehaviour playerBehaviour, TaskPage taskPage)
         {
-            _inventoryManager = inventoryManager;
-            _evidenceManager = evidenceManager;
+            _inventoryPage = inventoryPage;
+            _evidencePage = evidencePage;
             _progressPage = progressPage;
             _playerBehaviour = playerBehaviour;
             _taskPage = taskPage;
@@ -33,8 +33,8 @@ namespace LevelFlat.Features.Feature.NotebookFeature
                 {
                     _playerBehaviour.DisableFirstPersonController();
                     _noteBook.SetActive(true);
-                    _inventoryManager.UpdatePage();
-                    _evidenceManager.UpdatePage();
+                    _inventoryPage.UpdatePage();
+                    _evidencePage.UpdatePage();
                     _progressPage.UpdatePage();
                     _taskPage.UpdatePage();
                 }
