@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Evidence;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Inventory;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Progress;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Task;
 using LevelFlat.Features.Feature.NotebookFeature;
-using LevelFlat.Features.Feature.NotebookFeature.Evidence;
+using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+using UnityEngine;
 using Zenject;
 
-namespace DefaultNamespace
+namespace LevelFlat.Features.Feature.SceneContext
 {
     public class NotebookInstaller : MonoInstaller
     {
@@ -12,6 +17,8 @@ namespace DefaultNamespace
 
         public override void InstallBindings()
         {
+            Container.BindInstance(NotebookSettingsScene.Notebook).WithId(NotebookType.Notebook);
+            
             Container.BindInstance(NotebookSettingsScene.InventoryPage).AsSingle();
             Container.BindInstance(NotebookSettingsScene.EvidencePage).AsSingle();
             Container.BindInstance(NotebookSettingsScene.TaskPage).AsSingle();
@@ -21,12 +28,18 @@ namespace DefaultNamespace
             Container.BindInstance(NotebookSettingsScene.ButtonsEvidenceChangers).AsSingle();
             Container.BindInstance(NotebookSettingsScene.SliderEvidenceChangers).AsSingle();
             Container.BindInstance(NotebookSettingsScene.TaskTextChangers).AsSingle();
+            
+            Container.BindInstance(NotebookSettingsScene.TurningPage).WithId(AudioSourceType.Notebook.TurningPage);
         }
     }
 
     [Serializable]
     public class NotebookSettings
     {
+        [Header("Prefabs")]
+        public GameObject Notebook;
+        
+        [Header("Scripts")]
         public InventoryPage InventoryPage;
         public EvidencePage EvidencePage;
         public TaskPage TaskPage;
@@ -36,5 +49,8 @@ namespace DefaultNamespace
         public List<ButtonEvidenceChanger> ButtonsEvidenceChangers;
         public List<SliderEvidenceChanger> SliderEvidenceChangers;
         public List<TaskTextChanger> TaskTextChangers;
+        
+        [Header("AudioSources")] 
+        public AudioSource TurningPage;
     }
 }

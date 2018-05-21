@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer;
+using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.NotebookFeature
+namespace LevelFlat.Features.Feature.Notebook.Behaviour.Task
 {
     public class TaskPage : MonoBehaviour
     {

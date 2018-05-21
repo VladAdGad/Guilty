@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using LevelFlat.Features.Feature.NotebookFeature.Evidence;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer;
+using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.NotebookFeature
+namespace LevelFlat.Features.Feature.Notebook.Behaviour.Evidence
 {
     public class EvidencePage : MonoBehaviour
     {

@@ -1,9 +1,9 @@
 ﻿using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task;
+using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
+using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
 using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.InteractObject
+namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.InteractObject
 {
     public class ExamineTargetUpdateNote : MonoBehaviour, IGazable
     {

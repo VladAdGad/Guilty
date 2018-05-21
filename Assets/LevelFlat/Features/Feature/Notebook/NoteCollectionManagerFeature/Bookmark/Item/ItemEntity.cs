@@ -1,8 +1,9 @@
-﻿using LevelFlat.Features.Feature.NotebookFeature;
+﻿using LevelFlat.Features.Feature.Notebook.Behaviour.Inventory;
+using LevelFlat.Features.Feature.NotebookFeature;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer
+namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item
 {
     public class ItemEntity : MonoBehaviour
     {

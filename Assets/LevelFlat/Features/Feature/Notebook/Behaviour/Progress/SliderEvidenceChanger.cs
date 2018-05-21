@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer;
+using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace LevelFlat.Features.Feature.NotebookFeature
+namespace LevelFlat.Features.Feature.Notebook.Behaviour.Progress
 {
     public class SliderEvidenceChanger : MonoBehaviour
     {

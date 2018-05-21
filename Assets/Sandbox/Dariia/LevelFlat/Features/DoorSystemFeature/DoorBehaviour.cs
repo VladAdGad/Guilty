@@ -7,8 +7,11 @@ namespace InteractableObjects.Doors
     {
         [SerializeField] private AudioSource _closingDoorAudioSource;
         [SerializeField] private AudioSource _openingDoorAudioSource;
-        [SerializeField] private Animator _animator;
         [SerializeField] private bool _isDoorClosed = true;
+
+        private Animator _animator;
+
+        private void Start() => _animator = GetComponentInParent<Animator>();
 
         public override void OnPress()
         {
@@ -39,7 +42,7 @@ namespace InteractableObjects.Doors
             if (_openingDoorAudioSource.isPlaying || _closingDoorAudioSource.isPlaying) return;
             _closingDoorAudioSource.Play();
         }
-        
+
         private void PlayOpeningSound()
         {
             if (_openingDoorAudioSource.isPlaying || _closingDoorAudioSource.isPlaying) return;

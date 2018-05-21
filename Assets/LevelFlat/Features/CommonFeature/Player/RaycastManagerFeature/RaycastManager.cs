@@ -4,6 +4,7 @@ using System.Linq;
 using CommonFeature.UtilityCommonFeature;
 using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
+using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using UnityEngine.Assertions;
 using Zenject;
@@ -15,8 +16,11 @@ namespace LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature
         [SerializeField] private float _interactionDistance;
         [SerializeField] private LayerMask _layerMaskInteract;
         [SerializeField] private Camera _camera;
-        [Inject] private CrosshairManager _crosshairManager;
-
+        
+        // @formatter:off
+        [Inject(Id = GameObjectType.GuiSocket.Crosshair)] private GameObject _crosshairObject;
+        // @formatter:on
+        
         private IEnumerable<IGazable> _previousGazeable = new HashSet<IGazable>();
         private readonly Vector3 _position = new Vector3(Screen.width / 2f, Screen.height / 2f, 0f);
 
@@ -32,12 +36,12 @@ namespace LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature
 
             if (!Physics.Raycast(_camera.ScreenPointToRay(_position), out raycastHit, _interactionDistance, _layerMaskInteract.value))
             {
-                _crosshairManager.GetComponent<CrosshairManager>().ActivateNormalCosshair();
+                _crosshairObject.GetComponent<CrosshairManager>().ActivateNormalCosshair();
                 MoveEyesightOn(new List<IGazable>());
             }
             else
             {
-                _crosshairManager.GetComponent<CrosshairManager>().ActivateInteractCrosshair();
+                _crosshairObject.GetComponent<CrosshairManager>().ActivateInteractCrosshair();
             }
 
             return Optional<RaycastHit>.Of(raycastHit);

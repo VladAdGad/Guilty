@@ -1,9 +1,8 @@
 ﻿using System.Linq;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task
+namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task
 {
     public class CreateTaskEntity : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using UnityEngine;
 
-namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark
+namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark
 {
     public class ContainerInfo<T> : JsonConverterSingleton where T : new()
     {
