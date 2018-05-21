@@ -7,6 +7,7 @@
 
 //This script manages the informations of the interactable objects, such as the name
 
+using DefaultNamespace;
 using LevelFlat.Features.CommonFeature.Player;
 using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts;
@@ -20,25 +21,15 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
     {
         [SerializeField] private GameObject _targetExaminableObject;
 
-        private CrosshairManager _crosshairObject;
-        private UIFade _examineObjectInfoGui;
-        private RaycastManager _examineRaycastManager;
-        private ExamineRotation _examineRotation;
-        private PlayerBehaviour _playerBehaviour;
-        private Blur _blur;
+        // @formatter:off
+        [Inject(Id = GuiSocketType.Crosshair)] private GameObject _crosshairObject;
+        [Inject(Id = GuiSocketType.Examinecontrol)] private GameObject _ecamineControlObject;
+        [Inject(Id = PlayerSettingsType.MainCamera)] private GameObject _mainCamera;
+        [Inject(Id = PlayerSettingsType.ExaminableCamera)] private GameObject _examinableCamera;
+        [Inject] private PlayerBehaviour _playerBehaviour;
+        // @formatter:on
 
         private bool _isEximiningObject;
-
-        [Inject]
-        private void Construct(CrosshairManager crosshairObject, UIFade examineObjectInfoGui, RaycastManager examineRaycastManager, ExamineRotation examineRotation, PlayerBehaviour playerBehaviour, Blur blur)
-        {
-            _crosshairObject = crosshairObject;
-            _examineObjectInfoGui = examineObjectInfoGui;
-            _examineRaycastManager = examineRaycastManager;
-            _examineRotation = examineRotation;
-            _playerBehaviour = playerBehaviour;
-            _blur = blur;
-        }
 
         public override void OnPress()
         {
@@ -52,22 +43,22 @@ namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeatur
 
         private void StartExamineObject()
         {
-            _examineRotation.StartRotateObject(_targetExaminableObject);
+            _examinableCamera.GetComponent<ExamineRotation>().StartRotateObject(_targetExaminableObject);
             _playerBehaviour.DisableFirstPersonController();
-            _blur.enabled = true;
-            _crosshairObject.DisableCrosshair();
-            _examineObjectInfoGui.FadeIn();
-            _examineRaycastManager.enabled = true;
+            _mainCamera.GetComponent<Blur>().enabled = true;
+            _crosshairObject.GetComponent<CrosshairManager>().DisableCrosshair();
+            _ecamineControlObject.GetComponent<UIFade>().FadeIn();
+            _examinableCamera.GetComponent<RaycastManager>().enabled = true;
         }
 
         private void StopExamineObject()
         {
-            _examineRotation.StopRotateObject(_targetExaminableObject);
+            _examinableCamera.GetComponent<ExamineRotation>().StopRotateObject(_targetExaminableObject);
             _playerBehaviour.EnableFirstPersonController();
-            _blur.enabled = false;
-            _crosshairObject.EnableCrosshair();
-            _examineObjectInfoGui.FadeOut();
-            _examineRaycastManager.enabled = false;
+            _mainCamera.GetComponent<Blur>().enabled = false;
+            _crosshairObject.GetComponent<CrosshairManager>().EnableCrosshair();
+            _ecamineControlObject.GetComponent<UIFade>().FadeOut();
+            _examinableCamera.GetComponent<RaycastManager>().enabled = false;
         }
 
         private void ChangeExaminingState() => _isEximiningObject = !_isEximiningObject;

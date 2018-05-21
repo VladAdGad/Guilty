@@ -1,15 +1,17 @@
-﻿using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
+﻿using DefaultNamespace;
+using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace LevelFlat.Features.Feature.InteractWithObjects
 {
-    public abstract class Interactable: MonoBehaviour, IGazable, IPressable
+    public abstract class Interactable : MonoBehaviour, IGazable, IPressable
     {
         [SerializeField] private string _itemName;
         [SerializeField] private KeyCode _activationButton = KeyCode.Mouse1;
-        [SerializeField] private GameObject _itemNameText;
+        [Inject(Id = GuiSocketType.Itemname)] private GameObject _itemNameObject;
 
         public void OnGazeEnter() => ShowInfoOfSeenObject();
 
@@ -23,13 +25,13 @@ namespace LevelFlat.Features.Feature.InteractWithObjects
 
         private void ShowInfoOfSeenObject()
         {
-            _itemNameText.GetComponent<Text>().text = _itemName;
-            _itemNameText.GetComponent<UIFade>().FadeIn();
+            _itemNameObject.GetComponent<Text>().text = _itemName;
+            _itemNameObject.GetComponent<UIFade>().FadeIn();
         }
 
         private void HideInfoOfSeenObject()
         {
-            _itemNameText.GetComponent<UIFade>().FadeOut();
+            _itemNameObject.GetComponent<UIFade>().FadeOut();
         }
     }
 }

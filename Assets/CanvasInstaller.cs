@@ -6,17 +6,20 @@ using Zenject;
 
 public class CanvasInstaller : MonoInstaller<CanvasInstaller>
 {
-    [SerializeField] public GuiSettings GuiSettingsScene;
-    [SerializeField] private NotebookInstaller _notebookInstaller;
+    [SerializeField] public GuiSocketsSettings GuiSocketsSettingsScene;
 
     public override void InstallBindings()
     {
-        Container.BindInstance(GuiSettingsScene.CrosshairManager).AsSingle();
+        Container.BindInstance(GuiSocketsSettingsScene.Crosshair).WithId(GuiSocketType.Crosshair);
+        Container.BindInstance(GuiSocketsSettingsScene.ItemName).WithId(GuiSocketType.Itemname);
+        Container.BindInstance(GuiSocketsSettingsScene.ExamineControl).WithId(GuiSocketType.Examinecontrol);
     }
 
     [Serializable]
-    public class GuiSettings
+    public class GuiSocketsSettings
     {
-        public CrosshairManager CrosshairManager;
+        public GameObject Crosshair;
+        public GameObject ItemName;
+        public GameObject ExamineControl;
     }
 }
