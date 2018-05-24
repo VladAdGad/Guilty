@@ -1,7 +1,9 @@
-﻿using LevelFlat.Features.Feature.InteractWithObjects;
+﻿using DefaultNamespace;
+using LevelFlat.Features.Feature.InteractWithObjects;
 using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
 using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item;
 using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
+using UnityEngine;
 
 namespace LevelFlat.Features.Feature.InteractWith.PickupSystemFeature
 {
@@ -11,6 +13,7 @@ namespace LevelFlat.Features.Feature.InteractWith.PickupSystemFeature
         private CreateTaskEntity _createTaskEntity;
         private EvidenceEntity _evidenceEntity;
         private ItemEntity _itemEntity;
+        private UserMonolog _userMonolog;
 
         private void Start()
         {
@@ -18,6 +21,7 @@ namespace LevelFlat.Features.Feature.InteractWith.PickupSystemFeature
             _createTaskEntity = GetComponent<CreateTaskEntity>();
             _evidenceEntity = GetComponent<EvidenceEntity>();
             _itemEntity = GetComponent<ItemEntity>();
+            _userMonolog = GetComponent<UserMonolog>();
         }
 
         public override void OnPress()
@@ -33,6 +37,9 @@ namespace LevelFlat.Features.Feature.InteractWith.PickupSystemFeature
 
             if (_itemEntity != null)
                 _itemEntity.AddItem();
+
+            if (_userMonolog != null)
+                _userMonolog.PlayMonolog();
 
             Destroy(gameObject);
         }
