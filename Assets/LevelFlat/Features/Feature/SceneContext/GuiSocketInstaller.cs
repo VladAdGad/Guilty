@@ -5,7 +5,7 @@ using Zenject;
 
 namespace LevelFlat.Features.Feature.SceneContext
 {
-    public class CanvasInstaller : MonoInstaller<CanvasInstaller>
+    public class GuiSocketInstaller : MonoInstaller<GuiSocketInstaller>
     {
         [SerializeField] public GuiSocketsSettings GuiSocketsSettingsScene;
 
