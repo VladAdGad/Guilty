@@ -5,7 +5,7 @@ using Zenject;
 
 namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task
 {
-    public class CreateTaskEntity : MonoBehaviour
+    public class CreateTaskEntity : MonoBehaviour , IInitializable
     {
         [SerializeField] private TextAsset _jsonDataTask;
         [Inject] private DataTaskProxy _dataTaskProxy;
@@ -45,7 +45,7 @@ namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookm
             }
         }
         
-//        public void Initialize() => _userNotification.Listen(UpdateTask);
-//        public void Dispose() => _userNotification.Unlisten(UpdateTask);
+        public void Initialize() => _userNotification.Listen(() => UpdateTask(_dataTask));
+        public void Dispose() => _userNotification.Unlisten(() => UpdateTask(_dataTask));
     }
 }
