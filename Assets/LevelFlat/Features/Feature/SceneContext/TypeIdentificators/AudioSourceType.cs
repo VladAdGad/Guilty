@@ -4,7 +4,8 @@
     {
         public enum Notebook
         {
-            TurningPage
+            TurningPage,
+            NotifyAboutUpdate
         }
     }
 }

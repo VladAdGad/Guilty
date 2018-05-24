@@ -33,7 +33,7 @@ namespace LevelFlat.Features.Feature.InteractWith.PickupSystemFeature
 
             if (_itemEntity != null)
                 _itemEntity.AddItem();
-            
+
             Destroy(gameObject);
         }
     }
