@@ -18,7 +18,7 @@ namespace LevelFlat.Features.Feature.SceneContext
         public override void InstallBindings()
         {
             Container.BindInstance(NotebookSettingsScene.Notebook).WithId(NotebookType.Notebook);
-            
+
             Container.BindInstance(NotebookSettingsScene.InventoryPage).AsSingle();
             Container.BindInstance(NotebookSettingsScene.EvidencePage).AsSingle();
             Container.BindInstance(NotebookSettingsScene.TaskPage).AsSingle();
@@ -28,7 +28,7 @@ namespace LevelFlat.Features.Feature.SceneContext
             Container.BindInstance(NotebookSettingsScene.ButtonsEvidenceChangers).AsSingle();
             Container.BindInstance(NotebookSettingsScene.SliderEvidenceChangers).AsSingle();
             Container.BindInstance(NotebookSettingsScene.TaskTextChangers).AsSingle();
-            
+
             Container.BindInstance(NotebookSettingsScene.TurningPage).WithId(AudioSourceType.Notebook.TurningPage);
         }
     }
@@ -36,6 +36,7 @@ namespace LevelFlat.Features.Feature.SceneContext
     [Serializable]
     public class NotebookSettings
     {
+        // @formatter:off
         [Header("Prefabs")]
         public GameObject Notebook;
         
@@ -52,5 +53,6 @@ namespace LevelFlat.Features.Feature.SceneContext
         
         [Header("AudioSources")] 
         public AudioSource TurningPage;
+        // @formatter:on
     }
 }
