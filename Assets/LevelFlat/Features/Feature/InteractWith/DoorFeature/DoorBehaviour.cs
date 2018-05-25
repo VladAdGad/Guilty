@@ -1,24 +1,28 @@
 ﻿using LevelFlat.Features.Feature.InteractWithObjects;
 using UnityEngine;
 
-namespace InteractableObjects.Doors
+namespace LevelFlat.Features.Feature.InteractWith.DoorFeature
 {
     public class DoorBehaviour : Interactable
     {
         [SerializeField] private AudioSource _closingDoorAudioSource;
         [SerializeField] private AudioSource _openingDoorAudioSource;
-        [SerializeField] private bool _isDoorClosed = true;
 
+        private bool _isOpen;
         private Animator _animator;
 
-        private void Start() => _animator = GetComponentInParent<Animator>();
+        private void Start()
+        {
+            _animator = GetComponentInParent<Animator>();
+            _isOpen = _animator.GetBool("isOpen");
+        }
 
         public override void OnPress()
         {
-            if (_isDoorClosed)
-                OpenDoor();
-            else
+            if (_isOpen)
                 CloseDoor();
+            else
+                OpenDoor();
 
             ChangeStateOfDoor();
         }
@@ -35,7 +39,7 @@ namespace InteractableObjects.Doors
             PlayClosingSound();
         }
 
-        private void ChangeStateOfDoor() => _isDoorClosed = !_isDoorClosed;
+        private void ChangeStateOfDoor() => _isOpen = !_isOpen;
 
         private void PlayClosingSound()
         {

@@ -9,14 +9,14 @@ namespace LevelFlat.Features.Feature.InteractWithObjects
 {
     public abstract class Interactable : MonoBehaviour, IGazable, IPressable
     {
-        [SerializeField] private string _itemName;
+        [SerializeField] protected string ItemName;
         [SerializeField] private KeyCode _activationButton = KeyCode.Mouse1;
         
         // @formatter:off
-        [Inject(Id = GameObjectType.GuiSocket.ItemName)] private GameObject _itemNameObject;
+        [Inject(Id = GameObjectType.GuiSocket.ItemName)] protected GameObject ItemNameObject;
         // @formatter:on
         
-        public void OnGazeEnter() => ShowInfoOfSeenObject();
+        public virtual void OnGazeEnter() => ShowInfoOfSeenObject(ItemName);
 
         public void OnGazeExit() => HideInfoOfSeenObject();
 
@@ -26,15 +26,15 @@ namespace LevelFlat.Features.Feature.InteractWithObjects
         {
         }
 
-        private void ShowInfoOfSeenObject()
+        protected void ShowInfoOfSeenObject(string itemName)
         {
-            _itemNameObject.GetComponent<Text>().text = _itemName;
-            _itemNameObject.GetComponent<UIFade>().FadeIn();
+            ItemNameObject.GetComponent<Text>().text = itemName;
+            ItemNameObject.GetComponent<UIFade>().FadeIn();
         }
 
         private void HideInfoOfSeenObject()
         {
-            _itemNameObject.GetComponent<UIFade>().FadeOut();
+            ItemNameObject.GetComponent<UIFade>().FadeOut();
         }
     }
 }
