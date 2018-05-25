@@ -1,5 +1,5 @@
-﻿using DefaultNamespace;
-using LevelFlat.Features.Feature.Notebook.Behaviour.Inventory;
+﻿using LevelFlat.Features.Feature.Notebook.Behaviour.Inventory;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Notify;
 using UnityEngine;
 using Zenject;
 

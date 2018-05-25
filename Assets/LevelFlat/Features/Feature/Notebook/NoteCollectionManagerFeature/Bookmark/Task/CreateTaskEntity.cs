@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using DefaultNamespace;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Notify;
 using UnityEngine;
 using Zenject;
 

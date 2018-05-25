@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-namespace DefaultNamespace
+namespace LevelFlat.Features.CommonFeature.Player.Monolog
 {
-    public class UserMonolog : MonoBehaviour
+    public class PlayerMonolog : MonoBehaviour
     {
         [SerializeField] private AudioSource _monologSound;
 
