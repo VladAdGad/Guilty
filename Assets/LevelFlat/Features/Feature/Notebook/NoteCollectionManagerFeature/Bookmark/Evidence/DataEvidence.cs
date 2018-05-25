@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using UnityEngine;
 
-namespace LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer
+namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence
 {
     public class DataEvidence
     {

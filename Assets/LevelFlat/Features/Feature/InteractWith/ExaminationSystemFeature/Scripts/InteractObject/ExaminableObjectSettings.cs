@@ -9,7 +9,7 @@
 
 using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.InteractObject
+namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.InteractObject
 {
 	public class ExaminableObjectSettings : MonoBehaviour
 	{

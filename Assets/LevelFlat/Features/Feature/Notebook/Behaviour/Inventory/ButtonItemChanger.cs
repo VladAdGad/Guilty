@@ -1,8 +1,7 @@
-﻿using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.PickupItem.Conventer;
-using UnityEngine;
+﻿using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item;
 using UnityEngine.UI;
 
-namespace LevelFlat.Features.Feature.NotebookFeature
+namespace LevelFlat.Features.Feature.Notebook.Behaviour.Inventory
 {
     public class ButtonItemChanger : ButtonChanger
     {

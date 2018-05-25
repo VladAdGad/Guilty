@@ -1,12 +1,17 @@
-﻿using UnityEngine;
+﻿using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
-namespace LevelFlat.Features.Feature.NotebookFeature
+namespace LevelFlat.Features.Feature.Notebook.Behaviour
 {
     public class Page : MonoBehaviour
     {
         [SerializeField] private Button _bookmark;
-        [SerializeField] private AudioSource _audioSource;
+
+        // @formatter:off
+        [Inject(Id = AudioSourceType.Notebook.TurningPage)] private AudioSource _audioSource;
+        // @formatter:on
 
         private const int LastSibling = 2;
 

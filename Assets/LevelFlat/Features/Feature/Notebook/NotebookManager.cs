@@ -1,4 +1,11 @@
-﻿using LevelFlat.Features.CommonFeature.Player;
+﻿using System.Collections.Generic;
+using LevelFlat.Features.CommonFeature.Player;
+using LevelFlat.Features.Feature.Notebook.Behaviour;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Evidence;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Inventory;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Progress;
+using LevelFlat.Features.Feature.Notebook.Behaviour.Task;
+using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using Zenject;
 
@@ -6,24 +13,18 @@ namespace LevelFlat.Features.Feature.NotebookFeature
 {
     public class NotebookManager : MonoBehaviour
     {
-        [SerializeField] private GameObject _noteBook;
+        // @formatter:off
+        [Inject(Id = NotebookType.Notebook)] private GameObject _noteBook;
+        // @formatter:on
 
-        private InventoryPage _inventoryManager;
-        private EvidencePage _evidenceManager;
-        private ProgressPage _progressPage;
-        private TaskPage _taskPage;
+        [Inject] private PlayerBehaviour _playerBehaviour;
+        [Inject] private InventoryPage _inventoryPage;
+        [Inject] private EvidencePage _evidencePage;
+        [Inject] private ProgressPage _progressPage;
+        [Inject] private TaskPage _taskPage;
+        [Inject] private List<Page> _pages;
 
-        private PlayerBehaviour _playerBehaviour;
-
-        [Inject]
-        private void Construct(InventoryPage inventoryManager, EvidencePage evidenceManager, ProgressPage progressPage, PlayerBehaviour playerBehaviour, TaskPage taskPage)
-        {
-            _inventoryManager = inventoryManager;
-            _evidenceManager = evidenceManager;
-            _progressPage = progressPage;
-            _playerBehaviour = playerBehaviour;
-            _taskPage = taskPage;
-        }
+        private void Start() => _pages.ForEach(page => page.Init());
 
         private void Update()
         {
@@ -33,8 +34,8 @@ namespace LevelFlat.Features.Feature.NotebookFeature
                 {
                     _playerBehaviour.DisableFirstPersonController();
                     _noteBook.SetActive(true);
-                    _inventoryManager.UpdatePage();
-                    _evidenceManager.UpdatePage();
+                    _inventoryPage.UpdatePage();
+                    _evidencePage.UpdatePage();
                     _progressPage.UpdatePage();
                     _taskPage.UpdatePage();
                 }

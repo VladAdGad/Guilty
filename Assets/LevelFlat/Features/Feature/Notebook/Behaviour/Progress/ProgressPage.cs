@@ -1,12 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Evidence.Conventer;
-using LevelFlat.Features.Feature.NoteManagerFeature.Bookmark.Task.Conventer;
+using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.NotebookFeature
+namespace LevelFlat.Features.Feature.Notebook.Behaviour.Progress
 {
     public class ProgressPage : MonoBehaviour
     {
