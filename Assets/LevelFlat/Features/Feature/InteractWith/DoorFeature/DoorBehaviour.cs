@@ -10,11 +10,12 @@ namespace LevelFlat.Features.Feature.InteractWith.DoorFeature
 
         private bool _isOpen;
         private Animator _animator;
+        private const string NameOfParameter = "isOpen";
 
         private void Start()
         {
             _animator = GetComponentInParent<Animator>();
-            _isOpen = _animator.GetBool("isOpen");
+            _isOpen = _animator.GetBool(NameOfParameter);
         }
 
         public override void OnPress()
@@ -29,13 +30,13 @@ namespace LevelFlat.Features.Feature.InteractWith.DoorFeature
 
         private void OpenDoor()
         {
-            _animator.SetBool("isOpen", true);
+            _animator.SetBool(NameOfParameter, true);
             PlayOpeningSound();
         }
 
         private void CloseDoor()
         {
-            _animator.SetBool("isOpen", false);
+            _animator.SetBool(NameOfParameter, false);
             PlayClosingSound();
         }
 
