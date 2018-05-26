@@ -2,13 +2,14 @@
 using Sandbox.Vlad.BetweenScenes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Zenject;
 
 public class LevelChanger : MonoBehaviour
 {
-    [SerializeField] private FadeAnimation _fadeAnimation;
+    [Inject] private FadeAnimation _fadeAnimation;
     private const int NextScene = 1;
-    
-    private void Update()
+
+    private void Update() //TODO: remove after implmentings real rules of change scene
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -19,7 +20,7 @@ public class LevelChanger : MonoBehaviour
     private IEnumerator LoadNextScene()
     {
         _fadeAnimation.StartAnimation();
-        yield return new WaitForSeconds(AnimationManager.GetAnimationClipFromAnimatorByName(_fadeAnimation.Animator, FadeAnimation.NameOfAnimation).length);
+        yield return new WaitForSeconds(AnimationManager.GetAnimationClipFromAnimatorByName(_fadeAnimation.LevelChangerAnimator, FadeAnimation.NameOfAnimation).length);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + NextScene);
     }
     
