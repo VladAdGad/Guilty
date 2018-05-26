@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Zenject;
 
-namespace Sandbox.Vlad.BetweenScenes
+namespace LevelFlat.Features.Feature.LevelChanger
 {
     public class FadeAnimation
     {
