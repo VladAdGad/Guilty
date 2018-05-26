@@ -1,35 +1,26 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using Sandbox.Vlad.BetweenScenes;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelChanger : MonoBehaviour
 {
-    private Animator _animator;
-    private int _loadLevel;
+    [SerializeField] private FadeAnimation _fadeAnimation;
     private const int NextScene = 1;
-
-    private void Start() => _animator = GetComponent<Animator>();
-
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            LoadNextScene();
+            StartCoroutine(LoadNextScene());
         }
     }
 
-    public void FadeToLevel(int levelIndex)
+    private IEnumerator LoadNextScene()
     {
-        _loadLevel = levelIndex;
-        _animator.SetTrigger("FadeOut");
-    }
-
-    public void OnFadeComplete()
-    {
-        SceneManager.LoadScene(_loadLevel);
-    }
-
-    private void LoadNextScene()
-    {
+        _fadeAnimation.StartAnimation();
+        yield return new WaitForSeconds(AnimationManager.GetAnimationClipFromAnimatorByName(_fadeAnimation.Animator, FadeAnimation.NameOfAnimation).length);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + NextScene);
     }
+    
 }
