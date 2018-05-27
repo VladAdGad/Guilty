@@ -1,10 +1,9 @@
 ﻿using System;
 using LevelFlat.Features.Feature.LevelChanger;
-using Sandbox.Vlad.BetweenScenes;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.SceneContext
+namespace CommonFeature.SceneContext
 {
     public class LevelInstaller : MonoInstaller<LevelInstaller>
     {

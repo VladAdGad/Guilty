@@ -1,10 +1,13 @@
-﻿using UnityEngine;
+﻿using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+using UnityEngine;
+using Zenject;
+using GameObjectType = CommonFeature.SceneContext.TypeIdentificators.GameObjectType;
 
-namespace Gui.Menu
+namespace CommonFeature.UI.Pause
 {
     public class PauseGameManager : MonoBehaviour
     {
-        [SerializeField] private GameObject _pauseGameObject;
+        [Inject(Id = GameObjectType.Ui.PauseGame)] private GameObject _pauseGameObject;
 
         private PauseGameBehaviour _pauseGameBehaviour;
 

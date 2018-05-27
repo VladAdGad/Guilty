@@ -1,7 +1,8 @@
-﻿using LevelFlat.Features.Feature.LevelChanger;
+﻿using Gui.Menu;
+using LevelFlat.Features.Feature.LevelChanger;
 using UnityEngine;
 
-namespace Gui.Menu
+namespace CommonFeature.UI.Credits
 {
     public class CreditsBehaviour : MonoBehaviour
     {

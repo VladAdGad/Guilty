@@ -2,7 +2,7 @@
 using UnityEngine;
 using Zenject;
 
-namespace Gui.Menu
+namespace CommonFeature.UI.Pause
 {
     public class PauseGameBehaviour : MonoBehaviour
     {

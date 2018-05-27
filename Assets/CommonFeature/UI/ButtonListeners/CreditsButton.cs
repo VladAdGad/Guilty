@@ -1,8 +1,9 @@
-﻿using LevelFlat.Features.Feature.LevelChanger;
+﻿using Gui.Menu;
+using LevelFlat.Features.Feature.LevelChanger;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Gui.Menu
+namespace CommonFeature.UI.ButtonListeners
 {
     public class CreditsButton : MonoBehaviour
     {

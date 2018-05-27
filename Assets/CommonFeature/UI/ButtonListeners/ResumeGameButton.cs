@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using CommonFeature.UI.Pause;
+using UnityEngine;
 using UnityEngine.UI;
 
-namespace Gui.Menu
+namespace CommonFeature.UI.ButtonListeners
 {
     public class ResumeGameButton: MonoBehaviour
     {
