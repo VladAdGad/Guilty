@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Gui.Menu;
 using Sandbox.Vlad.BetweenScenes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -25,6 +26,7 @@ namespace LevelFlat.Features.Feature.LevelChanger
             yield return new WaitForSeconds(AnimationManager.GetAnimationClipFromAnimatorByName(_fadeAnimation.LevelChangerAnimator, FadeAnimation.NameOfAnimation).length);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + NextScene);
         }
-    
+        
+        public static void LoadIndexScene(SceneIndex indexScene) => SceneManager.LoadScene((int) indexScene);
     }
 }
