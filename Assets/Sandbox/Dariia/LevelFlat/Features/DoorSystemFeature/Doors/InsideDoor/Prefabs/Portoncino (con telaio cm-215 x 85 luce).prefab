@@ -3480,10 +3480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849802884ff6bd448ee392bc2264960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemName: Door
+  ItemName: 
   _activationButton: 324
-  _itemNameText: {fileID: 0}
   _closingDoorAudioSource: {fileID: 82337902894101456}
   _openingDoorAudioSource: {fileID: 82072806292139212}
-  _animator: {fileID: 95526210696990604}
-  _isDoorClosed: 1
