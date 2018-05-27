@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: 91255631e20587e428f88d400f2ac50b
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 05 Custo10
+    100002: 05 Custo11
+    100004: 05 Custo12
+    100006: 05 Custo13
+    100008: 05 Custo14
+    100010: 05 Custo15
+    100012: 05 Custo16
+    100014: 05 Custo17
+    100016: 05 Custo18
+    100018: 05 Custo19
+    100020: 05 Custo20
+    100022: 05 Custo21
+    100024: 05 Custo22
+    100026: 05 Custo23
+    100028: 05 Custo24
+    100030: '05 Custom '
+    100032: 05 Custom0
+    100034: 05 Custom1
+    100036: 05 Custom2
+    100038: 05 Custom3
+    100040: 05 Custom4
+    100042: 05 Custom5
+    100044: 05 Custom6
+    100046: 05 Custom7
+    100048: 05 Custom8
+    100050: 05 Custom9
+    100052: //RootNode
+    100054: Camera001
+    100056: Camera001.target
+    400000: 05 Custo10
+    400002: 05 Custo11
+    400004: 05 Custo12
+    400006: 05 Custo13
+    400008: 05 Custo14
+    400010: 05 Custo15
+    400012: 05 Custo16
+    400014: 05 Custo17
+    400016: 05 Custo18
+    400018: 05 Custo19
+    400020: 05 Custo20
+    400022: 05 Custo21
+    400024: 05 Custo22
+    400026: 05 Custo23
+    400028: 05 Custo24
+    400030: '05 Custom '
+    400032: 05 Custom0
+    400034: 05 Custom1
+    400036: 05 Custom2
+    400038: 05 Custom3
+    400040: 05 Custom4
+    400042: 05 Custom5
+    400044: 05 Custom6
+    400046: 05 Custom7
+    400048: 05 Custom8
+    400050: 05 Custom9
+    400052: //RootNode
+    400054: Camera001
+    400056: Camera001.target
+    2100000: Cover 1
+    2100002: Cover 2
+    2100004: Cover 3
+    2100006: Cover 4_
+    2100008: Cover 5
+    2100010: Cover 6
+    2100012: Cover 7
+    2100014: Cover 8
+    2100016: Cover 9
+    2100018: Cover 10
+    2100020: Cover 11
+    2100022: Cover 12
+    2100024: Cover 13
+    2100026: Cover 14
+    2100028: Cover 15
+    2100030: Cover 16
+    2100032: Cover 17
+    2100034: Cover 18
+    2100036: Cover 19
+    2100038: Cover 20
+    2100040: Cover 21
+    2100042: Cover 22
+    2100044: Cover 23
+    2100046: Cover 24
+    2100048: Cover 25
+    2100050: pages 1
+    2100052: pages 2
+    2300000: 05 Custo10
+    2300002: 05 Custo11
+    2300004: 05 Custo12
+    2300006: 05 Custo13
+    2300008: 05 Custo14
+    2300010: 05 Custo15
+    2300012: 05 Custo16
+    2300014: 05 Custo17
+    2300016: 05 Custo18
+    2300018: 05 Custo19
+    2300020: 05 Custo20
+    2300022: 05 Custo21
+    2300024: 05 Custo22
+    2300026: 05 Custo23
+    2300028: 05 Custo24
+    2300030: 05 Custom0
+    2300032: 05 Custom1
+    2300034: 05 Custom2
+    2300036: 05 Custom3
+    2300038: 05 Custom4
+    2300040: 05 Custom5
+    2300042: 05 Custom6
+    2300044: 05 Custom7
+    2300046: 05 Custom8
+    2300048: 05 Custom9
+    3300000: 05 Custo10
+    3300002: 05 Custo11
+    3300004: 05 Custo12
+    3300006: 05 Custo13
+    3300008: 05 Custo14
+    3300010: 05 Custo15
+    3300012: 05 Custo16
+    3300014: 05 Custo17
+    3300016: 05 Custo18
+    3300018: 05 Custo19
+    3300020: 05 Custo20
+    3300022: 05 Custo21
+    3300024: 05 Custo22
+    3300026: 05 Custo23
+    3300028: 05 Custo24
+    3300030: 05 Custom0
+    3300032: 05 Custom1
+    3300034: 05 Custom2
+    3300036: 05 Custom3
+    3300038: 05 Custom4
+    3300040: 05 Custom5
+    3300042: 05 Custom6
+    3300044: 05 Custom7
+    3300046: 05 Custom8
+    3300048: 05 Custom9
+    4300000: 05 Custom0
+    4300002: 05 Custom1
+    4300004: 05 Custom2
+    4300006: 05 Custom3
+    4300008: 05 Custom4
+    4300010: 05 Custom5
+    4300012: 05 Custom6
+    4300014: 05 Custom7
+    4300016: 05 Custom8
+    4300018: 05 Custom9
+    4300020: 05 Custo10
+    4300022: 05 Custo11
+    4300024: 05 Custo12
+    4300026: 05 Custo13
+    4300028: 05 Custo14
+    4300030: 05 Custo15
+    4300032: 05 Custo16
+    4300034: 05 Custo17
+    4300036: 05 Custo18
+    4300038: 05 Custo19
+    4300040: 05 Custo20
+    4300042: 05 Custo21
+    4300044: 05 Custo22
+    4300046: 05 Custo23
+    4300048: 05 Custo24
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

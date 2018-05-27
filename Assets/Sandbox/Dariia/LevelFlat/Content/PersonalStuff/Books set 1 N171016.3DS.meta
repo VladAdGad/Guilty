@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 7afbba8ddc847ad40add7b7d8d68d790
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Box44
+    100004: Box45
+    100006: Box46
+    100008: Box47
+    100010: Box48
+    100012: Box49
+    100014: Box50
+    100016: Box51
+    100018: Box52
+    100020: Box53
+    100022: Tropical A
+    400000: //RootNode
+    400002: Box44
+    400004: Box45
+    400006: Box46
+    400008: Box47
+    400010: Box48
+    400012: Box49
+    400014: Box50
+    400016: Box51
+    400018: Box52
+    400020: Box53
+    400022: Tropical A
+    2100000: standart  1
+    2100002: standart 2
+    2100004: standart 3
+    2100006: standart 41
+    2100008: standart
+    2100010: standart 42
+    2100012: standart1
+    2100014: standart 43
+    2100016: standart2
+    2100018: standart 44
+    2100020: standart noise
+    2100022: standart 45
+    2100024: standart_
+    2100026: standart 46
+    2100028: standart3
+    2100030: standart 47
+    2100032: standart4
+    2100034: standart 48
+    2100036: standart5
+    2100038: standart 49
+    2100040: standart6
+    2100042: standart 50
+    2100044: standart7
+    2300000: Box44
+    2300002: Box45
+    2300004: Box46
+    2300006: Box47
+    2300008: Box48
+    2300010: Box49
+    2300012: Box50
+    2300014: Box51
+    2300016: Box52
+    2300018: Box53
+    2300020: Tropical A
+    3300000: Box44
+    3300002: Box45
+    3300004: Box46
+    3300006: Box47
+    3300008: Box48
+    3300010: Box49
+    3300012: Box50
+    3300014: Box51
+    3300016: Box52
+    3300018: Box53
+    3300020: Tropical A
+    4300000: Tropical A
+    4300002: Box44
+    4300004: Box45
+    4300006: Box46
+    4300008: Box47
+    4300010: Box48
+    4300012: Box49
+    4300014: Box50
+    4300016: Box51
+    4300018: Box52
+    4300020: Box53
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
