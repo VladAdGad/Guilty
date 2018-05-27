@@ -1,7 +1,6 @@
-﻿using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+﻿using CommonFeature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using Zenject;
-using GameObjectType = CommonFeature.SceneContext.TypeIdentificators.GameObjectType;
 
 namespace CommonFeature.UI.Pause
 {
