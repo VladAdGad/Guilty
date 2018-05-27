@@ -30,7 +30,7 @@ namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookm
             if (!_dataTaskProxy.DataTasks.ToList().Any(it => it.Id.Equals(dataTask.Id)))
             {
                 _dataTaskProxy.DataTasks.Add(dataTask);
-                _userNotification.NotifyAbout();
+                _userNotification.NotifyAboutTask();
             }
             else
             {
@@ -41,7 +41,7 @@ namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookm
                         it.IsComplete = true;
                         if (it.IsHide.Equals(false))
                         {
-                            _userNotification.NotifyAbout();
+                            _userNotification.NotifyAboutTask();
                         }
                     }
                 });

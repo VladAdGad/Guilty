@@ -23,7 +23,7 @@ namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookm
         {
             _evidencePage.AddToPage(_dataEvidence);
             _progressPage.AddToPage(_dataEvidence);
-            _userNotification.NotifyAbout();
+            _userNotification.NotifyAboutEvidence();
             
             Destroy(this);
         }
