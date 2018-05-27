@@ -5252,8 +5252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea10eeac7a4477981517a2643f588a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemName: 
-  _activationButton: 324
+  ItemName: Safe password
+  _activationButton: 323
 --- !u!1001 &249476896
 Prefab:
   m_ObjectHideFlags: 0
@@ -17477,12 +17477,12 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b9c487dadab1f294694746875be68da0, type: 2}
+      objectReference: {fileID: 2100000, guid: ae66645e4dfde75438474ee6c5f88bcb, type: 2}
     - target: {fileID: 23277013643777520, guid: 65998f1a17fe3f34f84d85287020d9a7,
         type: 2}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+      objectReference: {fileID: 2100000, guid: ae66645e4dfde75438474ee6c5f88bcb, type: 2}
     - target: {fileID: 1795184431309204, guid: 65998f1a17fe3f34f84d85287020d9a7, type: 2}
       propertyPath: m_Layer
       value: 8
@@ -17507,7 +17507,8 @@ Prefab:
       propertyPath: m_Center.z
       value: -0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114848141144212268, guid: 65998f1a17fe3f34f84d85287020d9a7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 65998f1a17fe3f34f84d85287020d9a7, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &797969040 stripped
@@ -49037,7 +49038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemName: Key to the apartments
-  _activationButton: 324
+  _activationButton: 323
   _doorToOpen: {fileID: 232234644}
 --- !u!1 &1871579081
 GameObject:
