@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.InteractObject
 {
-    public class ExamineTargetUpdateNote : MonoBehaviour, IGazable
+    public class ExamineTarget : MonoBehaviour, IGazable
     {
         private CompleteTaskEntity _completeTaskEntity;
         private CreateTaskEntity _createTaskEntity;
@@ -21,7 +21,11 @@ namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scrip
             _playerMonolog = GetComponent<PlayerMonolog>();
         }
 
-        public void OnGazeEnter()
+        public void OnGazeEnter() => UpdateNotebook();
+
+        public void OnGazeExit() => Destroy(this);
+
+        private void UpdateNotebook()
         {
             if (_completeTaskEntity != null)
                 _completeTaskEntity.AddTask();
@@ -31,11 +35,9 @@ namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scrip
 
             if (_evidenceEntity != null)
                 _evidenceEntity.AddEvidence();
-            
-            if(_playerMonolog != null)
-                _playerMonolog.PlayMonolog();
-        }
 
-        public void OnGazeExit() => Destroy(this);
+            if (_playerMonolog != null)
+                _playerMonolog.StartMonolog();
+        }
     }
 }
