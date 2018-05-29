@@ -1,6 +1,7 @@
 ﻿using LevelFlat.Features.Feature.InteractWithObjects;
+using UnityEngine;
 
-namespace UnityEngine
+namespace LevelFlat.Features.Feature.InteractWith.RadioFeature
 {
     public class RadioBehaviour : Interactable
     {
@@ -12,15 +13,16 @@ namespace UnityEngine
         public override void OnPress()
         {
             if (_stateOfRadio)
-                StopPlayRecording();
+                MuteRadio();
             else
-                StartPlayRecording();
+                UnmuteRadio();
 
             ChangeStateOfRadio();
         }
 
-        private void StartPlayRecording() => _recordingAudio.Play();
-        private void StopPlayRecording() => _recordingAudio.Stop();
+        private void UnmuteRadio() => _recordingAudio.mute = false;
+
+        private void MuteRadio() => _recordingAudio.mute = true;
 
         private void ChangeStateOfRadio() => _stateOfRadio = !_stateOfRadio;
     }
