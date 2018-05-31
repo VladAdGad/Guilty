@@ -25,6 +25,13 @@ namespace LevelFlat.Features.Feature.InteractWith.PickupSystemFeature
 
         public override void OnPress()
         {
+            UpdateNotebook();
+
+            Destroy(gameObject);
+        }
+
+        private void UpdateNotebook()
+        {
             if (_completeTaskEntity != null)
                 _completeTaskEntity.AddTask();
 
@@ -38,9 +45,7 @@ namespace LevelFlat.Features.Feature.InteractWith.PickupSystemFeature
                 _itemEntity.AddItem();
 
             if (_playerMonolog != null)
-                _playerMonolog.PlayMonolog();
-
-            Destroy(gameObject);
+                _playerMonolog.StartMonolog();
         }
     }
 }
