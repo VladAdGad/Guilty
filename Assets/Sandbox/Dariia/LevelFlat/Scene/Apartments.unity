@@ -5452,7 +5452,6 @@ GameObject:
   - component: {fileID: 232234645}
   - component: {fileID: 232234647}
   - component: {fileID: 232234644}
-  - component: {fileID: 232234650}
   - component: {fileID: 232234648}
   m_Layer: 8
   m_Name: Door
@@ -5472,11 +5471,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b49c08cff54d64843c8c053189ba0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemName: 
+  ItemName: Door to the apartments
   _activationButton: 323
   _closingDoorAudioSource: {fileID: 232234645}
   _openingDoorAudioSource: {fileID: 232234647}
   _lockedStateTooltip: Door is closed
+  _lockStateAudioSource: {fileID: 616749418}
 --- !u!82 &232234645
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5729,17 +5729,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 80.130875, y: 13.138144, z: 212.54216}
   m_Center: {x: -17.956364, y: 221.09636, z: -11.261909}
---- !u!114 &232234650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 232234643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6efa48b1c9547cda3e2d09c77a468d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &234502584
 GameObject:
   m_ObjectHideFlags: 0
@@ -9554,7 +9543,7 @@ Transform:
   m_Children:
   - {fileID: 1011533736}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &409078180
 Prefab:
@@ -14866,6 +14855,11 @@ Transform:
   m_Father: {fileID: 2136585012}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &616749418 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82660129791288888, guid: 638573f26160ae14eaa1c986cda5e719,
+    type: 2}
+  m_PrefabInternal: {fileID: 402110946}
 --- !u!4 &618018922 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e391278f98d87c34e8ce639257abe44a, type: 3}
@@ -16334,7 +16328,7 @@ Prefab:
     - target: {fileID: 224920629909999000, guid: 48162b86ead14b34baca4542c4db1ade,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224920629909999000, guid: 48162b86ead14b34baca4542c4db1ade,
         type: 2}
@@ -16374,7 +16368,7 @@ Prefab:
     - target: {fileID: 224920629909999000, guid: 48162b86ead14b34baca4542c4db1ade,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224920629909999000, guid: 48162b86ead14b34baca4542c4db1ade,
         type: 2}
@@ -25982,7 +25976,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh3090822
+  m_Name: pb_Mesh54220
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -26540,6 +26534,7 @@ MonoBehaviour:
   _closingDoorAudioSource: {fileID: 1020611038}
   _openingDoorAudioSource: {fileID: 1020611039}
   _lockedStateTooltip: Door is closed
+  _lockStateAudioSource: {fileID: 616749418}
 --- !u!82 &1020611038
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28127,7 +28122,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh3093754
+  m_Name: pb_Mesh54856
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -48963,7 +48958,7 @@ Transform:
   - {fileID: 1938186321}
   - {fileID: 2063637069}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1603683639
 GameObject:
@@ -56479,7 +56474,6 @@ GameObject:
   - component: {fileID: 1871445485}
   - component: {fileID: 1871445484}
   - component: {fileID: 1871445487}
-  - component: {fileID: 1871445488}
   - component: {fileID: 1871445486}
   m_Layer: 8
   m_Name: Key
@@ -56577,10 +56571,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1871445480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c933743248844c9b49790e5748332c3, type: 3}
+  m_Script: {fileID: 11500000, guid: fea10eeac7a4477981517a2643f588a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jsonDataTask: {fileID: 4900000, guid: dfc56b2f009958740a37e1003c824fe1, type: 3}
+  ItemName: Key to the apartments
+  _activationButton: 323
 --- !u!65 &1871445487
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56593,20 +56588,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 62.5474, y: 9.7892, z: 58.2211}
   m_Center: {x: 0.000022888184, y: 0, z: 0.0009765625}
---- !u!114 &1871445488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1871445480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9dbe21d771348a48ab59a4119254a84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemName: Key to the apartments
-  _activationButton: 323
-  _doorToOpen: {fileID: 232234644}
 --- !u!1 &1871579081
 GameObject:
   m_ObjectHideFlags: 0
@@ -58003,22 +57984,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6efa48b1c9547cda3e2d09c77a468d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1926173971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1926173966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21b49c08cff54d64843c8c053189ba0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemName: 
-  _activationButton: 323
-  _closingDoorAudioSource: {fileID: 0}
-  _openingDoorAudioSource: {fileID: 0}
-  _lockedStateTooltip: Find the password
 --- !u!65 &1926173972
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61525,7 +61490,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2011182074}
-  - component: {fileID: 2011182077}
   - component: {fileID: 2011182076}
   - component: {fileID: 2011182075}
   - component: {fileID: 2011182078}
@@ -61580,22 +61544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6efa48b1c9547cda3e2d09c77a468d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2011182077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2011182073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21b49c08cff54d64843c8c053189ba0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemName: 
-  _activationButton: 323
-  _closingDoorAudioSource: {fileID: 0}
-  _openingDoorAudioSource: {fileID: 0}
-  _lockedStateTooltip: Find the code
 --- !u!65 &2011182078
 BoxCollider:
   m_ObjectHideFlags: 0
