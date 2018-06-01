@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using CommonFeature.UtilityCommonFeature;
 using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
-using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
+using LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.GUI;
 using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using UnityEngine.Assertions;

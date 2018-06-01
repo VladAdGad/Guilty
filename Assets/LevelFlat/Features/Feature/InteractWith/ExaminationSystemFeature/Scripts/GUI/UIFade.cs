@@ -9,7 +9,7 @@
 
 using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI
+namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.GUI
 {
     public class UIFade : MonoBehaviour
     {

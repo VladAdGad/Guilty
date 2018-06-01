@@ -1,7 +1,7 @@
 ﻿using LevelFlat.Features.Feature.InteractWith.PickupSystemFeature;
 using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWith.DoorFeature.DoorLockBehaviour
+namespace LevelFlat.Features.Feature.InteractWith.DoorFeature.Scripts.DoorLockBehaviour
 {
     public class DoorUnlock : PickupObject
     {

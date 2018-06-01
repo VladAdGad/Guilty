@@ -1,11 +1,11 @@
 ﻿using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
-using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
+using LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.GUI;
 using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.InteractWithObjects
+namespace LevelFlat.Features.Feature.InteractWith
 {
     public abstract class Interactable : MonoBehaviour, IGazable, IPressable
     {
