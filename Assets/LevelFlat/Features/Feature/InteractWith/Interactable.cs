@@ -10,7 +10,7 @@ namespace LevelFlat.Features.Feature.InteractWithObjects
     public abstract class Interactable : MonoBehaviour, IGazable, IPressable
     {
         [SerializeField] protected string ItemName;
-        [SerializeField] private KeyCode _activationButton = KeyCode.Mouse1;
+        [SerializeField] private KeyCode _activationButton = KeyCode.Mouse0;
         
         // @formatter:off
         [Inject(Id = GameObjectType.GuiSocket.ItemName)] protected GameObject ItemNameObject;
