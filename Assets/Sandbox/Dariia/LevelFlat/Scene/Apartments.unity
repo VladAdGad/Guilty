@@ -5453,6 +5453,7 @@ GameObject:
   - component: {fileID: 232234647}
   - component: {fileID: 232234644}
   - component: {fileID: 232234648}
+  - component: {fileID: 232234650}
   m_Layer: 8
   m_Name: Door
   m_TagString: Untagged
@@ -5729,6 +5730,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 80.130875, y: 13.138144, z: 212.54216}
   m_Center: {x: -17.956364, y: 221.09636, z: -11.261909}
+--- !u!114 &232234650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 232234643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6efa48b1c9547cda3e2d09c77a468d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &234502584
 GameObject:
   m_ObjectHideFlags: 0
@@ -56571,11 +56583,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1871445480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fea10eeac7a4477981517a2643f588a4, type: 3}
+  m_Script: {fileID: 11500000, guid: d80ecaae363c43439c6c8e899d72dde2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ItemName: Key to the apartments
   _activationButton: 323
+  _computerLock: {fileID: 232234644}
 --- !u!65 &1871445487
 BoxCollider:
   m_ObjectHideFlags: 0
