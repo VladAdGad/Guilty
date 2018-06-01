@@ -25,7 +25,7 @@ namespace LevelFlat.Features.Feature.InteractWith.DoorFeature.DoorLockBehaviour
         private void PlayLockStateAudio()
         {
             if (_lockStateAudioSource.isPlaying) return;
-            _lockStateAudioSource?.Play();
+            _lockStateAudioSource.Play();
         }
     }
 }

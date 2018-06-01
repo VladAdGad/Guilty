@@ -5,12 +5,12 @@ namespace LevelFlat.Features.Feature.InteractWith.DoorFeature.DoorLockBehaviour
 {
     public class DoorUnlock : PickupObject
     {
-        [SerializeField] private DoorLock _computerLock;
+        [SerializeField] private DoorLock _doorLock;
         
         public override void OnPress()
         {
             base.OnPress();
-            _computerLock.Unlock();
+            _doorLock.Unlock();
         }
     }
 }
