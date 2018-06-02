@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.LevelChanger
+namespace CommonFeature.LevelChange
 {
     public class FadeAnimation
     {

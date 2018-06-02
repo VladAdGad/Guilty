@@ -1,5 +1,5 @@
 ﻿using System;
-using LevelFlat.Features.Feature.LevelChanger;
+using CommonFeature.LevelChange;
 using UnityEngine;
 using Zenject;
 

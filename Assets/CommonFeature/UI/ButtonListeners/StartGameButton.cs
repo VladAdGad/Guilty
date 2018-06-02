@@ -1,5 +1,4 @@
-﻿using Gui.Menu;
-using LevelFlat.Features.Feature.LevelChanger;
+﻿using CommonFeature.LevelChange;
 using UnityEngine;
 using UnityEngine.UI;
 
