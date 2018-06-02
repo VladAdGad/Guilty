@@ -1,5 +1,4 @@
-﻿using Gui.Menu;
-using LevelFlat.Features.Feature.LevelChanger;
+﻿using CommonFeature.LevelChange;
 using UnityEngine;
 
 namespace CommonFeature.UI.Credits

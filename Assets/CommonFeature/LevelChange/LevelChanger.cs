@@ -1,11 +1,10 @@
 ﻿using System.Collections;
-using Gui.Menu;
 using Sandbox.Vlad.BetweenScenes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.LevelChanger
+namespace CommonFeature.LevelChange
 {
     public class LevelChanger : MonoBehaviour
     {
