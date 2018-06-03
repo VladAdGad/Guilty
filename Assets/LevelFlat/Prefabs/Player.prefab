@@ -3043,6 +3043,7 @@ GameObject:
   - component: {fileID: 114191149529400322}
   - component: {fileID: 114108222432217462}
   - component: {fileID: 114656491241235546}
+  - component: {fileID: 82873900142248970}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -4283,7 +4284,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1795817920830376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.05, y: 0.758, z: -0.19}
+  m_LocalPosition: {x: 20.05, y: 0.758, z: 27.762}
   m_LocalScale: {x: 0.4551034, y: 0.8278399, z: 0.45510343}
   m_Children:
   - {fileID: 4828663024211094}
@@ -7792,7 +7793,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 953b48f56637cc140ac2bfa5c7e3660e, type: 2}
+  - {fileID: 2100000, guid: 625b14daf28a6a24a8121947af4b4625, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8108,8 +8109,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b9c487dadab1f294694746875be68da0, type: 2}
-  - {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+  - {fileID: 2100000, guid: 557ff44fdd3caaa469532719d149c58a, type: 2}
+  - {fileID: 2100000, guid: 2eec876dd566d68479dc20b78c0ae106, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8428,8 +8429,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b9c487dadab1f294694746875be68da0, type: 2}
-  - {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+  - {fileID: 2100000, guid: 9f61cf47f7cb5014baac6c832b1c2cba, type: 2}
+  - {fileID: 2100000, guid: e9c1c935dbab5d54bbbdff56330bff1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9201,7 +9202,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b9c487dadab1f294694746875be68da0, type: 2}
-  - {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+  - {fileID: 2100000, guid: 444f444ceb239004eaf62c0ff86e86d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9727,8 +9728,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b9c487dadab1f294694746875be68da0, type: 2}
-  - {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+  - {fileID: 2100000, guid: 375350caba1d17e499a83f5aa93c9fad, type: 2}
+  - {fileID: 2100000, guid: 3a65d356ff139de48be73031cbff0c30, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10187,8 +10188,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b9c487dadab1f294694746875be68da0, type: 2}
-  - {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+  - {fileID: 2100000, guid: 8cc545975a414414cb5f6d0e5da8aeb4, type: 2}
+  - {fileID: 2100000, guid: a2c4c2909bdbde849ad2b029b955d9a5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10787,8 +10788,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b9c487dadab1f294694746875be68da0, type: 2}
-  - {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+  - {fileID: 2100000, guid: 87b2ad5a8e4116446a99a068b7b4e8f1, type: 2}
+  - {fileID: 2100000, guid: 593923b7aec18d34b9029224be2534fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12544,6 +12545,101 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!82 &82873900142248970
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1927721792305436}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f499ae55a040ac540a4c0bff1cbcab0b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.496
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &114001890473545356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12822,7 +12918,7 @@ MonoBehaviour:
       localPivot: {x: 0.5, y: -0.5}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+    _mat: {fileID: 0}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -13350,7 +13446,7 @@ MonoBehaviour:
       localPivot: {x: 0.5, y: -0.5}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+    _mat: {fileID: 0}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -13741,7 +13837,7 @@ MonoBehaviour:
       localPivot: {x: 0.5, y: -0.5}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+    _mat: {fileID: 0}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -13960,7 +14056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IsWalking: 0
-  m_WalkSpeed: 4
+  m_WalkSpeed: 3
   m_RunSpeed: 10
   m_RunstepLenghten: 0.7
   m_JumpSpeed: 10
@@ -14395,7 +14491,7 @@ MonoBehaviour:
       localPivot: {x: 0.5, y: -0.5}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+    _mat: {fileID: 0}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -14681,7 +14777,7 @@ MonoBehaviour:
       localPivot: {x: 0.5, y: -0.5}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+    _mat: {fileID: 0}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -14811,9 +14907,17 @@ MonoBehaviour:
     areaError: 15
   asset_guid: 
   dontDestroyMeshOnDelete: 0
-  m_selectedFaces: 
-  m_SelectedEdges: []
-  m_selectedTriangles: 
+  m_selectedFaces: 05000000
+  m_SelectedEdges:
+  - x: 20
+    y: 21
+  - x: 22
+    y: 20
+  - x: 21
+    y: 23
+  - x: 23
+    y: 22
+  m_selectedTriangles: 140000001500000016000000150000001700000016000000
 --- !u!114 &114648798162814812
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14855,7 +14959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56409ed2d7d7e094d897ab9d155069da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionDistance: 3
+  _interactionDistance: 2
   _layerMaskInteract:
     serializedVersion: 2
     m_Bits: 256
@@ -15238,7 +15342,7 @@ MonoBehaviour:
       localPivot: {x: 0.5, y: -0.5}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: b53a1ed829c4ef948ab2b5d1b3cff9ce, type: 2}
+    _mat: {fileID: 0}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
