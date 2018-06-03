@@ -70876,7 +70876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemName: Key to the apartments
-  _activationButton: 324
+  _activationButton: 323
   _doorLock: {fileID: 232234644}
 --- !u!65 &1871445487
 BoxCollider:
