@@ -19739,6 +19739,11 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 434315433}
+    - target: {fileID: 82873900142248970, guid: 038a68004b6157b4ea1169eea9f5df89,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: caa91a2d559123c4994d7b40cf28552c, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 038a68004b6157b4ea1169eea9f5df89, type: 2}
   m_IsPrefabParent: 0
