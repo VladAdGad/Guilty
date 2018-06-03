@@ -9,9 +9,9 @@
 
 using LevelFlat.Features.CommonFeature.Player;
 using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature;
+using LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.GUI;
 using LevelFlat.Features.Feature.InteractWithObjects;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts;
-using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Scripts.GUI;
 using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using Zenject;

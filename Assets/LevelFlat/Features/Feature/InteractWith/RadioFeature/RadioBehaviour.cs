@@ -1,5 +1,4 @@
-﻿using LevelFlat.Features.Feature.InteractWithObjects;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LevelFlat.Features.Feature.InteractWith.RadioFeature
 {

@@ -9,7 +9,7 @@ using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.NotebookFeature
+namespace LevelFlat.Features.Feature.Notebook
 {
     public class NotebookManager : MonoBehaviour
     {

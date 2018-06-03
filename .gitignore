@@ -47,4 +47,4 @@ README.md
 UnityPackageManager/
 Packages/
 _ReSharper.Caches/
-Editor/
+*/Plugins/Editor/
