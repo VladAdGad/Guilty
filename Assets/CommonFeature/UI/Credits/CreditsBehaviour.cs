@@ -1,15 +1,13 @@
 ﻿using CommonFeature.LevelChange;
 using UnityEngine;
+using Zenject;
 
 namespace CommonFeature.UI.Credits
 {
     public class CreditsBehaviour : MonoBehaviour
     {
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Escape)) LoadMainLevelAfterCredits();
-        }
+        [Inject] private LevelChanger _levelChanger;
 
-        private void LoadMainLevelAfterCredits() => LevelChanger.LoadIndexScene(SceneIndex.MainMenu);
+        private void LoadMainLevelAfterCredits() => StartCoroutine(_levelChanger.LoadIndexScene(SceneIndex.MainMenu));
     }
 }
