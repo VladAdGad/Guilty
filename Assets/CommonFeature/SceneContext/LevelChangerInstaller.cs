@@ -5,19 +5,19 @@ using Zenject;
 
 namespace CommonFeature.SceneContext
 {
-    public class LevelInstaller : MonoInstaller<LevelInstaller>
+    public class LevelChangerInstaller : MonoInstaller<LevelChangerInstaller>
     {
         [SerializeField] private LevelChangerSettings _levelChangerSettingsScene;
         
         public override void InstallBindings()
         {
-            Container.Bind<FadeAnimation>().AsSingle().WithArguments(_levelChangerSettingsScene.LevelChangerAnimator);
+            Container.BindInstance(_levelChangerSettingsScene.LevelChanger);
         }
 
         [Serializable]
         public class LevelChangerSettings
         {
-            public Animator LevelChangerAnimator;
+            public LevelChanger LevelChanger;
         }
     }
 }

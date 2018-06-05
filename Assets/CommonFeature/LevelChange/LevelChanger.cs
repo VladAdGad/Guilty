@@ -8,8 +8,10 @@ namespace CommonFeature.LevelChange
 {
     public class LevelChanger : MonoBehaviour
     {
-        [Inject] private FadeAnimation _fadeAnimation;
+        private FadeAnimation _fadeAnimation;
         private const int NextScene = 1;
+
+        private void Start() => _fadeAnimation = GetComponent<FadeAnimation>();
 
         private void Update() //TODO: remove after implmentings real rules of change scene
         {
@@ -25,7 +27,12 @@ namespace CommonFeature.LevelChange
             yield return new WaitForSeconds(AnimationManager.GetAnimationClipFromAnimatorByName(_fadeAnimation.LevelChangerAnimator, FadeAnimation.NameOfAnimation).length);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + NextScene);
         }
-        
-        public static void LoadIndexScene(SceneIndex indexScene) => SceneManager.LoadScene((int) indexScene);
+
+        public IEnumerator LoadIndexScene(SceneIndex indexScene)
+        {
+            _fadeAnimation.StartAnimation();
+            yield return new WaitForSeconds(AnimationManager.GetAnimationClipFromAnimatorByName(_fadeAnimation.LevelChangerAnimator, FadeAnimation.NameOfAnimation).length);
+            SceneManager.LoadScene((int) indexScene);
+        }
     }
 }
