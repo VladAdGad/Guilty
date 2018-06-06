@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1097633651, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
-  m_Name: New Dialogue Database
+  m_Name: New Dialogue Database (Auto-Backup)
   m_EditorClassIdentifier: 
   version: 
   author: 
@@ -2502,7 +2502,7 @@ MonoBehaviour:
     - id: 33
       fields:
       - title: Title
-        value: ALT2
+        value: ALT2Q9
         type: 0
         typeString: 
       - title: Pictures
@@ -2581,7 +2581,7 @@ MonoBehaviour:
     - id: 34
       fields:
       - title: Title
-        value: ALT2A1
+        value: ALT2Q7
         type: 0
         typeString: 
       - title: Pictures
@@ -2648,7 +2648,7 @@ MonoBehaviour:
     - id: 35
       fields:
       - title: Title
-        value: ALT2A2
+        value: New Dialogue Entry
         type: 0
         typeString: 
       - title: Pictures
@@ -3550,7 +3550,7 @@ MonoBehaviour:
     - id: 47
       fields:
       - title: Title
-        value: Q11
+        value: Q11V2
         type: 0
         typeString: 
       - title: Pictures
@@ -3610,14 +3610,14 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 1701.094
-        y: 1699.2821
+        x: 1825.2012
+        y: 1728.7465
         width: 160
         height: 30
     - id: 48
       fields:
       - title: Title
-        value: ALT3Q1
+        value: Q11V1
         type: 0
         typeString: 
       - title: Pictures
@@ -3683,14 +3683,14 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 1278.1902
-        y: 1719.0708
+        x: 1448.7258
+        y: 1717.285
         width: 160
         height: 30
     - id: 49
       fields:
       - title: Title
-        value: ALT3Q1A
+        value: New Dialogue Entry
         type: 0
         typeString: 
       - title: Pictures
@@ -3714,7 +3714,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: To kill him?..
+        value: I suppose to kill him?..
         type: 0
         typeString: 
       - title: Parenthetical
@@ -3756,14 +3756,14 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 1279.0831
-        y: 1776.2136
+        x: 1449.6188
+        y: 1774.4279
         width: 160
         height: 30
     - id: 50
       fields:
       - title: Title
-        value: ALT3Q2
+        value: New Dialogue Entry
         type: 0
         typeString: 
       - title: Pictures
@@ -3787,227 +3787,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: And do you have something that confirms it?
-        type: 0
-        typeString: 
-      - title: Parenthetical
         value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: 
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 50
-        destinationConversationID: 1
-        destinationDialogueID: 51
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 1279.0831
-        y: 1826.2136
-        width: 160
-        height: 30
-    - id: 51
-      fields:
-      - title: Title
-        value: ALT3Q2A
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: 
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: 
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: No, it's just my conjectures.
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: 
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 51
-        destinationConversationID: 1
-        destinationDialogueID: 52
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 1279.0831
-        y: 1876.2136
-        width: 160
-        height: 30
-    - id: 52
-      fields:
-      - title: Title
-        value: ALT3Q3
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: 
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: 
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 'Okey. '
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: 
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 52
-        destinationConversationID: 1
-        destinationDialogueID: 53
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 1279.0831
-        y: 1926.2136
-        width: 160
-        height: 30
-    - id: 53
-      fields:
-      - title: Title
-        value: ALT3Q4
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: 
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: 
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Thank you for your cooperation with police. We will keep you in touch
-          about our investigation.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4043,8 +3823,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 1279.0831
-        y: 1976.2136
+        x: 1449.6188
+        y: 1824.4279
         width: 160
         height: 30
   syncInfo:
