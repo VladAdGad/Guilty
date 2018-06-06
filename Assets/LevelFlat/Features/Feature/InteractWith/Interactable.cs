@@ -13,8 +13,8 @@ namespace LevelFlat.Features.Feature.InteractWith
         [SerializeField] private KeyCode _activationButton = KeyCode.Mouse0;
 
         // @formatter:off
-        [Inject(Id = GameObjectType.GuiSocket.ItemName)] protected GameObject ItemNameObject;
-        [Inject(Id = GameObjectType.GuiSocket.Crosshair)] private GameObject _crosshairObject;
+        [Inject(Id = GameObjectType.GuiSocket.ItemName)] private GameObject _itemNameObject;
+        [Inject(Id = GameObjectType.GuiSocket.Crosshair)] protected GameObject CrosshairObject;
         // @formatter:on
 
         public virtual void OnGazeEnter() => ShowInfoOfSeenObject(ItemName);
@@ -29,15 +29,15 @@ namespace LevelFlat.Features.Feature.InteractWith
 
         protected void ShowInfoOfSeenObject(string itemName)
         {
-            _crosshairObject.GetComponent<CrosshairManager>().ActivateInteractCrosshair();
-            ItemNameObject.GetComponent<Text>().text = itemName;
-            ItemNameObject.GetComponent<UIFade>().FadeIn();
+            CrosshairObject.GetComponent<CrosshairManager>().ActivateInteractCrosshair();
+            _itemNameObject.GetComponent<Text>().text = itemName;
+            _itemNameObject.GetComponent<UIFade>().FadeIn();
         }
 
         private void HideInfoOfSeenObject()
         {
-            _crosshairObject.GetComponent<CrosshairManager>().ActivateNormalCosshair();
-            ItemNameObject.GetComponent<UIFade>().FadeOut();
+            CrosshairObject.GetComponent<CrosshairManager>().ActivateNormalCosshair();
+            _itemNameObject.GetComponent<UIFade>().FadeOut();
         }
     }
 }
