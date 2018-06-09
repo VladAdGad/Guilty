@@ -4,7 +4,7 @@ using Zenject;
 
 namespace LevelFlat.Features.Feature.Notebook.Behaviour.Notify
 {
-    public abstract class UserNotification : Signal<UserNotification>
+    public class UserNotification : Signal<UserNotification>
     {
         // @formatter:off
         [Inject(Id = AudioSourceType.Notebook.NotifyAboutCreateTask)] private AudioSource _notifyAboutTaskSound;
