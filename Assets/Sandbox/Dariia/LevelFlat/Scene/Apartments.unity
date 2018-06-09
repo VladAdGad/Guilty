@@ -493,7 +493,7 @@ GameObject:
   - component: {fileID: 8596569}
   - component: {fileID: 8596571}
   - component: {fileID: 8596570}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ???? ?-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1415,6 +1415,24 @@ Transform:
   m_Father: {fileID: 913373989}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &41211957 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1531791089309418, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &41211964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 41211957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: This box is full with Mia's old stuff.
 --- !u!4 &42095869 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 52384810c8fba244c9adb5993a965998, type: 3}
@@ -2668,7 +2686,7 @@ GameObject:
   - component: {fileID: 77442825}
   - component: {fileID: 77442827}
   - component: {fileID: 77442826}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ????? ???1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5801,6 +5819,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 672348688}
   m_GameObject: {fileID: 205101603}
   m_Mesh: {fileID: 4300004, guid: f5ec007281885ed4fa8d9c14d1a0454e, type: 3}
+--- !u!1 &206205168 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1380220498182562, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &206205175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 206205168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: It looks like that this paper ball is an important document
+    from brother's work.
 --- !u!1 &207459750 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 2744659777ef1644fa3c409885932e57, type: 3}
@@ -6036,7 +6073,7 @@ GameObject:
   - component: {fileID: 211513710}
   - component: {fileID: 211513712}
   - component: {fileID: 211513711}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: o41152-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7307,7 +7344,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh197636
+  m_Name: pb_Mesh-376334
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -8057,7 +8094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _monologSound: {fileID: 1711508624}
+  _monologSound: {fileID: 418248154}
   _textOfSubtitlesMonolog: Those numbers must be the password to the safe.
 --- !u!1 &243688369
 GameObject:
@@ -10876,7 +10913,7 @@ GameObject:
   - component: {fileID: 351880307}
   - component: {fileID: 351880309}
   - component: {fileID: 351880308}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: hotPlates_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12190,7 +12227,7 @@ GameObject:
   - component: {fileID: 377215930}
   - component: {fileID: 377215932}
   - component: {fileID: 377215931}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: o41167-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12629,6 +12666,24 @@ Transform:
   m_Father: {fileID: 1979686177}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &401142609 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1178487713512886, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &401142614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 401142609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: Company gave it to brother, so he could work more efficiently.
 --- !u!1 &401887208
 GameObject:
   m_ObjectHideFlags: 0
@@ -13790,6 +13845,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc0f60bea3fbb5b4dbaeb6ee7d5ca5f4, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &420167891 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1675800306790000, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &420167901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 420167891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: It's brother's request for the pay increase, but is's denied.
 --- !u!1 &420330687
 GameObject:
   m_ObjectHideFlags: 0
@@ -17501,6 +17574,7 @@ GameObject:
   - component: {fileID: 525836346}
   - component: {fileID: 525836345}
   - component: {fileID: 525836348}
+  - component: {fileID: 525836349}
   m_Layer: 8
   m_Name: Knife
   m_TagString: Untagged
@@ -17574,6 +17648,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _json: {fileID: 4900000, guid: 53e93510a55668440bc73377153de46a, type: 3}
+--- !u!114 &525836349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 525836343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: Is it blood on the knife?..
 --- !u!1 &526124704
 GameObject:
   m_ObjectHideFlags: 0
@@ -18119,6 +18206,24 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e391278f98d87c34e8ce639257abe44a, type: 3}
   m_PrefabInternal: {fileID: 542554572}
+--- !u!1 &543127825 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1561214347338324, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &543127830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543127825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: Ethan liked to read at brother's small library.
 --- !u!1 &546257923
 GameObject:
   m_ObjectHideFlags: 0
@@ -19391,6 +19496,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40, y: 40, z: 40.000004}
   m_Center: {x: 0.00012397766, y: 20, z: 0.0000028610227}
+--- !u!1 &586825788 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1437255692130664, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &586825795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 586825788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: Someone definitely was here at that day...
 --- !u!1 &587706656
 GameObject:
   m_ObjectHideFlags: 0
@@ -20107,6 +20230,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 2142444934}
   m_GameObject: {fileID: 619307985}
   m_Mesh: {fileID: 4300038, guid: f5ec007281885ed4fa8d9c14d1a0454e, type: 3}
+--- !u!1 &620302573 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1433525077894190, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &620302585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620302573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: So, he was here in the day of murder?..
 --- !u!1001 &627222953
 Prefab:
   m_ObjectHideFlags: 0
@@ -24533,6 +24674,24 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &754685633 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1934665750223224, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &754685638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754685633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: I guess, one knife here is missed.
 --- !u!1 &755615434
 GameObject:
   m_ObjectHideFlags: 0
@@ -25999,6 +26158,25 @@ Transform:
   m_Father: {fileID: 352206243}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 0}
+--- !u!1 &799632464 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1380318345171632, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &799632469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 799632464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: Brother had a problem with sleeping, so the doctor from
+    company gave him a receipt.
 --- !u!1 &800450202
 GameObject:
   m_ObjectHideFlags: 0
@@ -29978,6 +30156,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 885048106}
   m_Mesh: {fileID: 4300026, guid: f5ec007281885ed4fa8d9c14d1a0454e, type: 3}
+--- !u!1 &885674100 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1533560800489502, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &885674110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 885674100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: Ethan often did this - closed something in the safe as
+    a joke.
 --- !u!1 &887455452
 GameObject:
   m_ObjectHideFlags: 0
@@ -31900,7 +32097,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 958217401}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ??????
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32912,7 +33109,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 967256303}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ????? ???0 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33638,6 +33835,25 @@ Transform:
   m_Father: {fileID: 332617298}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &983278391 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1392516052919200, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &983278396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 983278391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: When brother only started to work there, Dylan even liked
+    him.
 --- !u!1 &985423895
 GameObject:
   m_ObjectHideFlags: 0
@@ -33724,7 +33940,7 @@ GameObject:
   - component: {fileID: 986261013}
   - component: {fileID: 986261015}
   - component: {fileID: 986261014}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ?-5 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37179,7 +37395,7 @@ GameObject:
   - component: {fileID: 1055943083}
   - component: {fileID: 1055943085}
   - component: {fileID: 1055943084}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: o41160-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37536,7 +37752,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh293214
+  m_Name: pb_Mesh709092
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -38460,6 +38676,10 @@ Prefab:
     - target: {fileID: 100000, guid: d05a790e4e0387c4c860ec1f46403120, type: 3}
       propertyPath: m_Name
       value: Locker 2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d05a790e4e0387c4c860ec1f46403120, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d05a790e4e0387c4c860ec1f46403120, type: 3}
@@ -40783,7 +41003,7 @@ GameObject:
   - component: {fileID: 1148570698}
   - component: {fileID: 1148570700}
   - component: {fileID: 1148570699}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: o41160-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44812,7 +45032,7 @@ GameObject:
   - component: {fileID: 1223358117}
   - component: {fileID: 1223358119}
   - component: {fileID: 1223358118}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: oven_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45481,7 +45701,7 @@ GameObject:
   - component: {fileID: 1238255941}
   - component: {fileID: 1238255943}
   - component: {fileID: 1238255942}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: faucet_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46400,6 +46620,24 @@ Transform:
   m_Father: {fileID: 1233087351}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1244569394 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1415544683235092, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &1244569399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244569394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: Dylan never liked that brother bought some books for work.
 --- !u!1 &1247070589
 GameObject:
   m_ObjectHideFlags: 0
@@ -46744,7 +46982,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh195358
+  m_Name: pb_Mesh-376144
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -47164,7 +47402,7 @@ GameObject:
   - component: {fileID: 1260046269}
   - component: {fileID: 1260046272}
   - component: {fileID: 1260046271}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: kitchen_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49582,6 +49820,25 @@ GameObject:
   m_PrefabParentObject: {fileID: 1878754409028834, guid: 038a68004b6157b4ea1169eea9f5df89,
     type: 2}
   m_PrefabInternal: {fileID: 615903477}
+--- !u!1 &1308891045 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1439309680600126, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &1308891050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308891045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: Mia hated all those plants, but brother continued to buy
+    more and more.
 --- !u!1 &1310794942
 GameObject:
   m_ObjectHideFlags: 0
@@ -51278,7 +51535,7 @@ GameObject:
   - component: {fileID: 1360689544}
   - component: {fileID: 1360689546}
   - component: {fileID: 1360689545}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: plug_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53315,6 +53572,24 @@ Transform:
   m_Father: {fileID: 794030732}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1432091286 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1603395552118614, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &1432091291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1432091286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: The most famous assassinations in history.
 --- !u!1 &1433512418
 GameObject:
   m_ObjectHideFlags: 0
@@ -53864,7 +54139,7 @@ GameObject:
   - component: {fileID: 1451777943}
   - component: {fileID: 1451777942}
   - component: {fileID: 1451777944}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: shelf_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55377,7 +55652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1510376413}
   - component: {fileID: 1510376414}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: F5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62780,6 +63055,25 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5201aead134e0cc4a90bf9d5d604466f, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1615487836 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1630213104182216, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &1615487841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1615487836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: I remember, that brother took first place somewhere and
+    got this prize.
 --- !u!1001 &1619607162
 Prefab:
   m_ObjectHideFlags: 0
@@ -62856,7 +63150,7 @@ GameObject:
   - component: {fileID: 1619703610}
   - component: {fileID: 1619703612}
   - component: {fileID: 1619703611}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: o41167-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65128,7 +65422,7 @@ GameObject:
   - component: {fileID: 1668981979}
   - component: {fileID: 1668981981}
   - component: {fileID: 1668981980}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ?-007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66471,7 +66765,7 @@ GameObject:
   - component: {fileID: 1723138081}
   - component: {fileID: 1723138083}
   - component: {fileID: 1723138082}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ?-009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68038,7 +68332,7 @@ GameObject:
   - component: {fileID: 1762605983}
   - component: {fileID: 1762605985}
   - component: {fileID: 1762605984}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ???? ?-006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68107,7 +68401,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh179344
+  m_Name: pb_Mesh-376130
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -68258,6 +68552,24 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &1770332317 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1979840210936748, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &1770332322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1770332317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: Brother was the best worker of the year in a company once.
 --- !u!1 &1770921212
 GameObject:
   m_ObjectHideFlags: 0
@@ -69894,7 +70206,7 @@ GameObject:
   - component: {fileID: 1819064064}
   - component: {fileID: 1819064066}
   - component: {fileID: 1819064065}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ?-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70866,7 +71178,7 @@ GameObject:
   - component: {fileID: 1851796567}
   - component: {fileID: 1851796569}
   - component: {fileID: 1851796568}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ??? ?4?011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71434,7 +71746,7 @@ GameObject:
   - component: {fileID: 1871579082}
   - component: {fileID: 1871579084}
   - component: {fileID: 1871579083}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: '?5 ????? '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71681,12 +71993,31 @@ Transform:
   m_Father: {fileID: 1020611036}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1876104422 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1074238060196984, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &1876104432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1876104422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: So, it means, that in the day of murder brother also met
+    Dylan.
 --- !u!1 &1877222875 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1416488186236496, guid: 038a68004b6157b4ea1169eea9f5df89,
     type: 2}
   m_PrefabInternal: {fileID: 615903477}
---- !u!114 &1877222876
+--- !u!114 &1877222880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -71740,7 +72071,7 @@ GameObject:
   - component: {fileID: 1877910147}
   - component: {fileID: 1877910149}
   - component: {fileID: 1877910148}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ??? ?4?016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74962,7 +75293,7 @@ GameObject:
   - component: {fileID: 1957928099}
   - component: {fileID: 1957928101}
   - component: {fileID: 1957928100}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ?-006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78129,7 +78460,7 @@ GameObject:
   - component: {fileID: 2014334449}
   - component: {fileID: 2014334451}
   - component: {fileID: 2014334450}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ?????????0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79463,6 +79794,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2034318937}
   m_Mesh: {fileID: 4300070, guid: d551ea81802d12041a146ba03b75a7c2, type: 3}
+--- !u!1 &2034990143 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1651128593644366, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &2034990148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2034990143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: They broke up, but he anyway kept this photo here.
 --- !u!1 &2035677662
 GameObject:
   m_ObjectHideFlags: 0
@@ -79738,6 +80087,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2036835440}
   m_Mesh: {fileID: 4300084, guid: ec40b66161fcdf5458ccee83032f58c3, type: 3}
+--- !u!1 &2037564525 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1472873370964214, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &2037564532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037564525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: He would never bought something like this, only Mia adores
+    it.
 --- !u!1 &2039182941
 GameObject:
   m_ObjectHideFlags: 0
@@ -80003,7 +80371,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh191770
+  m_Name: pb_Mesh-376112
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -81460,7 +81828,7 @@ GameObject:
   - component: {fileID: 2094351559}
   - component: {fileID: 2094351561}
   - component: {fileID: 2094351560}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ?-008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82240,6 +82608,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: f7a86424642609c46b1c4b055cd4bc00, type: 2}
+    - target: {fileID: 100000, guid: d05a790e4e0387c4c860ec1f46403120, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d05a790e4e0387c4c860ec1f46403120, type: 3}
   m_IsPrefabParent: 0
@@ -82319,6 +82691,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 837817260}
   m_GameObject: {fileID: 2118143488}
   m_Mesh: {fileID: 4300058, guid: f5ec007281885ed4fa8d9c14d1a0454e, type: 3}
+--- !u!1 &2120071064 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1346420717602942, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &2120071071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120071064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: This deer head was actually company's property.
 --- !u!1 &2122450591
 GameObject:
   m_ObjectHideFlags: 0
@@ -82455,6 +82845,24 @@ Transform:
   m_Father: {fileID: 171913859}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2132933613 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1631911335348280, guid: 038a68004b6157b4ea1169eea9f5df89,
+    type: 2}
+  m_PrefabInternal: {fileID: 615903477}
+--- !u!114 &2132933618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2132933613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 418248154}
+  _textOfSubtitlesMonolog: They always were friends, from the childhood.
 --- !u!1001 &2136345537
 Prefab:
   m_ObjectHideFlags: 0
@@ -83558,7 +83966,7 @@ GameObject:
   - component: {fileID: 2144146030}
   - component: {fileID: 2144146032}
   - component: {fileID: 2144146031}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ?5 ????
   m_TagString: Untagged
   m_Icon: {fileID: 0}
