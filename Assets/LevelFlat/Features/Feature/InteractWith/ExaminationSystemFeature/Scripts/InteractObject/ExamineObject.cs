@@ -14,6 +14,7 @@ using LevelFlat.Features.Feature.InteractWithObjects;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts;
 using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Zenject;
 
 namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.InteractObject
@@ -33,6 +34,7 @@ namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scrip
 
         public override void OnPress()
         {
+            if(EventSystem.current.IsPointerOverGameObject()) return;
             if (_isEximiningObject)
                 StopExamineObject();
             else
