@@ -5,9 +5,7 @@
         public enum Notebook
         {
             TurningPage,
-            NotifyAboutTask,
-            NotifyAboutEvidence,
-            NotifyAboutItem
+            NotifyAboutCreateTask
         }
     }
 }
