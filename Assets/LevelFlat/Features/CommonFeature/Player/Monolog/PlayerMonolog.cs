@@ -11,7 +11,7 @@ namespace LevelFlat.Features.CommonFeature.Player.Monolog
 
         public void StartMonolog()
         {
-            _monologSound?.Play();
+            _monologSound.Play();
             _subtitlesMonolog.ShowSubtitles(_textOfSubtitlesMonolog);
         }
     }

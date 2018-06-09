@@ -11,9 +11,7 @@ namespace LevelFlat.Features.Feature.SceneContext
         
         public override void InstallBindings()
         {
-            Container.BindInstance(AudioEnvironmentSettingsScene.NotifyAboutTask).WithId(AudioSourceType.Notebook.NotifyAboutTask);
-            Container.BindInstance(AudioEnvironmentSettingsScene.NotifyAboutItem).WithId(AudioSourceType.Notebook.NotifyAboutItem);
-            Container.BindInstance(AudioEnvironmentSettingsScene.NotifyAboutEvidence).WithId(AudioSourceType.Notebook.NotifyAboutEvidence);
+            Container.BindInstance(AudioEnvironmentSettingsScene.NotifyAboutTask).WithId(AudioSourceType.Notebook.NotifyAboutCreateTask);
         }
         
         [Serializable]
@@ -22,8 +20,6 @@ namespace LevelFlat.Features.Feature.SceneContext
             // @formatter:off
             [Header("AudioSources")] 
             public AudioSource NotifyAboutTask;
-            public AudioSource NotifyAboutItem;
-            public AudioSource NotifyAboutEvidence;
             // @formatter:on
         }
     }

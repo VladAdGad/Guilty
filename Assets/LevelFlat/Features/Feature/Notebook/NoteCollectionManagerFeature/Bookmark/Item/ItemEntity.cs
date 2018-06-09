@@ -20,7 +20,6 @@ namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookm
         public void AddItem()
         {
             _inventoryManager.AddToPage(_dataItem);
-            _userNotification.NotifyAboutItem();
             
             Destroy(this);
         }
