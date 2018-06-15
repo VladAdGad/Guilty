@@ -15,6 +15,7 @@ namespace Sandbox.Vlad
     public class LevelFlatChangeLevel : Interactable
     {
         [SerializeField] private int _toAllowChangeLevel;
+        [SerializeField] private AudioSource _shouldFindMoreEvidencesAudio;
         [Inject] private List<ButtonEvidenceChanger> _buttonEvidenceChangers;
         [Inject] private LevelChanger _levelChanger;
 
@@ -26,6 +27,8 @@ namespace Sandbox.Vlad
         {
             if (CheckRequirements())
                 StartCoroutine(_levelChanger.LoadNextScene());
+            else
+                PlayLockStateAudio();
         }
 
         private bool CheckRequirements()
@@ -46,6 +49,12 @@ namespace Sandbox.Vlad
             }
 
             return countOfEthan.Equals(_toAllowChangeLevel) && countOfMia.Equals(_toAllowChangeLevel) && countOfDylan.Equals(_toAllowChangeLevel);
+        }
+
+        private void PlayLockStateAudio()
+        {
+            if (_shouldFindMoreEvidencesAudio.isPlaying) return;
+            _shouldFindMoreEvidencesAudio.Play();
         }
     }
 }
