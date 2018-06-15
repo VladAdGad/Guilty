@@ -10,7 +10,7 @@ using Zenject;
  * 10 kostylej iz 10 etoj klase
  */
 
-namespace Sandbox.Vlad
+namespace LevelFlat.Features.ChangeLevelFeature
 {
     public class LevelFlatChangeLevel : Interactable
     {
