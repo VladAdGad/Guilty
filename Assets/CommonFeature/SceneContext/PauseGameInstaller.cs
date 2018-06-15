@@ -1,5 +1,6 @@
 ﻿using System;
 using CommonFeature.SceneContext.TypeIdentificators;
+using CommonFeature.UI.Pause;
 using UnityEngine;
 using Zenject;
 
