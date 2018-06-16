@@ -6,7 +6,8 @@
         {
             TurningPage,
             NotifyAboutCreateTask,
-            NotifyAboutPickUpItem
+            NotifyAboutPickUpItem,
+            NotifyAboutEvidence
         }
     }
 }
