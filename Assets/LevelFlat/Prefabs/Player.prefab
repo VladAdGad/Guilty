@@ -13355,7 +13355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _monologSound: {fileID: 0}
-  _textOfSubtitlesMonolog: It's brother's request for the pay increase, but is's denied.
+  _textOfSubtitlesMonolog: It's brother's request for the pay increase, but it's denied.
 --- !u!114 &114239694075131168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14098,7 +14098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _monologSound: {fileID: 0}
-  _textOfSubtitlesMonolog: The most famous assassinations in history.
+  _textOfSubtitlesMonolog: '"The most famous assassinations in history"...'
 --- !u!114 &114423377364914534
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16020,7 +16020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _monologSound: {fileID: 0}
-  _textOfSubtitlesMonolog: He would never bought something like this, only Mia adores
+  _textOfSubtitlesMonolog: He would never bought something like this, only Mia likes
     it.
 --- !u!114 &114993163563060274
 MonoBehaviour:
