@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace LevelFlat.Features.Feature.InteractWith.DoorFeature.Scripts.DoorLockBehaviour
 {
@@ -14,6 +15,7 @@ namespace LevelFlat.Features.Feature.InteractWith.DoorFeature.Scripts.DoorLockBe
 
         public override void OnPress()
         {
+            if(EventSystem.current.IsPointerOverGameObject()) return;
             if (!_doorLocked)
                 base.OnPress();
             else
