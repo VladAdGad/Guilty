@@ -1,6 +1,6 @@
 ﻿namespace LevelFlat.Features.Feature.SceneContext.TypeIdentificators
 {
-    internal abstract class GameObjectType
+    public abstract class GameObjectType
     {
         public enum Camera
         {
@@ -18,6 +18,11 @@
         public enum Player
         {
             Player
+        }
+
+        public enum Notebook
+        {
+            Notebook
         }
     }
 }

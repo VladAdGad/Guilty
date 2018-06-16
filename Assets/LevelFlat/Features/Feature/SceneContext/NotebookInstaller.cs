@@ -16,7 +16,7 @@ namespace LevelFlat.Features.Feature.SceneContext
 
         public override void InstallBindings()
         {
-            Container.BindInstance(NotebookSettingsScene.Notebook).WithId(NotebookType.Notebook);
+            Container.BindInstance(NotebookSettingsScene.Notebook).WithId(GameObjectType.Notebook.Notebook);
 
             Container.BindInstance(NotebookSettingsScene.InventoryPage).AsSingle();
             Container.BindInstance(NotebookSettingsScene.EvidencePage).AsSingle();
