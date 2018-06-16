@@ -13,6 +13,7 @@ namespace LevelFlat.Features.Feature.SceneContext
         {
             Container.BindInstance(AudioEnvironmentSettingsScene.NotifyAboutTask).WithId(AudioSourceType.Notebook.NotifyAboutCreateTask);
             Container.BindInstance(AudioEnvironmentSettingsScene.NotifyAboutItem).WithId(AudioSourceType.Notebook.NotifyAboutPickUpItem);
+            Container.BindInstance(AudioEnvironmentSettingsScene.NotifyAboutEvidence).WithId(AudioSourceType.Notebook.NotifyAboutEvidence);
         }
         
         [Serializable]
@@ -22,6 +23,7 @@ namespace LevelFlat.Features.Feature.SceneContext
             [Header("AudioSources")] 
             public AudioSource NotifyAboutTask;
             public AudioSource NotifyAboutItem;
+            public AudioSource NotifyAboutEvidence;
             // @formatter:on
         }
     }
