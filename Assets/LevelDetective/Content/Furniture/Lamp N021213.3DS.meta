@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 2ee22fc86982b154e9ac1b329a5f1fd7
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box01_FACE
+    100002: Box02_FACE
+    100004: Box03_FACE
+    100006: Box04_FACE
+    100008: Box05_FACE
+    100010: Box06_FACE
+    100012: Box07_FACE
+    100014: Box09_FACE
+    100016: Box10_FACE
+    100018: Box11_FACE
+    100020: bulb_FACES
+    100022: Cylinder00
+    100024: Cylinder11
+    100026: Cylinder23
+    100028: Cylinder25
+    100030: Cylinder26
+    100032: Cylinder27
+    100034: Cylinder28
+    100036: Cylinder29
+    100038: Cylinder30
+    100040: Cylinder31
+    100042: Cylinder32
+    100044: inside_co0
+    100046: //RootNode
+    100048: Line02_FAC
+    100050: Line03_FAC
+    100052: Object01_F
+    100054: Object02_F
+    100056: outside_c0
+    100058: Spring01_F
+    100060: Spring02_F
+    100062: Spring03_F
+    400000: Box01_FACE
+    400002: Box02_FACE
+    400004: Box03_FACE
+    400006: Box04_FACE
+    400008: Box05_FACE
+    400010: Box06_FACE
+    400012: Box07_FACE
+    400014: Box09_FACE
+    400016: Box10_FACE
+    400018: Box11_FACE
+    400020: bulb_FACES
+    400022: Cylinder00
+    400024: Cylinder11
+    400026: Cylinder23
+    400028: Cylinder25
+    400030: Cylinder26
+    400032: Cylinder27
+    400034: Cylinder28
+    400036: Cylinder29
+    400038: Cylinder30
+    400040: Cylinder31
+    400042: Cylinder32
+    400044: inside_co0
+    400046: //RootNode
+    400048: Line02_FAC
+    400050: Line03_FAC
+    400052: Object01_F
+    400054: Object02_F
+    400056: outside_c0
+    400058: Spring01_F
+    400060: Spring02_F
+    400062: Spring03_F
+    2100000: _Lamp N021213VMt
+    2100002: _Lamp N0212131
+    2100004: _Lamp N0212132
+    2100006: _Lamp N0212133
+    2300000: Box01_FACE
+    2300002: Box02_FACE
+    2300004: Box03_FACE
+    2300006: Box04_FACE
+    2300008: Box05_FACE
+    2300010: Box06_FACE
+    2300012: Box07_FACE
+    2300014: Box09_FACE
+    2300016: Box10_FACE
+    2300018: Box11_FACE
+    2300020: bulb_FACES
+    2300022: Cylinder00
+    2300024: Cylinder11
+    2300026: Cylinder23
+    2300028: Cylinder25
+    2300030: Cylinder26
+    2300032: Cylinder27
+    2300034: Cylinder28
+    2300036: Cylinder29
+    2300038: Cylinder30
+    2300040: Cylinder31
+    2300042: Cylinder32
+    2300044: inside_co0
+    2300046: Line02_FAC
+    2300048: Line03_FAC
+    2300050: Object01_F
+    2300052: Object02_F
+    2300054: outside_c0
+    2300056: Spring01_F
+    2300058: Spring02_F
+    2300060: Spring03_F
+    3300000: Box01_FACE
+    3300002: Box02_FACE
+    3300004: Box03_FACE
+    3300006: Box04_FACE
+    3300008: Box05_FACE
+    3300010: Box06_FACE
+    3300012: Box07_FACE
+    3300014: Box09_FACE
+    3300016: Box10_FACE
+    3300018: Box11_FACE
+    3300020: bulb_FACES
+    3300022: Cylinder00
+    3300024: Cylinder11
+    3300026: Cylinder23
+    3300028: Cylinder25
+    3300030: Cylinder26
+    3300032: Cylinder27
+    3300034: Cylinder28
+    3300036: Cylinder29
+    3300038: Cylinder30
+    3300040: Cylinder31
+    3300042: Cylinder32
+    3300044: inside_co0
+    3300046: Line02_FAC
+    3300048: Line03_FAC
+    3300050: Object01_F
+    3300052: Object02_F
+    3300054: outside_c0
+    3300056: Spring01_F
+    3300058: Spring02_F
+    3300060: Spring03_F
+    4300000: Box01_FACE
+    4300002: Box02_FACE
+    4300004: Box05_FACE
+    4300006: Box06_FACE
+    4300008: Box03_FACE
+    4300010: Box04_FACE
+    4300012: Box09_FACE
+    4300014: Cylinder23
+    4300016: Cylinder00
+    4300018: Spring01_F
+    4300020: Cylinder25
+    4300022: Spring02_F
+    4300024: Cylinder26
+    4300026: Cylinder27
+    4300028: Cylinder28
+    4300030: Cylinder29
+    4300032: Cylinder30
+    4300034: Cylinder31
+    4300036: outside_c0
+    4300038: Line03_FAC
+    4300040: Cylinder11
+    4300042: Line02_FAC
+    4300044: Box10_FACE
+    4300046: Cylinder32
+    4300048: Spring03_F
+    4300050: Box11_FACE
+    4300052: bulb_FACES
+    4300054: Object01_F
+    4300056: Box07_FACE
+    4300058: Object02_F
+    4300060: inside_co0
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
