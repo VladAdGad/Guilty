@@ -7,7 +7,7 @@ namespace CommonFeature.UI.Pause
     public class PauseGameManager : MonoBehaviour
     {
         [Inject(Id = GameObjectType.Ui.PauseGame)] private GameObject _pauseGameObject;
-
+        
         private PauseGameBehaviour _pauseGameBehaviour;
 
         private void Start() => _pauseGameBehaviour = _pauseGameObject.GetComponent<PauseGameBehaviour>();

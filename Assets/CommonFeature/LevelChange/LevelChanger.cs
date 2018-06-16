@@ -2,7 +2,6 @@
 using Sandbox.Vlad.BetweenScenes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Zenject;
 
 namespace CommonFeature.LevelChange
 {
@@ -13,15 +12,7 @@ namespace CommonFeature.LevelChange
 
         private void Start() => _fadeAnimation = GetComponent<FadeAnimation>();
 
-        private void Update() //TODO: remove after implmentings real rules of change scene
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                StartCoroutine(LoadNextScene());
-            }
-        }
-
-        private IEnumerator LoadNextScene()
+        public IEnumerator LoadNextScene()
         {
             _fadeAnimation.StartAnimation();
             yield return new WaitForSeconds(AnimationManager.GetAnimationClipFromAnimatorByName(_fadeAnimation.LevelChangerAnimator, FadeAnimation.NameOfAnimation).length);
