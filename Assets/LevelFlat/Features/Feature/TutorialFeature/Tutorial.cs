@@ -11,26 +11,25 @@ namespace LevelFlat.Features.Feature.TutorialFeature
         [Inject] private PlayerBehaviour _playerBehaviour;
         // @formatter:on
 
-
-        private void Awake() => PauseGame();
+        private void Awake() => EnableTutorial();
 
         private void Update()
         {
             if (Input.GetKey(KeyCode.Return))
             {
-                ResumeGame();
+                DisableTutrial();
                 Destroy(gameObject);
             }
         }
 
-        private void ResumeGame()
+        private void DisableTutrial()
         {
             _canvasMain.SetActive(true);
             _playerBehaviour.EnableFirstPersonController();
             Time.timeScale = 1;
         }
 
-        private void PauseGame()
+        private void EnableTutorial()
         {
             _canvasMain.SetActive(false);
             _playerBehaviour.DisableFirstPersonController();
