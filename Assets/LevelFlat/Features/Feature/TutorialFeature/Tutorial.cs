@@ -1,5 +1,4 @@
-﻿using CommonFeature.SceneContext.TypeIdentificators;
-using CommonFeature.UI.Pause;
+﻿using LevelFlat.Features.CommonFeature.Player;
 using UnityEngine;
 using Zenject;
 
@@ -7,17 +6,35 @@ namespace LevelFlat.Features.Feature.TutorialFeature
 {
     public class Tutorial : MonoBehaviour
     {
-        [Inject(Id = GameObjectType.Ui.PauseGame)] private GameObject _pauseGameObject;
+        // @formatter:off
+        [SerializeField] private GameObject _canvasMain;
+        [Inject] private PlayerBehaviour _playerBehaviour;
+        // @formatter:on
 
-        private void Awake() => _pauseGameObject.GetComponent<PauseGameBehaviour>().PauseGame();
+
+        private void Awake() => PauseGame();
 
         private void Update()
         {
             if (Input.GetKey(KeyCode.Return))
             {
-                _pauseGameObject.GetComponent<PauseGameBehaviour>().ResumeGame();
+                ResumeGame();
                 Destroy(gameObject);
             }
+        }
+
+        private void ResumeGame()
+        {
+            _canvasMain.SetActive(true);
+            _playerBehaviour.EnableFirstPersonController();
+            Time.timeScale = 1;
+        }
+
+        private void PauseGame()
+        {
+            _canvasMain.SetActive(false);
+            _playerBehaviour.DisableFirstPersonController();
+            Time.timeScale = 0;
         }
     }
 }
