@@ -7625,7 +7625,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-376334
+  m_Name: pb_Mesh-5194
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -8377,7 +8377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _monologSound: {fileID: 418248154}
+  _monologSound: {fileID: 1538893298}
   _textOfSubtitlesMonolog: Those numbers must be the password to the safe.
 --- !u!114 &241755931
 MonoBehaviour:
@@ -15163,7 +15163,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-376176
+  m_Name: pb_Mesh-5034
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -18304,7 +18304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _monologSound: {fileID: 418248154}
+  _monologSound: {fileID: 296148889}
   _textOfSubtitlesMonolog: Is it blood on the knife?..
 --- !u!1 &526124704
 GameObject:
@@ -20742,102 +20742,102 @@ Prefab:
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 1651176550}
     - target: {fileID: 114770586705044946, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 1450672421}
     - target: {fileID: 114885430766169680, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 2025793761}
     - target: {fileID: 114962477962919378, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 1377887195}
     - target: {fileID: 114511265953832864, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 768881212}
     - target: {fileID: 114543631128524944, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 410015723}
     - target: {fileID: 114880792917672702, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 630154542}
     - target: {fileID: 114217828646796150, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 817833058}
     - target: {fileID: 114552036855615624, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 88770181}
     - target: {fileID: 114213252177705664, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 829006963}
     - target: {fileID: 114916873561116014, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 60489767}
     - target: {fileID: 114026116658451126, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 766084397}
     - target: {fileID: 114417264013667292, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 661197643}
     - target: {fileID: 114493178840714338, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 1664726201}
     - target: {fileID: 114102882096573606, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 478153630}
     - target: {fileID: 114887923569971834, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 714158160}
     - target: {fileID: 114991791132478966, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 1812441158}
     - target: {fileID: 114589281356897062, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 1909492859}
     - target: {fileID: 114646319101253338, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 280085403}
     - target: {fileID: 114125119629649640, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 2072373458}
     - target: {fileID: 114802255067411450, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
@@ -20847,22 +20847,22 @@ Prefab:
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 1538401541}
     - target: {fileID: 114743804376270468, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 2093945735}
     - target: {fileID: 114074913524550078, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 859892651}
     - target: {fileID: 114925228397334816, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 1698058548}
     - target: {fileID: 33327386612153678, guid: 038a68004b6157b4ea1169eea9f5df89,
         type: 2}
       propertyPath: m_Mesh
@@ -20952,7 +20952,7 @@ Prefab:
         type: 2}
       propertyPath: _monologSound
       value: 
-      objectReference: {fileID: 418248154}
+      objectReference: {fileID: 1733772923}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 038a68004b6157b4ea1169eea9f5df89, type: 2}
   m_IsPrefabParent: 0
@@ -48998,7 +48998,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-376144
+  m_Name: pb_Mesh-5002
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -52781,6 +52781,7 @@ GameObject:
   - component: {fileID: 1332084860}
   - component: {fileID: 1332084859}
   - component: {fileID: 1332084858}
+  - component: {fileID: 1332084862}
   m_Layer: 8
   m_Name: Key
   m_TagString: Untagged
@@ -52895,6 +52896,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 62.54741, y: 9.789202, z: 58.221104}
   m_Center: {x: 0.001953125, y: 0.00012207031, z: 0}
+--- !u!114 &1332084862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1332084854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 1285502806}
+  _textOfSubtitlesMonolog: Yes! Maybe it's a key to the guestroom?
 --- !u!1 &1334595131
 GameObject:
   m_ObjectHideFlags: 0
@@ -66738,7 +66752,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh714690
+  m_Name: pb_Mesh-5036
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -71459,7 +71473,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-376130
+  m_Name: pb_Mesh-4988
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -74814,7 +74828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _monologSound: {fileID: 418248154}
+  _monologSound: {fileID: 275823275}
   _textOfSubtitlesMonolog: Key to the apartment!
 --- !u!1 &1871579081
 GameObject:
@@ -83496,7 +83510,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-376112
+  m_Name: pb_Mesh-4970
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
