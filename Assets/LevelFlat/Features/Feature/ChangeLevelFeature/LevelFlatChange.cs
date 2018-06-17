@@ -60,8 +60,6 @@ namespace LevelFlat.Features.Feature.ChangeLevelFeature
                     ++countOfDylan;
             }
             
-            Debug.Log(countOfDylan +""+ countOfEthan +""+ countOfMia);
-
             return countOfEthan >= _toAllowChangeLevel &&
                    countOfMia >= _toAllowChangeLevel &&
                    countOfDylan >= _toAllowChangeLevel;
