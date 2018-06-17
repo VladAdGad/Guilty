@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using CommonFeature.LevelChange;
-using CommonFeature.UtilityCommonFeature;
 using LevelFlat.Features.Feature.InteractWith;
 using LevelFlat.Features.Feature.Notebook.Behaviour.Evidence;
 using UnityEngine;
@@ -21,14 +21,9 @@ namespace LevelFlat.Features.Feature.ChangeLevelFeature
         [Inject] private List<ButtonEvidenceChanger> _buttonEvidenceChangers;
         [Inject] private LevelChanger _levelChanger;
 
-        private OneTimeAction _onPressOnce;
-        private const string Ethan = "Ethan";
-        private const string Mia = "Mia";
-        private const string Dylan = "Dylan";
+        private readonly Dictionary<SuspectEnum, int> _suspects = new Dictionary<SuspectEnum, int>() {{SuspectEnum.Dylan, 0}, {SuspectEnum.Ethan, 0}, {SuspectEnum.Mia, 0}};
 
-        private void Start() => _onPressOnce = new OneTimeAction(ChangeLevel);
-
-        public override void OnPress() => _onPressOnce.Invoke();
+        public override void OnPress() => ChangeLevel();
 
         private void ChangeLevel()
         {
@@ -45,24 +40,34 @@ namespace LevelFlat.Features.Feature.ChangeLevelFeature
 
         private bool CheckRequirements()
         {
-            int countOfEthan = 0, countOfMia = 0, countOfDylan = 0;
-
-            foreach (var evidence in _buttonEvidenceChangers)
+            ResetSuspects();
+            foreach (var buttonEvidenceChanger in _buttonEvidenceChangers)
             {
-                if (evidence.DataEvidence == null) continue;
-                if (evidence.DataEvidence.Title.Equals(Ethan))
-                    ++countOfEthan;
-
-                if (evidence.DataEvidence.Title.Equals(Mia))
-                    ++countOfMia;
-
-                if (evidence.DataEvidence.Title.Equals(Dylan))
-                    ++countOfDylan;
+                if (buttonEvidenceChanger.DataEvidence == null) continue;
+                foreach (KeyValuePair<SuspectEnum, int> keyValuePair in _suspects.ToList())
+                {
+                    if (keyValuePair.Key.ToString().Equals(buttonEvidenceChanger.DataEvidence.Involved))
+                    {
+                        _suspects[keyValuePair.Key] += 1;
+                    }
+                }
             }
 
-            return countOfEthan >= _toAllowChangeLevel &&
-                   countOfMia >= _toAllowChangeLevel &&
-                   countOfDylan >= _toAllowChangeLevel;
+
+            foreach (KeyValuePair<SuspectEnum, int> keyValuePair in _suspects)
+            {
+                if (keyValuePair.Value < _toAllowChangeLevel)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private void ResetSuspects()
+        {
+            foreach (KeyValuePair<SuspectEnum, int> keyValuePair in _suspects.ToList())
+                _suspects[keyValuePair.Key] = 0;
         }
 
         private void PlayLockStateAudio()
