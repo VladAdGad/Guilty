@@ -13,5 +13,5 @@ public class LevelIntroChange : MonoBehaviour
         _videoPlayer.loopPointReached += EndReached;
     }
 
-    private static void EndReached(VideoPlayer vp) => SceneManager.LoadScene((int) SceneIndex.Flat);
+    private static void EndReached(VideoPlayer vp) => SceneManager.LoadScene((int) SceneIndex.Apartments);
 }
