@@ -2,6 +2,7 @@
 using LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.GUI;
 using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zenject;
 

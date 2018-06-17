@@ -1,6 +1,6 @@
 ﻿namespace CommonFeature.SceneContext.TypeIdentificators
 {
-    internal abstract class GameObjectType
+    public abstract class GameObjectType
     {
         public enum Ui
         {

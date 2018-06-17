@@ -14,7 +14,7 @@ namespace LevelFlat.Features.Feature.Notebook
     public class NotebookManager : MonoBehaviour
     {
         // @formatter:off
-        [Inject(Id = NotebookType.Notebook)] private GameObject _noteBook;
+        [Inject(Id = GameObjectType.Notebook.Notebook)] private GameObject _noteBook;
         // @formatter:on
 
         [Inject] private PlayerBehaviour _playerBehaviour;
