@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 516471036}
   - component: {fileID: 516471037}
   - component: {fileID: 516471038}
+  - component: {fileID: 516471039}
   m_Layer: 5
   m_Name: Video
   m_TagString: Untagged
@@ -357,6 +358,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &516471039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516471035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a897c0bbfabfd6409f6fbfba9359800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _videoPlayer: {fileID: 516471037}
 --- !u!1 &986180512
 GameObject:
   m_ObjectHideFlags: 0
