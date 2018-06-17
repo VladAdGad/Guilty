@@ -9,6 +9,6 @@ namespace CommonFeature.UI.ButtonListeners
     {
         [Inject] private LevelChanger _levelChanger;
         
-        private void Start() => GetComponent<Button>().onClick.AddListener(() => StartCoroutine(_levelChanger.LoadIndexScene(SceneIndex.Apartments)));
+        private void Start() => GetComponent<Button>().onClick.AddListener(() => StartCoroutine(_levelChanger.LoadIndexScene(SceneIndex.Intro)));
     }
 }
