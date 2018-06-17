@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using CommonFeature.LevelChange;
+using CommonFeature.UtilityCommonFeature;
 using LevelFlat.Features.Feature.InteractWith;
 using LevelFlat.Features.Feature.Notebook.Behaviour.Evidence;
 using UnityEngine;
@@ -21,19 +21,26 @@ namespace LevelFlat.Features.Feature.ChangeLevelFeature
         [Inject] private List<ButtonEvidenceChanger> _buttonEvidenceChangers;
         [Inject] private LevelChanger _levelChanger;
 
-        public override void OnPress() => ChangeLevel();
+        private OneTimeAction _changeLevelOnceTimeAction;
+        
+        private void Start() => _changeLevelOnceTimeAction = new OneTimeAction(ChangeLevel);
 
-        private void ChangeLevel()
+        public override void OnPress()
         {
             if (CheckRequirements())
             {
-                StartCoroutine(_levelChanger.LoadNextScene());
-                _openDoorSound.Play();
+                _changeLevelOnceTimeAction.Invoke();
             }
             else
             {
                 PlayLockStateAudio();
             }
+        }
+
+        private void ChangeLevel()
+        {
+            StartCoroutine(_levelChanger.LoadNextScene());
+            _openDoorSound.Play();
         }
 
         private bool CheckRequirements()
