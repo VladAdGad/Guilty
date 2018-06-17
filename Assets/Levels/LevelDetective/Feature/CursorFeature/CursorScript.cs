@@ -2,5 +2,9 @@
 
 public class CursorScript : MonoBehaviour
 {
-    void Start() => Cursor.visible = true;
+    private void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
 }
