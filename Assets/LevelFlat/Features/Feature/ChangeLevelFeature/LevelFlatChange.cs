@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using CommonFeature.LevelChange;
+using CommonFeature.UtilityCommonFeature;
 using LevelFlat.Features.Feature.InteractWith;
 using LevelFlat.Features.Feature.Notebook.Behaviour.Evidence;
 using UnityEngine;
@@ -10,7 +11,7 @@ using Zenject;
  * 10 kostylej iz 10 etoj klase
  */
 
-namespace LevelFlat.Features.ChangeLevelFeature
+namespace LevelFlat.Features.Feature.ChangeLevelFeature
 {
     public class LevelFlatChange : Interactable
     {
@@ -20,11 +21,16 @@ namespace LevelFlat.Features.ChangeLevelFeature
         [Inject] private List<ButtonEvidenceChanger> _buttonEvidenceChangers;
         [Inject] private LevelChanger _levelChanger;
 
+        private OneTimeAction _onPressOnce;
         private const string Ethan = "Ethan";
         private const string Mia = "Mia";
         private const string Dylan = "Dylan";
 
-        public override void OnPress()
+        private void Start() => _onPressOnce = new OneTimeAction(ChangeLevel);
+
+        public override void OnPress() => _onPressOnce.Invoke();
+
+        private void ChangeLevel()
         {
             if (CheckRequirements())
             {
