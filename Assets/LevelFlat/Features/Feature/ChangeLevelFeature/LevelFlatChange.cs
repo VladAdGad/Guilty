@@ -50,16 +50,16 @@ namespace LevelFlat.Features.Feature.ChangeLevelFeature
             foreach (var evidence in _buttonEvidenceChangers)
             {
                 if (evidence.DataEvidence == null) continue;
-                if (evidence.DataEvidence.Title.Equals(SuspectEnum.Ethan.ToString()))
+                if (evidence.DataEvidence.Involved.Equals(SuspectEnum.Ethan.ToString()))
                     ++countOfEthan;
 
-                if (evidence.DataEvidence.Title.Equals(SuspectEnum.Mia.ToString()))
+                if (evidence.DataEvidence.Involved.Equals(SuspectEnum.Mia.ToString()))
                     ++countOfMia;
 
-                if (evidence.DataEvidence.Title.Equals(SuspectEnum.Dylan.ToString()))
+                if (evidence.DataEvidence.Involved.Equals(SuspectEnum.Dylan.ToString()))
                     ++countOfDylan;
             }
-
+            
             return countOfEthan >= _toAllowChangeLevel &&
                    countOfMia >= _toAllowChangeLevel &&
                    countOfDylan >= _toAllowChangeLevel;
