@@ -26,14 +26,12 @@ namespace LevelFlat.Features.Feature.TutorialFeature
         {
             _canvasMain.SetActive(true);
             _playerBehaviour.EnableFirstPersonController();
-            Time.timeScale = 1;
         }
 
         private void EnableTutorial()
         {
             _canvasMain.SetActive(false);
             _playerBehaviour.DisableFirstPersonController();
-            Time.timeScale = 0;
         }
     }
 }

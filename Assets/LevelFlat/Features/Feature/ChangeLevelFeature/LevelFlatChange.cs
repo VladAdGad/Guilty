@@ -12,10 +12,11 @@ using Zenject;
 
 namespace LevelFlat.Features.ChangeLevelFeature
 {
-    public class LevelFlatChangeLevel : Interactable
+    public class LevelFlatChange : Interactable
     {
         [SerializeField] private int _toAllowChangeLevel;
         [SerializeField] private AudioSource _shouldFindMoreEvidencesAudio;
+        [SerializeField] private AudioSource _openDoorSound;
         [Inject] private List<ButtonEvidenceChanger> _buttonEvidenceChangers;
         [Inject] private LevelChanger _levelChanger;
 
@@ -26,9 +27,14 @@ namespace LevelFlat.Features.ChangeLevelFeature
         public override void OnPress()
         {
             if (CheckRequirements())
+            {
                 StartCoroutine(_levelChanger.LoadNextScene());
+                _openDoorSound.Play();
+            }
             else
+            {
                 PlayLockStateAudio();
+            }
         }
 
         private bool CheckRequirements()
