@@ -60,7 +60,9 @@ namespace LevelFlat.Features.Feature.ChangeLevelFeature
                     ++countOfDylan;
             }
 
-            return countOfEthan.Equals(_toAllowChangeLevel) && countOfMia.Equals(_toAllowChangeLevel) && countOfDylan.Equals(_toAllowChangeLevel);
+            return countOfEthan >= _toAllowChangeLevel &&
+                   countOfMia >= _toAllowChangeLevel &&
+                   countOfDylan >= _toAllowChangeLevel;
         }
 
         private void PlayLockStateAudio()
