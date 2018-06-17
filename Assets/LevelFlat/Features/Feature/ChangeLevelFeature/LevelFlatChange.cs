@@ -21,8 +21,6 @@ namespace LevelFlat.Features.Feature.ChangeLevelFeature
         [Inject] private List<ButtonEvidenceChanger> _buttonEvidenceChangers;
         [Inject] private LevelChanger _levelChanger;
 
-        private readonly Dictionary<SuspectEnum, int> _suspects = new Dictionary<SuspectEnum, int>() {{SuspectEnum.Dylan, 0}, {SuspectEnum.Ethan, 0}, {SuspectEnum.Mia, 0}};
-
         public override void OnPress() => ChangeLevel();
 
         private void ChangeLevel()
@@ -40,34 +38,24 @@ namespace LevelFlat.Features.Feature.ChangeLevelFeature
 
         private bool CheckRequirements()
         {
-            ResetSuspects();
-            foreach (var buttonEvidenceChanger in _buttonEvidenceChangers)
+            int countOfEthan = 0, countOfMia = 0, countOfDylan = 0;
+
+            foreach (var evidence in _buttonEvidenceChangers)
             {
-                if (buttonEvidenceChanger.DataEvidence == null) continue;
-                foreach (KeyValuePair<SuspectEnum, int> keyValuePair in _suspects.ToList())
-                {
-                    if (keyValuePair.Key.ToString().Equals(buttonEvidenceChanger.DataEvidence.Involved))
-                    {
-                        _suspects[keyValuePair.Key] += 1;
-                    }
-                }
+                if (evidence.DataEvidence == null) continue;
+                if (evidence.DataEvidence.Title.Equals(SuspectEnum.Ethan.ToString()))
+                    ++countOfEthan;
+
+                if (evidence.DataEvidence.Title.Equals(SuspectEnum.Mia.ToString()))
+                    ++countOfMia;
+
+                if (evidence.DataEvidence.Title.Equals(SuspectEnum.Dylan.ToString()))
+                    ++countOfDylan;
             }
 
-
-            foreach (KeyValuePair<SuspectEnum, int> keyValuePair in _suspects)
-            {
-                if (keyValuePair.Value < _toAllowChangeLevel)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-
-        private void ResetSuspects()
-        {
-            foreach (KeyValuePair<SuspectEnum, int> keyValuePair in _suspects.ToList())
-                _suspects[keyValuePair.Key] = 0;
+            return countOfEthan >= _toAllowChangeLevel &&
+                   countOfMia >= _toAllowChangeLevel &&
+                   countOfDylan >= _toAllowChangeLevel;
         }
 
         private void PlayLockStateAudio()
