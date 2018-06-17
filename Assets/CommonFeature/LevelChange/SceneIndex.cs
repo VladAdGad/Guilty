@@ -4,7 +4,7 @@
     {
         Intro = 0,
         MainMenu = 1,
-        Flat = 2,
+        Apartments = 2,
         Detective = 3,
         EndingOne = 4,
         EndingTwo = 5,
