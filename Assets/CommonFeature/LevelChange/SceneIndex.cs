@@ -2,10 +2,13 @@
 {
     public enum SceneIndex
     {
-//        Intro = 0,
-        MainMenu = 0,
-        Flat = 1,
+        Intro = 0,
+        MainMenu = 1,
+        Flat = 2,
         Detective = 3,
-        Credits = 5
+        EndingOne = 4,
+        EndingTwo = 5,
+        EndingThree = 6,
+        Credits = 7
     }
 }
