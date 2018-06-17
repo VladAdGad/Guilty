@@ -14,6 +14,7 @@ using LevelFlat.Features.Feature.InteractWithObjects;
 using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts;
 using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Zenject;
 
 namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.InteractObject
@@ -23,7 +24,6 @@ namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scrip
         [SerializeField] private GameObject _targetExaminableObject;
 
         // @formatter:off
-        [Inject(Id = GameObjectType.GuiSocket.Crosshair)] private GameObject _crosshairObject;
         [Inject(Id = GameObjectType.GuiSocket.ExamineControl)] private GameObject _ecamineControlObject;
         [Inject(Id = GameObjectType.Camera.MainCamera)] private GameObject _mainCamera;
         [Inject(Id = GameObjectType.Camera.ExaminableCamera)] private GameObject _examinableCamera;
@@ -34,6 +34,7 @@ namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scrip
 
         public override void OnPress()
         {
+            if(EventSystem.current.IsPointerOverGameObject()) return;
             if (_isEximiningObject)
                 StopExamineObject();
             else
@@ -47,7 +48,7 @@ namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scrip
             _examinableCamera.GetComponent<ExamineRotation>().StartRotateObject(_targetExaminableObject);
             _playerBehaviour.DisableFirstPersonController();
             _mainCamera.GetComponent<Blur>().enabled = true;
-            _crosshairObject.GetComponent<CrosshairManager>().DisableCrosshair();
+            CrosshairObject.GetComponent<CrosshairManager>().DisableCrosshair();
             _ecamineControlObject.GetComponent<UIFade>().FadeIn();
             _examinableCamera.GetComponent<RaycastManager>().enabled = true;
         }
@@ -57,7 +58,7 @@ namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scrip
             _examinableCamera.GetComponent<ExamineRotation>().StopRotateObject(_targetExaminableObject);
             _playerBehaviour.EnableFirstPersonController();
             _mainCamera.GetComponent<Blur>().enabled = false;
-            _crosshairObject.GetComponent<CrosshairManager>().EnableCrosshair();
+            CrosshairObject.GetComponent<CrosshairManager>().EnableCrosshair();
             _ecamineControlObject.GetComponent<UIFade>().FadeOut();
             _examinableCamera.GetComponent<RaycastManager>().enabled = false;
         }

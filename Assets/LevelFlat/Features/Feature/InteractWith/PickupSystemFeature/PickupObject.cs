@@ -1,8 +1,8 @@
 ﻿using LevelFlat.Features.CommonFeature.Player.Monolog;
-using LevelFlat.Features.Feature.InteractWithObjects;
 using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
 using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item;
 using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
+using UnityEngine.EventSystems;
 
 namespace LevelFlat.Features.Feature.InteractWith.PickupSystemFeature
 {
@@ -25,6 +25,7 @@ namespace LevelFlat.Features.Feature.InteractWith.PickupSystemFeature
 
         public override void OnPress()
         {
+            if(EventSystem.current.IsPointerOverGameObject()) return;
             UpdateNotebook();
 
             Destroy(gameObject);

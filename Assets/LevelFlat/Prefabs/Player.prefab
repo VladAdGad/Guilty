@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 65480507879053178}
   - component: {fileID: 114046247897303698}
   - component: {fileID: 114719434966203390}
+  - component: {fileID: 114213252177705664}
   m_Layer: 9
   m_Name: BossMeeting
   m_TagString: Untagged
@@ -553,6 +554,7 @@ GameObject:
   - component: {fileID: 65975144023831462}
   - component: {fileID: 114528741640531532}
   - component: {fileID: 114346771415448680}
+  - component: {fileID: 114511265953832864}
   m_Layer: 9
   m_Name: Notebook
   m_TagString: Untagged
@@ -1009,6 +1011,7 @@ GameObject:
   - component: {fileID: 65691176243390850}
   - component: {fileID: 114055976677985586}
   - component: {fileID: 114539868049007654}
+  - component: {fileID: 114026116658451126}
   m_Layer: 9
   m_Name: Deerhead
   m_TagString: Untagged
@@ -1095,6 +1098,7 @@ GameObject:
   - component: {fileID: 65389042172124126}
   - component: {fileID: 114986199732129070}
   - component: {fileID: 114846909706241840}
+  - component: {fileID: 114802255067411450}
   m_Layer: 9
   m_Name: Paper ball
   m_TagString: Untagged
@@ -1113,6 +1117,7 @@ GameObject:
   - component: {fileID: 65147945934875892}
   - component: {fileID: 114619943454718876}
   - component: {fileID: 114785939832725698}
+  - component: {fileID: 114770586705044946}
   m_Layer: 9
   m_Name: Pills
   m_TagString: Untagged
@@ -1148,6 +1153,7 @@ GameObject:
   - component: {fileID: 65923579769517108}
   - component: {fileID: 114712044940626858}
   - component: {fileID: 114856379872505660}
+  - component: {fileID: 114885430766169680}
   m_Layer: 9
   m_Name: WorkPhoto
   m_TagString: Untagged
@@ -1168,6 +1174,7 @@ GameObject:
   - component: {fileID: 65349657779491974}
   - component: {fileID: 114638006750274702}
   - component: {fileID: 114439094673720720}
+  - component: {fileID: 114743804376270468}
   m_Layer: 9
   m_Name: 'Figurine '
   m_TagString: Untagged
@@ -1237,6 +1244,7 @@ GameObject:
   - component: {fileID: 65597813403370180}
   - component: {fileID: 114171324033508074}
   - component: {fileID: 114896115362587996}
+  - component: {fileID: 114102882096573606}
   m_Layer: 9
   m_Name: WorkBook
   m_TagString: Untagged
@@ -1255,6 +1263,7 @@ GameObject:
   - component: {fileID: 65584428247938074}
   - component: {fileID: 114911083330348504}
   - component: {fileID: 114928506421675250}
+  - component: {fileID: 114114144857728126}
   m_Layer: 9
   m_Name: 'Painting '
   m_TagString: Untagged
@@ -1314,6 +1323,7 @@ GameObject:
   - component: {fileID: 65683834518194072}
   - component: {fileID: 114057232799929020}
   - component: {fileID: 114001890473545356}
+  - component: {fileID: 114887923569971834}
   m_Layer: 9
   m_Name: LetterFriend
   m_TagString: Untagged
@@ -1334,6 +1344,7 @@ GameObject:
   - component: {fileID: 65262621836473980}
   - component: {fileID: 114866044564285340}
   - component: {fileID: 114217495955404898}
+  - component: {fileID: 114646319101253338}
   m_Layer: 9
   m_Name: Plate
   m_TagString: Untagged
@@ -1369,6 +1380,7 @@ GameObject:
   - component: {fileID: 65942430562088236}
   - component: {fileID: 114209810363399600}
   - component: {fileID: 114423377364914534}
+  - component: {fileID: 114493178840714338}
   m_Layer: 9
   m_Name: Plant
   m_TagString: Untagged
@@ -1491,6 +1503,7 @@ GameObject:
   - component: {fileID: 65930084833430928}
   - component: {fileID: 114997174095878062}
   - component: {fileID: 114495130663869792}
+  - component: {fileID: 114991791132478966}
   m_Layer: 9
   m_Name: Cereals
   m_TagString: Untagged
@@ -1814,6 +1827,7 @@ GameObject:
   - component: {fileID: 65817616189600402}
   - component: {fileID: 114894060994357688}
   - component: {fileID: 114012913015150204}
+  - component: {fileID: 114552036855615624}
   m_Layer: 9
   m_Name: Box
   m_TagString: Untagged
@@ -1837,6 +1851,7 @@ GameObject:
   - component: {fileID: 65335798687205272}
   - component: {fileID: 114612923212147580}
   - component: {fileID: 114522542052197982}
+  - component: {fileID: 114543631128524944}
   m_Layer: 9
   m_Name: FindKeyNote
   m_TagString: Untagged
@@ -1990,6 +2005,7 @@ GameObject:
   - component: {fileID: 65675723711221938}
   - component: {fileID: 114542189404897404}
   - component: {fileID: 114684862756311124}
+  - component: {fileID: 114916873561116014}
   m_Layer: 9
   m_Name: EthanBooks
   m_TagString: Untagged
@@ -2143,6 +2159,7 @@ GameObject:
   - component: {fileID: 65336582830214940}
   - component: {fileID: 114979867763675828}
   - component: {fileID: 114784000222373896}
+  - component: {fileID: 114417264013667292}
   m_Layer: 9
   m_Name: MiaBook
   m_TagString: Untagged
@@ -2178,6 +2195,7 @@ GameObject:
   - component: {fileID: 65573816047888624}
   - component: {fileID: 114196807729519534}
   - component: {fileID: 114867126749182194}
+  - component: {fileID: 114962477962919378}
   m_Layer: 9
   m_Name: Prize
   m_TagString: Untagged
@@ -2196,6 +2214,7 @@ GameObject:
   - component: {fileID: 65321254042783790}
   - component: {fileID: 114882627791739932}
   - component: {fileID: 114427913626314944}
+  - component: {fileID: 114557496215696844}
   m_Layer: 9
   m_Name: EthanPhoto
   m_TagString: Untagged
@@ -2265,6 +2284,7 @@ GameObject:
   - component: {fileID: 65022947540282566}
   - component: {fileID: 114335161341910004}
   - component: {fileID: 114305500360600530}
+  - component: {fileID: 114589281356897062}
   m_Layer: 9
   m_Name: MiaPhoto
   m_TagString: Untagged
@@ -2354,6 +2374,7 @@ GameObject:
   - component: {fileID: 65868905881077590}
   - component: {fileID: 114486762436508134}
   - component: {fileID: 114355786560478696}
+  - component: {fileID: 114217828646796150}
   m_Layer: 9
   m_Name: Request
   m_TagString: Untagged
@@ -2475,8 +2496,8 @@ GameObject:
   - component: {fileID: 114644443920110926}
   - component: {fileID: 64822077550412890}
   - component: {fileID: 65279226053080862}
-  - component: {fileID: 114545690188851700}
   - component: {fileID: 114493799035916972}
+  - component: {fileID: 114925228397334816}
   m_Layer: 9
   m_Name: NoteKey
   m_TagString: Untagged
@@ -2680,7 +2701,7 @@ GameObject:
   - component: {fileID: 82226794841334324}
   - component: {fileID: 114492876298215054}
   - component: {fileID: 114375614458780520}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2752,9 +2773,9 @@ GameObject:
   - component: {fileID: 114058081083216640}
   - component: {fileID: 64849334794489978}
   - component: {fileID: 65211113143419556}
-  - component: {fileID: 114245687701922636}
   - component: {fileID: 114694984761152828}
   - component: {fileID: 114091435868826898}
+  - component: {fileID: 114118089934804676}
   m_Layer: 9
   m_Name: Documents
   m_TagString: Untagged
@@ -2908,6 +2929,7 @@ GameObject:
   - component: {fileID: 65317824132437548}
   - component: {fileID: 114807968934900202}
   - component: {fileID: 114981532339904092}
+  - component: {fileID: 114074913524550078}
   m_Layer: 9
   m_Name: High heels
   m_TagString: Untagged
@@ -3062,6 +3084,7 @@ GameObject:
   - component: {fileID: 114825035638811242}
   - component: {fileID: 114254589419570724}
   - component: {fileID: 65594462274895244}
+  - component: {fileID: 114125119629649640}
   m_Layer: 9
   m_Name: Knives
   m_TagString: Untagged
@@ -3233,6 +3256,7 @@ GameObject:
   - component: {fileID: 65730055241990444}
   - component: {fileID: 114673277993951586}
   - component: {fileID: 114726244571182234}
+  - component: {fileID: 114880792917672702}
   m_Layer: 9
   m_Name: Trophy
   m_TagString: Untagged
@@ -12554,7 +12578,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f499ae55a040ac540a4c0bff1cbcab0b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: caa91a2d559123c4994d7b40cf28552c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.496
   m_Pitch: 1
@@ -12717,6 +12741,19 @@ MonoBehaviour:
   MaxZoom: 0
   MinZoom: 0
   CanZoom: 0
+--- !u!114 &114026116658451126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1346420717602942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: This deer head was actually company's property.
 --- !u!114 &114026741494076918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13051,6 +13088,20 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114074913524550078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1895575377666380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: I guess, those are Mia's. But why it is here if they broke
+    up a long time ago?
 --- !u!114 &114082758960658246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13089,6 +13140,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _entityType: 0
+--- !u!114 &114102882096573606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1415544683235092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: Dylan never liked that brother bought some books for work.
 --- !u!114 &114108222432217462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13127,6 +13191,45 @@ MonoBehaviour:
   blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
   brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
     type: 3}
+--- !u!114 &114114144857728126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1416488186236496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: This is Monet... Mia really liked his art works.
+--- !u!114 &114118089934804676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854909058985110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: It's documents that my brother took home from work
+--- !u!114 &114125119629649640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1934665750223224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: I guess, one knife here is missed.
 --- !u!114 &114171324033508074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13214,6 +13317,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _json: {fileID: 4900000, guid: 27a086946bd1f6e4e804ab7621fe2e17, type: 3}
+--- !u!114 &114213252177705664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074238060196984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: So, it means, that in the day of murder brother also met
+    Dylan.
 --- !u!114 &114217495955404898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13226,6 +13343,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _json: {fileID: 4900000, guid: 08474f62e80cf434386862b361cf5f9c, type: 3}
+--- !u!114 &114217828646796150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1675800306790000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: It's brother's request for the pay increase, but it's denied.
 --- !u!114 &114239694075131168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13240,20 +13370,6 @@ MonoBehaviour:
   MaxZoom: 0
   MinZoom: 0
   CanZoom: 0
---- !u!114 &114245687701922636
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1854909058985110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5c41847fb5992840ac28cbd8c0851eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemName: Letter from Ethan
-  _activationButton: 323
-  _targetExaminableObject: {fileID: 0}
 --- !u!114 &114254589419570724
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13970,6 +14086,19 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114417264013667292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1603395552118614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: '"The most famous assassinations in history"...'
 --- !u!114 &114423377364914534
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14167,6 +14296,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b445466c1ca51344aa674c50644662d5, type: 3}
   m_JumpSound: {fileID: 0}
   m_LandSound: {fileID: 0}
+--- !u!114 &114493178840714338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1439309680600126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: Mia hated all those plants, but brother continued to buy
+    more and more.
 --- !u!114 &114493799035916972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14216,6 +14359,19 @@ MonoBehaviour:
   MaxZoom: 0
   MinZoom: 0
   CanZoom: 0
+--- !u!114 &114511265953832864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178487713512886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: Company gave it to brother, so he could work more efficiently.
 --- !u!114 &114522542052197982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14263,20 +14419,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _json: {fileID: 4900000, guid: 0f123b46e016d01498077af0a669c5cd, type: 3}
---- !u!114 &114545690188851700
+--- !u!114 &114543631128524944
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1707503947381398}
+  m_GameObject: {fileID: 1533560800489502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5c41847fb5992840ac28cbd8c0851eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemName: Letter from Ethan
-  _activationButton: 323
-  _targetExaminableObject: {fileID: 0}
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: Ethan often did this - closed something in the safe as
+    a joke.
+--- !u!114 &114552036855615624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1531791089309418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: This box is full with Mia's old stuff.
+--- !u!114 &114557496215696844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1631911335348280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: They always were friends, from the childhood.
 --- !u!114 &114563173912556290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14303,6 +14485,19 @@ MonoBehaviour:
   MaxZoom: 0
   MinZoom: 0
   CanZoom: 0
+--- !u!114 &114589281356897062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651128593644366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: They broke up, but he anyway kept this photo here.
 --- !u!114 &114612923212147580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14918,6 +15113,19 @@ MonoBehaviour:
   - x: 23
     y: 22
   m_selectedTriangles: 140000001500000016000000150000001700000016000000
+--- !u!114 &114646319101253338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1437255692130664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: Someone definitely was here at that day...
 --- !u!114 &114648798162814812
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14962,7 +15170,7 @@ MonoBehaviour:
   _interactionDistance: 2
   _layerMaskInteract:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 257
   _camera: {fileID: 20908087062121152}
 --- !u!114 &114664022556456378
 MonoBehaviour:
@@ -15102,6 +15310,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6efa48b1c9547cda3e2d09c77a468d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114743804376270468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1396809851380184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: 'Ethan gave this figurine on brother''s birthday. '
 --- !u!114 &114744386784132276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15130,6 +15351,20 @@ MonoBehaviour:
   MaxZoom: 0
   MinZoom: 0
   CanZoom: 0
+--- !u!114 &114770586705044946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1380318345171632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: Brother had a problem with sleeping, so the doctor from
+    company gave him a receipt.
 --- !u!114 &114784000222373896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15166,6 +15401,20 @@ MonoBehaviour:
   MaxZoom: 0
   MinZoom: 0
   CanZoom: 0
+--- !u!114 &114802255067411450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1380220498182562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: It looks like that this paper ball is an important document
+    from brother's work.
 --- !u!114 &114807968934900202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15560,6 +15809,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _entityType: 0
+--- !u!114 &114880792917672702
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979840210936748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: Brother was the best worker of the year in a company once.
 --- !u!114 &114882627791739932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15571,6 +15833,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6efa48b1c9547cda3e2d09c77a468d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114885430766169680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1392516052919200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: When brother only started to work there, Dylan even liked
+    him.
+--- !u!114 &114887923569971834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433525077894190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: So, he was here in the day of murder?..
 --- !u!114 &114894060994357688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15619,6 +15908,32 @@ MonoBehaviour:
   MaxZoom: 0
   MinZoom: 0
   CanZoom: 0
+--- !u!114 &114916873561116014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561214347338324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: Ethan liked to read at brother's small library.
+--- !u!114 &114925228397334816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1707503947381398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: Oh, it says where I can find the key!
 --- !u!114 &114928506421675250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15644,6 +15959,20 @@ MonoBehaviour:
   MaxZoom: 0
   MinZoom: 0
   CanZoom: 0
+--- !u!114 &114962477962919378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1630213104182216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: I remember, that brother took first place somewhere and
+    got this prize.
 --- !u!114 &114979867763675828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15679,6 +16008,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6efa48b1c9547cda3e2d09c77a468d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114991791132478966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1472873370964214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9351343a821d422e97d870e0cf452be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _monologSound: {fileID: 0}
+  _textOfSubtitlesMonolog: He would never bought something like this, only Mia likes
+    it.
 --- !u!114 &114993163563060274
 MonoBehaviour:
   m_ObjectHideFlags: 1

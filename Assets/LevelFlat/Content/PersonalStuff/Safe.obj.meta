@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: e3040ec05d6cc224cb9068f164448f74
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bank-Safe_Bank-Safe-Door
+    100002: Bank-Safe_Bank-Safe-Door_Arms
+    100004: Bank-Safe_Bank-Safe-Door_Bars
+    100006: Bank-Safe_Bank-Safe-Door_Hand
+    100008: Bank-Safe_Bank-Safe-Door_Lock
+    100010: Bank-Safe_Bank-Safe-Door_Lock_Knob
+    100012: Bank-Safe_Bank-Safe-Door_Lock_Knob_Rubber
+    100014: Bank-Safe_Bank-Safe-Main
+    100016: Bank-Safe_Bank-Safe-Main_Bank-Safe-Jt
+    100018: Bank-Safe_Bank-Safe-Main_Bank-Safe-Sh
+    100020: //RootNode
+    400000: Bank-Safe_Bank-Safe-Door
+    400002: Bank-Safe_Bank-Safe-Door_Arms
+    400004: Bank-Safe_Bank-Safe-Door_Bars
+    400006: Bank-Safe_Bank-Safe-Door_Hand
+    400008: Bank-Safe_Bank-Safe-Door_Lock
+    400010: Bank-Safe_Bank-Safe-Door_Lock_Knob
+    400012: Bank-Safe_Bank-Safe-Door_Lock_Knob_Rubber
+    400014: Bank-Safe_Bank-Safe-Main
+    400016: Bank-Safe_Bank-Safe-Main_Bank-Safe-Jt
+    400018: Bank-Safe_Bank-Safe-Main_Bank-Safe-Sh
+    400020: //RootNode
+    2100000: Bank-Safe_Bank-Safe-DoorMat
+    2100002: Bank-Safe_Bank-Safe-Door_ArmsMat
+    2100004: Bank-Safe_Bank-Safe-Door_BarsMat
+    2100006: Bank-Safe_Bank-Safe-Door_HandMat
+    2100008: Bank-Safe_Bank-Safe-Door_LockMat
+    2100010: Bank-Safe_Bank-Safe-Door_Lock_KnobMat
+    2100012: Bank-Safe_Bank-Safe-Door_Lock_Knob_RubberMat
+    2100014: Bank-Safe_Bank-Safe-MainMat
+    2100016: Bank-Safe_Bank-Safe-Main_Bank-Safe-JtMat
+    2100018: Bank-Safe_Bank-Safe-Main_Bank-Safe-ShMat
+    2300000: Bank-Safe_Bank-Safe-Door
+    2300002: Bank-Safe_Bank-Safe-Door_Arms
+    2300004: Bank-Safe_Bank-Safe-Door_Bars
+    2300006: Bank-Safe_Bank-Safe-Door_Hand
+    2300008: Bank-Safe_Bank-Safe-Door_Lock
+    2300010: Bank-Safe_Bank-Safe-Door_Lock_Knob
+    2300012: Bank-Safe_Bank-Safe-Door_Lock_Knob_Rubber
+    2300014: Bank-Safe_Bank-Safe-Main
+    2300016: Bank-Safe_Bank-Safe-Main_Bank-Safe-Jt
+    2300018: Bank-Safe_Bank-Safe-Main_Bank-Safe-Sh
+    3300000: Bank-Safe_Bank-Safe-Door
+    3300002: Bank-Safe_Bank-Safe-Door_Arms
+    3300004: Bank-Safe_Bank-Safe-Door_Bars
+    3300006: Bank-Safe_Bank-Safe-Door_Hand
+    3300008: Bank-Safe_Bank-Safe-Door_Lock
+    3300010: Bank-Safe_Bank-Safe-Door_Lock_Knob
+    3300012: Bank-Safe_Bank-Safe-Door_Lock_Knob_Rubber
+    3300014: Bank-Safe_Bank-Safe-Main
+    3300016: Bank-Safe_Bank-Safe-Main_Bank-Safe-Jt
+    3300018: Bank-Safe_Bank-Safe-Main_Bank-Safe-Sh
+    4300000: Bank-Safe_Bank-Safe-Door
+    4300002: Bank-Safe_Bank-Safe-Door_Arms
+    4300004: Bank-Safe_Bank-Safe-Door_Bars
+    4300006: Bank-Safe_Bank-Safe-Door_Hand
+    4300008: Bank-Safe_Bank-Safe-Door_Lock
+    4300010: Bank-Safe_Bank-Safe-Door_Lock_Knob
+    4300012: Bank-Safe_Bank-Safe-Door_Lock_Knob_Rubber
+    4300014: Bank-Safe_Bank-Safe-Main
+    4300016: Bank-Safe_Bank-Safe-Main_Bank-Safe-Jt
+    4300018: Bank-Safe_Bank-Safe-Main_Bank-Safe-Sh
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
