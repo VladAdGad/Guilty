@@ -1,4 +1,5 @@
-﻿using CommonFeature.UI.Pause;
+﻿using CommonFeature.CursorFeature;
+using CommonFeature.UI.Pause;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,7 @@ namespace CommonFeature.UI.ButtonListeners
         {
             _pauseGameBehaviour = GetComponentInParent<PauseGameBehaviour>();
             GetComponent<Button>().onClick.AddListener(_pauseGameBehaviour.ResumeGame);
+            GetComponent<Button>().onClick.AddListener(CursorBehaviour.DisableCursor);
         }
     }
 }
