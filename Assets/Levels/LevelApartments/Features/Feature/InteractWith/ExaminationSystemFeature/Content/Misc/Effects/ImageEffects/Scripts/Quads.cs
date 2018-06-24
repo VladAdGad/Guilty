@@ -2,7 +2,7 @@ using UnityEngine;
 
 // same as Triangles but creates quads instead which generally
 // saves fillrate at the expense for more triangles to issue
-namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts
+namespace Levels.LevelApartments.Features.Feature.InteractWith.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts
 {
     class Quads
     {

@@ -1,8 +1,8 @@
-﻿using LevelFlat.Features.Feature.Notebook.Behaviour.Notify;
-using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
+﻿using Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Notify;
+using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.SceneContext
+namespace Levels.LevelApartments.Features.Feature.SceneContext
 {
     public class GameInstaller : MonoInstaller
     {

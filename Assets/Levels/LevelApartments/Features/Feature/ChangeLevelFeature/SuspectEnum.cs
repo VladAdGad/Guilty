@@ -1,4 +1,4 @@
-﻿namespace LevelFlat.Features.Feature.ChangeLevelFeature
+﻿namespace Levels.LevelApartments.Features.Feature.ChangeLevelFeature
 {
     public enum SuspectEnum
     {

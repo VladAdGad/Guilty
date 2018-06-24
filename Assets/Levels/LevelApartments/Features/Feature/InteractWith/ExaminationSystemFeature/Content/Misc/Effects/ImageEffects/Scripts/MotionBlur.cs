@@ -5,7 +5,7 @@ using UnityEngine;
 // as it is scaled to a smaller resolution.
 // The effect works by accumulating the previous frames in an accumulation
 // texture.
-namespace LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts
+namespace Levels.LevelApartments.Features.Feature.InteractWith.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts
 {
     [ExecuteInEditMode]
     [AddComponentMenu("Image Effects/Blur/Motion Blur (Color Accumulation)")]

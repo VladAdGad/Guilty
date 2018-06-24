@@ -1,6 +1,6 @@
 ﻿using CommonFeature.CursorFeature;
-using LevelFlat.Features.CommonFeature.Player;
-using LevelFlat.Features.Feature.Notebook;
+using Levels.LevelApartments.Features.CommonFeature.Player;
+using Levels.LevelApartments.Features.Feature.Notebook;
 using UnityEngine;
 using Zenject;
 

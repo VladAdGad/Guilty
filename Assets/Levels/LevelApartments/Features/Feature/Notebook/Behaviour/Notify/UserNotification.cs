@@ -1,8 +1,8 @@
-﻿using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+﻿using Levels.LevelApartments.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.Notebook.Behaviour.Notify
+namespace Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Notify
 {
     public class UserNotification : Signal<UserNotification>
     {

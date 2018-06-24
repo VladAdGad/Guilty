@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task
+namespace Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task
 {
     public class DataTaskProxy
     {

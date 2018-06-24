@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
-using LevelFlat.Features.CommonFeature.Player;
-using LevelFlat.Features.Feature.Notebook.Behaviour;
-using LevelFlat.Features.Feature.Notebook.Behaviour.Evidence;
-using LevelFlat.Features.Feature.Notebook.Behaviour.Inventory;
-using LevelFlat.Features.Feature.Notebook.Behaviour.Progress;
-using LevelFlat.Features.Feature.Notebook.Behaviour.Task;
-using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+using Levels.LevelApartments.Features.CommonFeature.Player;
+using Levels.LevelApartments.Features.Feature.Notebook.Behaviour;
+using Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Evidence;
+using Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Inventory;
+using Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Progress;
+using Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Task;
+using Levels.LevelApartments.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.Notebook
+namespace Levels.LevelApartments.Features.Feature.Notebook
 {
     public class NotebookManager : MonoBehaviour
     {

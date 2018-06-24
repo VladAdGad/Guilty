@@ -1,9 +1,9 @@
 ﻿using System;
-using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+using Levels.LevelApartments.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.SceneContext
+namespace Levels.LevelApartments.Features.Feature.SceneContext
 {
     public class AudioInstaller : MonoInstaller
     {

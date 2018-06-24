@@ -1,10 +1,10 @@
-﻿using LevelFlat.Features.CommonFeature.Player.Monolog;
-using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
-using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
-using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
+﻿using Levels.LevelApartments.Features.CommonFeature.Player.Monolog;
+using Levels.LevelApartments.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
+using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
+using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
 using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.InteractObject
+namespace Levels.LevelApartments.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.InteractObject
 {
     public class ExamineTarget : MonoBehaviour, IGazable
     {

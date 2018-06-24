@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using LevelFlat.Features.Feature.InteractWithObjects;
-using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
+using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
 using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWith.ComputerFeature.ComputerLockBehaviour
+namespace Levels.LevelApartments.Features.Feature.InteractWith.ComputerFeature.ComputerLockBehaviour
 {
     public class ComputerLock : Interactable
     {

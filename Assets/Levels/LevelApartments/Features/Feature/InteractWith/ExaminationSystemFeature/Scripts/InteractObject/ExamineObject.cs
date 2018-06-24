@@ -7,17 +7,16 @@
 
 //This script manages the informations of the interactable objects, such as the name
 
-using LevelFlat.Features.CommonFeature.Player;
-using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature;
-using LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.GUI;
-using LevelFlat.Features.Feature.InteractWithObjects;
-using LevelFlat.Features.Feature.InteractWithObjects.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts;
-using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+using Levels.LevelApartments.Features.CommonFeature.Player;
+using Levels.LevelApartments.Features.CommonFeature.Player.RaycastManagerFeature;
+using Levels.LevelApartments.Features.Feature.InteractWith.ExaminationSystemFeature.Content.Misc.Effects.ImageEffects.Scripts;
+using Levels.LevelApartments.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.GUI;
+using Levels.LevelApartments.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.InteractObject
+namespace Levels.LevelApartments.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.InteractObject
 {
     public class ExamineObject : Interactable
     {

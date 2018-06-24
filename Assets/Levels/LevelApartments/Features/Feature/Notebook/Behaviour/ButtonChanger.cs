@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace LevelFlat.Features.Feature.Notebook.Behaviour
+namespace Levels.LevelApartments.Features.Feature.Notebook.Behaviour
 {
     public abstract class ButtonChanger: MonoBehaviour
     {

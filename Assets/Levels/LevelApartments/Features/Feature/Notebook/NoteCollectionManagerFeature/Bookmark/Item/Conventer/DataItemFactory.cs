@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item.Conventer
+namespace Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item.Conventer
 {
     public abstract class DataItemFactory
     {

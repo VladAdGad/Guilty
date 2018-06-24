@@ -1,9 +1,9 @@
-﻿using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+﻿using Levels.LevelApartments.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.Notebook.Behaviour
+namespace Levels.LevelApartments.Features.Feature.Notebook.Behaviour
 {
     public class Page : MonoBehaviour
     {

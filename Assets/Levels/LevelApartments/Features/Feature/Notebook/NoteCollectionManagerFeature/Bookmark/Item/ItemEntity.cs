@@ -1,9 +1,9 @@
-﻿using LevelFlat.Features.Feature.Notebook.Behaviour.Inventory;
-using LevelFlat.Features.Feature.Notebook.Behaviour.Notify;
+﻿using Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Inventory;
+using Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Notify;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item
+namespace Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item
 {
     public class ItemEntity : MonoBehaviour, IInitializable
     {

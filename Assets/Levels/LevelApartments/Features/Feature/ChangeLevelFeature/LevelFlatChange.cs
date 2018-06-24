@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using CommonFeature.LevelChange;
 using CommonFeature.UtilityCommonFeature;
-using LevelFlat.Features.Feature.InteractWith;
-using LevelFlat.Features.Feature.Notebook.Behaviour.Evidence;
+using Levels.LevelApartments.Features.Feature.InteractWith;
+using Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Evidence;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Zenject;
 
 /*
@@ -11,7 +12,7 @@ using Zenject;
  * 10 kostylej iz 10 etoj klase
  */
 
-namespace LevelFlat.Features.Feature.ChangeLevelFeature
+namespace Levels.LevelApartments.Features.Feature.ChangeLevelFeature
 {
     public class LevelFlatChange : Interactable
     {
@@ -27,6 +28,7 @@ namespace LevelFlat.Features.Feature.ChangeLevelFeature
 
         public override void OnPress()
         {
+            if(EventSystem.current.IsPointerOverGameObject()) return;
             if (CheckRequirements())
             {
                 _changeLevelOnceTimeAction.Invoke();
