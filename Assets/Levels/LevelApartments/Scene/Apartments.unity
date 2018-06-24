@@ -66673,6 +66673,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1166892626}
   - component: {fileID: 1541025442}
+  - component: {fileID: 1541025444}
+  - component: {fileID: 1541025443}
   m_Layer: 2
   m_Name: HallDoor
   m_TagString: Untagged
@@ -66690,8 +66692,32 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 95.83335, y: 13.898977, z: 222.72008}
-  m_Center: {x: -18.325966, y: 221.15804, z: -6.8164983}
+  m_Size: {x: 7.589959, y: 13.898977, z: 222.72008}
+  m_Center: {x: 25.79577, y: 221.15804, z: -6.816492}
+--- !u!65 &1541025443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541025441}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 95.772446, y: 13.898977, z: 9.5756035}
+  m_Center: {x: -18.295448, y: 221.15805, z: 99.75586}
+--- !u!65 &1541025444
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541025441}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.1616626, y: 13.898977, z: 222.72008}
+  m_Center: {x: -62.661613, y: 221.15804, z: -6.816492}
 --- !u!1 &1541432786
 GameObject:
   m_ObjectHideFlags: 0
