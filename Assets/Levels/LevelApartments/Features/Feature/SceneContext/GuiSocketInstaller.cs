@@ -14,7 +14,6 @@ namespace Levels.LevelApartments.Features.Feature.SceneContext
         {
             Container.BindInstance(GuiSocketsSettingsScene.Crosshair).WithId(GameObjectType.GuiSocket.Crosshair);
             Container.BindInstance(GuiSocketsSettingsScene.ItemName).WithId(GameObjectType.GuiSocket.ItemName);
-            Container.BindInstance(GuiSocketsSettingsScene.ExamineControl).WithId(GameObjectType.GuiSocket.ExamineControl);
             Container.BindInstance(GuiSocketsSettingsScene.SubtitlesMonolog);
         }
 
@@ -23,7 +22,6 @@ namespace Levels.LevelApartments.Features.Feature.SceneContext
         {
             public GameObject Crosshair;
             public GameObject ItemName;
-            public GameObject ExamineControl;
             public SubtitlesMonolog SubtitlesMonolog;
         }
     }

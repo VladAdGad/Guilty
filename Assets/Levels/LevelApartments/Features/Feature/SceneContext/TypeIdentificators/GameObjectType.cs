@@ -12,7 +12,6 @@
         {
             Crosshair,
             ItemName,
-            ExamineControl
         }
         
         public enum Player
