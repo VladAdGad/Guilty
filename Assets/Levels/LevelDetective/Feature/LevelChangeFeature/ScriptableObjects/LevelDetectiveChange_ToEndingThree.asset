@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3da9559d1c3c30a4e98e4af114148dff, type: 3}
   m_Name: LevelDetectiveChange_ToEndingThree
   m_EditorClassIdentifier: 
-  _indexScene: 5
+  _indexScene: 6
