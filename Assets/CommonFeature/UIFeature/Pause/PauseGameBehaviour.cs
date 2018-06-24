@@ -4,7 +4,7 @@ using LevelFlat.Features.Feature.Notebook;
 using UnityEngine;
 using Zenject;
 
-namespace CommonFeature.UI.Pause
+namespace CommonFeature.UIFeature.Pause
 {
     public class PauseGameBehaviour : MonoBehaviour
     {

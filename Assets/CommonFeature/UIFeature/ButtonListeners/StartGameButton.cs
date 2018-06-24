@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace CommonFeature.UI.ButtonListeners
+namespace CommonFeature.UIFeature.ButtonListeners
 {
     public class StartGameButton: MonoBehaviour
     {

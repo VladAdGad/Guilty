@@ -1,9 +1,9 @@
 ﻿using CommonFeature.CursorFeature;
-using CommonFeature.UI.Pause;
+using CommonFeature.UIFeature.Pause;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace CommonFeature.UI.ButtonListeners
+namespace CommonFeature.UIFeature.ButtonListeners
 {
     public class ResumeGameButton: MonoBehaviour
     {
