@@ -45,9 +45,11 @@ namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scrip
 
         public void StartRotateObject(GameObject targetTransform)
         {
-            targetTransform.SetActive(true);
-            _targetTransform = targetTransform.transform;
             enabled = true;
+            _targetTransform = targetTransform.transform;
+            _targetTransform.localRotation = Quaternion.Euler(0,0,0);
+            _targetTransform.localPosition = targetTransform.transform.localPosition;
+            targetTransform.SetActive(true);
         }
 
         public void StopRotateObject(GameObject targetTransform)
