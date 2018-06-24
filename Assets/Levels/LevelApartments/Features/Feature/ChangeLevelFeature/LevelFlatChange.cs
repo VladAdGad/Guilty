@@ -4,6 +4,7 @@ using CommonFeature.UtilityCommonFeature;
 using LevelFlat.Features.Feature.InteractWith;
 using LevelFlat.Features.Feature.Notebook.Behaviour.Evidence;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Zenject;
 
 /*
@@ -27,6 +28,7 @@ namespace LevelFlat.Features.Feature.ChangeLevelFeature
 
         public override void OnPress()
         {
+            if(EventSystem.current.IsPointerOverGameObject()) return;
             if (CheckRequirements())
             {
                 _changeLevelOnceTimeAction.Invoke();
