@@ -1016,7 +1016,7 @@ GameObject:
   - component: {fileID: 2034798438}
   - component: {fileID: 2034798437}
   m_Layer: 5
-  m_Name: Assets (1)
+  m_Name: Were used
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1072,7 +1072,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: In game were used ProBuilder and PostProcessing
+  m_Text: In game were used ProBuilder, PostProcessing, Dialogue System, JetBrains
+    and Zenject
 --- !u!222 &2034798438
 CanvasRenderer:
   m_ObjectHideFlags: 0
