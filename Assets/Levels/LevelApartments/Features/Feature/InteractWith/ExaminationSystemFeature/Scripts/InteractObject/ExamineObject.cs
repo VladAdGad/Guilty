@@ -23,7 +23,6 @@ namespace Levels.LevelApartments.Features.Feature.InteractWith.ExaminationSystem
         [SerializeField] private GameObject _targetExaminableObject;
 
         // @formatter:off
-        [Inject(Id = GameObjectType.GuiSocket.ExamineControl)] private GameObject _ecamineControlObject;
         [Inject(Id = GameObjectType.Camera.MainCamera)] private GameObject _mainCamera;
         [Inject(Id = GameObjectType.Camera.ExaminableCamera)] private GameObject _examinableCamera;
         [Inject] private PlayerBehaviour _playerBehaviour;
@@ -48,7 +47,6 @@ namespace Levels.LevelApartments.Features.Feature.InteractWith.ExaminationSystem
             _playerBehaviour.DisableFirstPersonController();
             _mainCamera.GetComponent<Blur>().enabled = true;
             CrosshairObject.GetComponent<CrosshairManager>().DisableCrosshair();
-            _ecamineControlObject.GetComponent<UIFade>().FadeIn();
             _examinableCamera.GetComponent<RaycastManager>().enabled = true;
         }
 
@@ -58,7 +56,6 @@ namespace Levels.LevelApartments.Features.Feature.InteractWith.ExaminationSystem
             _playerBehaviour.EnableFirstPersonController();
             _mainCamera.GetComponent<Blur>().enabled = false;
             CrosshairObject.GetComponent<CrosshairManager>().EnableCrosshair();
-            _ecamineControlObject.GetComponent<UIFade>().FadeOut();
             _examinableCamera.GetComponent<RaycastManager>().enabled = false;
         }
 
