@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9190,13 +9190,11 @@ GameObject:
   - component: {fileID: 241755925}
   - component: {fileID: 241755924}
   - component: {fileID: 241755923}
-  - component: {fileID: 241755922}
-  - component: {fileID: 241755921}
   - component: {fileID: 241755927}
   - component: {fileID: 241755926}
   - component: {fileID: 241755930}
-  - component: {fileID: 241755928}
   - component: {fileID: 241755931}
+  - component: {fileID: 241755921}
   m_Layer: 8
   m_Name: SafeCode
   m_TagString: Untagged
@@ -9204,34 +9202,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 127
   m_IsActive: 1
---- !u!65 &241755921
-BoxCollider:
+--- !u!114 &241755921
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 65035479930857024, guid: 65998f1a17fe3f34f84d85287020d9a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 797969039}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 241755920}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.13982192, z: 1}
-  m_Center: {x: 0.5, y: 0.06991096, z: -0.5}
---- !u!64 &241755922
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 64673527572463844, guid: 65998f1a17fe3f34f84d85287020d9a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 797969039}
-  m_GameObject: {fileID: 241755920}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 1065698658}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4de08c3f7b0b4c6cb3afe9512a644a6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: Sticker with numbers
+  _activationButton: 323
+  _doorLock: {fileID: 915954429}
 --- !u!114 &241755923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9593,20 +9577,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.13982192, z: 1}
   m_Center: {x: 0.5, y: 0.06991096, z: -0.5}
---- !u!114 &241755928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 241755920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d80ecaae363c43439c6c8e899d72dde2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemName: Sticker with numbers
-  _activationButton: 323
-  _doorLock: {fileID: 915954429}
 --- !u!33 &241755929
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -30733,8 +30703,14 @@ Prefab:
       propertyPath: m_Center.z
       value: -0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 65035479930857024, guid: 65998f1a17fe3f34f84d85287020d9a7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114848141144212268, guid: 65998f1a17fe3f34f84d85287020d9a7, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 65998f1a17fe3f34f84d85287020d9a7, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &797969040
@@ -36788,12 +36764,12 @@ GameObject:
   m_Component:
   - component: {fileID: 915954425}
   - component: {fileID: 915954426}
+  - component: {fileID: 915954432}
   - component: {fileID: 915954427}
-  - component: {fileID: 915954433}
+  - component: {fileID: 915954428}
   - component: {fileID: 915954431}
   - component: {fileID: 915954430}
   - component: {fileID: 915954429}
-  - component: {fileID: 915954432}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -36934,59 +36910,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &915954429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 915954424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21b49c08cff54d64843c8c053189ba0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemName: Safe
-  _activationButton: 323
-  _closingDoorAudioSource: {fileID: 0}
-  _openingDoorAudioSource: {fileID: 915954427}
-  _lockedStateTooltip: You need to find the code
-  _lockStateAudioSource: {fileID: 915954433}
---- !u!114 &915954430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 915954424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6efa48b1c9547cda3e2d09c77a468d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &915954431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 915954424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e08ed331a6f4bb9b2d818e60dd68ea3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _jsonDataTask: {fileID: 4900000, guid: 2e629013af6137649b0b98c7aff083ca, type: 3}
---- !u!65 &915954432
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 915954424}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 100.05182, y: 127.29865, z: 8.720783}
-  m_Center: {x: -0.75889355, y: 76.19536, z: 54.27807}
---- !u!82 &915954433
+--- !u!82 &915954428
 AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -36997,7 +36921,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 10c1fdfc62eb00f44986e6ba05584b0c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.463
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -37081,6 +37005,57 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &915954429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 915954424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9424c08500cf4b2680d0f9ad08f6ecb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: Safe
+  _activationButton: 323
+  _openingDoorAudioSource: {fileID: 915954427}
+  _lockedStateTooltip: You need to find the code
+  _lockStateAudioSource: {fileID: 915954428}
+--- !u!114 &915954430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 915954424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6efa48b1c9547cda3e2d09c77a468d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &915954431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 915954424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e08ed331a6f4bb9b2d818e60dd68ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jsonDataTask: {fileID: 4900000, guid: 2e629013af6137649b0b98c7aff083ca, type: 3}
+--- !u!65 &915954432
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 915954424}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100.05182, y: 127.29865, z: 8.720783}
+  m_Center: {x: -0.75889355, y: 76.19536, z: 54.27807}
 --- !u!1 &918204734 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100034, guid: 5201aead134e0cc4a90bf9d5d604466f, type: 3}
@@ -44250,7 +44225,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh78926
+  m_Name: pb_Mesh85052
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
