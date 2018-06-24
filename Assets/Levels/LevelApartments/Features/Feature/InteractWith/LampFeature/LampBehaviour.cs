@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWith.LampFeature
+namespace Levels.LevelApartments.Features.Feature.InteractWith.LampFeature
 {
     public class LampBehaviour : Interactable
     {

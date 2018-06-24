@@ -1,7 +1,7 @@
-﻿using LevelFlat.Features.Feature.InteractWith.PickupSystemFeature;
+﻿using Levels.LevelApartments.Features.Feature.InteractWith.PickupSystemFeature;
 using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWith.ComputerFeature.ComputerLockBehaviour
+namespace Levels.LevelApartments.Features.Feature.InteractWith.ComputerFeature.ComputerLockBehaviour
 {
     public class ComputerUnlock : PickupObject
     {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace LevelFlat.Features.Feature.InteractWith.DoorFeature.Scripts.DoorLockBehaviour
+namespace Levels.LevelApartments.Features.Feature.InteractWith.DoorFeature.Scripts.DoorLockBehaviour
 {
     public class DoorLock : DoorBehaviour
     {

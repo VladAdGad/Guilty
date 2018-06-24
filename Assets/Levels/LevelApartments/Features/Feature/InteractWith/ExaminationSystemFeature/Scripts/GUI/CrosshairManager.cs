@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.GUI
+namespace Levels.LevelApartments.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.GUI
 {
     public class CrosshairManager : MonoBehaviour
     {

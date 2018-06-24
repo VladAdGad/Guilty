@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWith.RadioFeature
+namespace Levels.LevelApartments.Features.Feature.InteractWith.RadioFeature
 {
     public class RadioBehaviour : Interactable
     {

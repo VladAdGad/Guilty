@@ -1,7 +1,7 @@
-using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
+using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
 using UnityEngine.UI;
 
-namespace LevelFlat.Features.Feature.Notebook.Behaviour.Evidence
+namespace Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Evidence
 {
     public class ButtonEvidenceChanger : ButtonChanger
     {

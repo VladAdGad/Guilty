@@ -7,10 +7,10 @@
 
 //This script allows us to setup the highlightning system for interactable items
 
-using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
+using Levels.LevelApartments.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
 using UnityEngine;
 
-namespace LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts
+namespace Levels.LevelApartments.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts
 {
     public class Emission : MonoBehaviour, IGazable
     {

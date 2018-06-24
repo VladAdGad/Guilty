@@ -1,8 +1,8 @@
-﻿using LevelFlat.Features.CommonFeature.Player;
+﻿using Levels.LevelApartments.Features.CommonFeature.Player;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.TutorialFeature
+namespace Levels.LevelApartments.Features.Feature.TutorialFeature
 {
     public class Tutorial : MonoBehaviour
     {

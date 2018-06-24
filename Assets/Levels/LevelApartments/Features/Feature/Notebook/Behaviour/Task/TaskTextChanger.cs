@@ -1,8 +1,8 @@
-﻿using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
+﻿using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace LevelFlat.Features.Feature.Notebook.Behaviour.Task
+namespace Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Task
 {
     public class TaskTextChanger : MonoBehaviour
     {

@@ -2,7 +2,7 @@
 using UnityStandardAssets.Characters.FirstPerson;
 using Zenject;
 
-namespace LevelFlat.Features.CommonFeature.Player
+namespace Levels.LevelApartments.Features.CommonFeature.Player
 {
     public class PlayerBehaviour
     {

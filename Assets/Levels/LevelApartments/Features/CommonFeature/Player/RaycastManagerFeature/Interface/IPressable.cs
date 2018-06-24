@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface
+namespace Levels.LevelApartments.Features.CommonFeature.Player.RaycastManagerFeature.Interface
 {
     public interface IPressable : IInteractable
     {

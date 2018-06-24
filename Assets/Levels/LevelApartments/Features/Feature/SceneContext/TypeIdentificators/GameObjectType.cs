@@ -1,4 +1,4 @@
-﻿namespace LevelFlat.Features.Feature.SceneContext.TypeIdentificators
+﻿namespace Levels.LevelApartments.Features.Feature.SceneContext.TypeIdentificators
 {
     public abstract class GameObjectType
     {

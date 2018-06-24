@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using LevelFlat.Features.Feature.Notebook.Behaviour.Evidence;
-using LevelFlat.Features.Feature.Notebook.Behaviour.Inventory;
-using LevelFlat.Features.Feature.Notebook.Behaviour.Progress;
-using LevelFlat.Features.Feature.Notebook.Behaviour.Task;
-using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+using Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Evidence;
+using Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Inventory;
+using Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Progress;
+using Levels.LevelApartments.Features.Feature.Notebook.Behaviour.Task;
+using Levels.LevelApartments.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.SceneContext
+namespace Levels.LevelApartments.Features.Feature.SceneContext
 {
     public class NotebookInstaller : MonoInstaller
     {

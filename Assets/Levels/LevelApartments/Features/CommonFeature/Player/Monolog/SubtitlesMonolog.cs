@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace LevelFlat.Features.CommonFeature.Player.Monolog
+namespace Levels.LevelApartments.Features.CommonFeature.Player.Monolog
 {
     public class SubtitlesMonolog : MonoBehaviour
     {

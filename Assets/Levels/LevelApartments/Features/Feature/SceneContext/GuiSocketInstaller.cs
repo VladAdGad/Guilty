@@ -1,10 +1,10 @@
 ﻿using System;
-using LevelFlat.Features.CommonFeature.Player.Monolog;
-using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+using Levels.LevelApartments.Features.CommonFeature.Player.Monolog;
+using Levels.LevelApartments.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.SceneContext
+namespace Levels.LevelApartments.Features.Feature.SceneContext
 {
     public class GuiSocketInstaller : MonoInstaller<GuiSocketInstaller>
     {

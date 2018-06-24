@@ -1,12 +1,12 @@
 ﻿using System;
-using LevelFlat.Features.CommonFeature.Player;
-using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature;
-using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+using Levels.LevelApartments.Features.CommonFeature.Player;
+using Levels.LevelApartments.Features.CommonFeature.Player.RaycastManagerFeature;
+using Levels.LevelApartments.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 using Zenject;
 
-namespace LevelFlat.Features.Feature.SceneContext
+namespace Levels.LevelApartments.Features.Feature.SceneContext
 {
     public class PlayerInstaller : MonoInstaller
     {

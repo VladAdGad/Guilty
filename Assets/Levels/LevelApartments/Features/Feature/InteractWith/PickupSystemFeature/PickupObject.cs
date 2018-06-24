@@ -1,10 +1,10 @@
-﻿using LevelFlat.Features.CommonFeature.Player.Monolog;
-using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
-using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item;
-using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
+﻿using Levels.LevelApartments.Features.CommonFeature.Player.Monolog;
+using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
+using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item;
+using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
 using UnityEngine.EventSystems;
 
-namespace LevelFlat.Features.Feature.InteractWith.PickupSystemFeature
+namespace Levels.LevelApartments.Features.Feature.InteractWith.PickupSystemFeature
 {
     public class PickupObject : Interactable
     {

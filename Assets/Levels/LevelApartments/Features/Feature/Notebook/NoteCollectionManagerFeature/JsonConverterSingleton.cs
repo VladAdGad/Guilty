@@ -1,9 +1,9 @@
 ﻿using System;
-using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence.Conventer;
-using LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item.Conventer;
+using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence.Conventer;
+using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Item.Conventer;
 using Newtonsoft.Json;
 
-namespace LevelFlat.Features.Feature.Notebook.NoteCollectionManagerFeature
+namespace Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature
 {
     public class JsonConverterSingleton
     {

@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using CommonFeature.UtilityCommonFeature;
-using LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
-using LevelFlat.Features.Feature.InteractWith.ExaminationSystemFeature.Scripts.GUI;
-using LevelFlat.Features.Feature.SceneContext.TypeIdentificators;
+using Levels.LevelApartments.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
 using UnityEngine;
 using UnityEngine.Assertions;
-using Zenject;
 
-namespace LevelFlat.Features.CommonFeature.Player.RaycastManagerFeature
+namespace Levels.LevelApartments.Features.CommonFeature.Player.RaycastManagerFeature
 {
     public class RaycastManager : MonoBehaviour
     {
