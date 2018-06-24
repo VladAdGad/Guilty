@@ -41489,6 +41489,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 218842289}
+  - component: {fileID: 1008593390}
+  - component: {fileID: 1008593389}
+  - component: {fileID: 1008593388}
   m_Layer: 0
   m_Name: GuestRoomDoor
   m_TagString: Untagged
@@ -41496,6 +41499,42 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &1008593388
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1008593387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 81.823875, y: 13.17971, z: 8.38549}
+  m_Center: {x: -18.07108, y: 221.33607, z: 100.19037}
+--- !u!65 &1008593389
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1008593387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.004468, y: 13.508582, z: 221.87627}
+  m_Center: {x: 26.400047, y: 221.5005, z: -6.555496}
+--- !u!65 &1008593390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1008593387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.854046, y: 13.508682, z: 221.87627}
+  m_Center: {x: -62.46699, y: 221.50056, z: -6.555496}
 --- !u!1 &1009791785
 GameObject:
   m_ObjectHideFlags: 0
