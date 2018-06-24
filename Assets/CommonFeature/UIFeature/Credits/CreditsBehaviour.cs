@@ -2,7 +2,7 @@
 using UnityEngine;
 using Zenject;
 
-namespace CommonFeature.UI.Credits
+namespace CommonFeature.UIFeature.Credits
 {
     public class CreditsBehaviour : MonoBehaviour
     {

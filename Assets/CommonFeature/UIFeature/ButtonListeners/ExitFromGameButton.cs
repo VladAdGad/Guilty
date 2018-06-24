@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace CommonFeature.UI.ButtonListeners
+namespace CommonFeature.UIFeature.ButtonListeners
 {
     public class ExitFromGameButton : MonoBehaviour
     {
