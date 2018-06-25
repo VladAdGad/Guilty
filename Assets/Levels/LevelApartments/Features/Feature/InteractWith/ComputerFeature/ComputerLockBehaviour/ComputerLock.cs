@@ -12,8 +12,6 @@ namespace Levels.LevelApartments.Features.Feature.InteractWith.ComputerFeature.C
         [SerializeField] private CreateTaskEntity _createTaskEntity;
         private bool _isUnlocked;
 
-        private void Start() => _createTaskEntity = GetComponent<CreateTaskEntity>();
-
         public override void OnGazeEnter()
         {
             if (_createTaskEntity != null)
