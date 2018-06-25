@@ -1,4 +1,4 @@
-﻿using CommonFeature.LevelChange;
+﻿using CommonFeature.LevelChangerFeature;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;

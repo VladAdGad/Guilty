@@ -3,7 +3,7 @@ using Sandbox.Vlad.BetweenScenes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace CommonFeature.LevelChange
+namespace CommonFeature.LevelChangerFeature
 {
     public class LevelChangeProcessing : MonoBehaviour
     {

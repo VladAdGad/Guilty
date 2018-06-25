@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Zenject;
 
-namespace CommonFeature.LevelChange
+namespace CommonFeature.LevelChangerFeature
 {
     public class LevelChanger : MonoBehaviour
     {
