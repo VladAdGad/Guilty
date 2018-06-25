@@ -20,7 +20,7 @@ namespace Levels.LevelApartments.Features.Feature.ChangeLevelFeature
         [SerializeField] private AudioSource _shouldFindMoreEvidencesAudio;
         [SerializeField] private AudioSource _openDoorSound;
         [Inject] private List<ButtonEvidenceChanger> _buttonEvidenceChangers;
-        [Inject] private LevelChanger _levelChanger;
+        [Inject] private LevelChangeProcessing _levelChangeProcessing;
 
         private OneTimeAction _changeLevelOnceTimeAction;
         
@@ -41,7 +41,7 @@ namespace Levels.LevelApartments.Features.Feature.ChangeLevelFeature
 
         private void ChangeLevel()
         {
-            StartCoroutine(_levelChanger.LoadNextScene());
+            StartCoroutine(_levelChangeProcessing.LoadNextScene());
             _openDoorSound.Play();
         }
 

@@ -1,29 +1,13 @@
-﻿using System.Collections;
-using Sandbox.Vlad.BetweenScenes;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
+using Zenject;
 
 namespace CommonFeature.LevelChange
 {
     public class LevelChanger : MonoBehaviour
     {
-        private FadeAnimation _fadeAnimation;
-        private const int NextScene = 1;
+        [SerializeField] private SceneIndex _sceneIndex;
+        [Inject] private LevelChangeProcessing _levelChangeProcessing;
 
-        private void Start() => _fadeAnimation = GetComponent<FadeAnimation>();
-
-        public IEnumerator LoadNextScene()
-        {
-            _fadeAnimation.StartAnimation();
-            yield return new WaitForSeconds(AnimationManager.GetAnimationClipFromAnimatorByName(_fadeAnimation.LevelChangerAnimator, FadeAnimation.NameOfAnimation).length);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + NextScene);
-        }
-
-        public IEnumerator LoadIndexScene(SceneIndex indexScene)
-        {
-            _fadeAnimation.StartAnimation();
-            yield return new WaitForSeconds(AnimationManager.GetAnimationClipFromAnimatorByName(_fadeAnimation.LevelChangerAnimator, FadeAnimation.NameOfAnimation).length);
-            SceneManager.LoadScene((int) indexScene);
-        }
+        public void ChangeLevel() => StartCoroutine(_levelChangeProcessing.LoadIndexScene(_sceneIndex));
     }
 }

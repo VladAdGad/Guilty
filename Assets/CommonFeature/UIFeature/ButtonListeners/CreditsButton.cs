@@ -7,8 +7,8 @@ namespace CommonFeature.UIFeature.ButtonListeners
 {
     public class CreditsButton : MonoBehaviour
     {
-        [Inject] private LevelChanger _levelChanger;
+        [Inject] private LevelChangeProcessing _levelChangeProcessing;
         
-        private void Start() => GetComponent<Button>().onClick.AddListener(() => StartCoroutine(_levelChanger.LoadIndexScene(SceneIndex.Credits)));
+        private void Start() => GetComponent<Button>().onClick.AddListener(() => StartCoroutine(_levelChangeProcessing.LoadIndexScene(SceneIndex.Credits)));
     }
 }
