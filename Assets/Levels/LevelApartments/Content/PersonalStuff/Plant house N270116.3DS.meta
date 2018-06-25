@@ -1,28 +1,34 @@
 fileFormatVersion: 2
-guid: 3d551c7d56c71fe45b6724615b98c926
+guid: 00edb36d0859a8e42b018757196343ea
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Obj_000001
-    100002: Obj_000002
-    100004: Obj_000003
-    100006: //RootNode
-    400000: Obj_000001
-    400002: Obj_000002
-    400004: Obj_000003
-    400006: //RootNode
-    2100000: mat1
-    2100002: w  3_
-    2100004: Leather  grey
-    2300000: Obj_000001
-    2300002: Obj_000002
-    2300004: Obj_000003
-    3300000: Obj_000001
-    3300002: Obj_000002
-    3300004: Obj_000003
-    4300000: Obj_000001
-    4300002: Obj_000002
-    4300004: Obj_000003
+    100000: Arch41_030
+    100002: Arch41_031
+    100004: Arch41_032
+    100006: Arch41_036
+    100008: //RootNode
+    400000: Arch41_030
+    400002: Arch41_031
+    400004: Arch41_032
+    400006: Arch41_036
+    400008: //RootNode
+    2100000: Arch41_036_mat_1
+    2100002: Arch41_036_mat_4
+    2100004: Arch41_036_mat_2
+    2100006: Arch41_036_mat_3
+    2300000: Arch41_030
+    2300002: Arch41_031
+    2300004: Arch41_032
+    2300006: Arch41_036
+    3300000: Arch41_030
+    3300002: Arch41_031
+    3300004: Arch41_032
+    3300006: Arch41_036
+    4300000: Arch41_036
+    4300002: Arch41_030
+    4300004: Arch41_031
+    4300006: Arch41_032
   externalObjects: {}
   materials:
     importMaterials: 1
