@@ -1,4 +1,4 @@
-﻿using Levels.LevelApartments.Features.CommonFeature.Player.Monolog;
+﻿using Levels.LevelApartments.Features.CommonFeature.Player.MonologFeature;
 using Levels.LevelApartments.Features.CommonFeature.Player.RaycastManagerFeature.Interface;
 using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Evidence;
 using Levels.LevelApartments.Features.Feature.Notebook.NoteCollectionManagerFeature.Bookmark.Task;
