@@ -3,9 +3,9 @@ using Sandbox.Vlad.BetweenScenes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace CommonFeature.LevelChange
+namespace CommonFeature.LevelChangerFeature
 {
-    public class LevelChanger : MonoBehaviour
+    public class LevelChangeProcessing : MonoBehaviour
     {
         private FadeAnimation _fadeAnimation;
         private const int NextScene = 1;

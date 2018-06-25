@@ -1,4 +1,4 @@
-﻿using CommonFeature.LevelChange;
+﻿using CommonFeature.LevelChangerFeature;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -7,8 +7,8 @@ namespace CommonFeature.UIFeature.ButtonListeners
 {
     public class StartGameButton: MonoBehaviour
     {
-        [Inject] private LevelChanger _levelChanger;
+        [Inject] private LevelChangeProcessing _levelChangeProcessing;
         
-        private void Start() => GetComponent<Button>().onClick.AddListener(() => StartCoroutine(_levelChanger.LoadIndexScene(SceneIndex.Intro)));
+        private void Start() => GetComponent<Button>().onClick.AddListener(() => StartCoroutine(_levelChangeProcessing.LoadIndexScene(SceneIndex.Intro)));
     }
 }

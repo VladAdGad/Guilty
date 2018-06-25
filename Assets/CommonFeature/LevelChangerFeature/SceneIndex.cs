@@ -1,4 +1,4 @@
-﻿namespace CommonFeature.LevelChange
+﻿namespace CommonFeature.LevelChangerFeature
 {
     public enum SceneIndex
     {

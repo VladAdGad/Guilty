@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Zenject;
 
-namespace Levels.LevelApartments.Features.CommonFeature.Player.Monolog
+namespace Levels.LevelApartments.Features.CommonFeature.Player.MonologFeature
 {
     public class PlayerMonolog : MonoBehaviour
     {

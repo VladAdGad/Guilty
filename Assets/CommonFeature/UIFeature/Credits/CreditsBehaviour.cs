@@ -1,4 +1,4 @@
-﻿using CommonFeature.LevelChange;
+﻿using CommonFeature.LevelChangerFeature;
 using UnityEngine;
 using Zenject;
 
@@ -6,8 +6,8 @@ namespace CommonFeature.UIFeature.Credits
 {
     public class CreditsBehaviour : MonoBehaviour
     {
-        [Inject] private LevelChanger _levelChanger;
+        [Inject] private LevelChangeProcessing _levelChangeProcessing;
 
-        private void LoadMainLevelAfterCredits() => StartCoroutine(_levelChanger.LoadIndexScene(SceneIndex.MainMenu));
+        private void LoadMainLevelAfterCredits() => StartCoroutine(_levelChangeProcessing.LoadIndexScene(SceneIndex.MainMenu));
     }
 }

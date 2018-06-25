@@ -1,5 +1,5 @@
 ﻿using System;
-using Levels.LevelApartments.Features.CommonFeature.Player.Monolog;
+using Levels.LevelApartments.Features.CommonFeature.Player.MonologFeature;
 using Levels.LevelApartments.Features.Feature.SceneContext.TypeIdentificators;
 using UnityEngine;
 using Zenject;

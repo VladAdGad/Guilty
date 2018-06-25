@@ -1,5 +1,5 @@
 ﻿using System;
-using CommonFeature.LevelChange;
+using CommonFeature.LevelChangerFeature;
 using UnityEngine;
 using Zenject;
 
@@ -11,13 +11,13 @@ namespace CommonFeature.SceneContext
         
         public override void InstallBindings()
         {
-            Container.BindInstance(_levelChangerSettingsScene.LevelChanger);
+            Container.BindInstance(_levelChangerSettingsScene.LevelChangeProcessing);
         }
 
         [Serializable]
         public class LevelChangerSettings
         {
-            public LevelChanger LevelChanger;
+            public LevelChangeProcessing LevelChangeProcessing;
         }
     }
 }
