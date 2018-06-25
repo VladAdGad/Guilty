@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelChangerSettingsScene:
-    LevelChanger: {fileID: 114996097536724854}
+    LevelChangeProcessing: {fileID: 114996097536724854}
 --- !u!114 &114276004167158396
 MonoBehaviour:
   m_ObjectHideFlags: 1
