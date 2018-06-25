@@ -23869,7 +23869,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.505
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -55842,7 +55842,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.495
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -56232,6 +56232,43 @@ Prefab:
         type: 2}
       propertyPath: m_Navigation.m_Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024686925222474, guid: 6ee83716336153a409cc0254e0bee921,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224232456429944024, guid: 6ee83716336153a409cc0254e0bee921,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224215526124763124, guid: 6ee83716336153a409cc0254e0bee921,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748688914155182, guid: 6ee83716336153a409cc0254e0bee921, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657227891057054, guid: 6ee83716336153a409cc0254e0bee921, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165245720531152, guid: 6ee83716336153a409cc0254e0bee921, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224451012060144858, guid: 6ee83716336153a409cc0254e0bee921,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 16.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114842031533456360, guid: 6ee83716336153a409cc0254e0bee921,
+        type: 2}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ee83716336153a409cc0254e0bee921, type: 2}
@@ -74014,7 +74051,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.492
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -86575,7 +86612,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.52
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
