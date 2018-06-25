@@ -1,35 +1,16 @@
 fileFormatVersion: 2
-guid: 843c28f11f1db07449b58cf7f0a6c0c1
+guid: e78a6242894fabb418f244b778e48ac9
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Backdrop
-    100002: Crumple_Sphere
-    100004: FocusTo
-    100006: Paper
-    100008: //RootNode
-    100010: TrackTo
-    400000: Backdrop
-    400002: Crumple_Sphere
-    400004: FocusTo
-    400006: Paper
-    400008: //RootNode
-    400010: TrackTo
-    2100000: Backdrop
-    2100002: Transparent
-    2100004: Paper
-    2300000: Backdrop
-    2300002: Crumple_Sphere
-    2300004: Paper
-    3300000: Backdrop
-    3300002: Crumple_Sphere
-    3300004: Paper
-    4300000: Backdrop
-    4300002: Crumple_Sphere
-    4300004: Paper
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    100000: default
+    100002: //RootNode
+    400000: default
+    400002: //RootNode
+    2100000: defaultMat
+    2300000: default
+    3300000: default
+    4300000: default
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -105,7 +86,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
